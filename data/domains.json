@@ -1,0 +1,566 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "note": "Educational overview content. General, textbook-level statements only. No clinical, dosing or regulatory advice. Every reference is a source pointer that must be verified before citing.",
+    "evidenceTiers": ["ESTABLISHED", "SUPPORTED", "EMERGING", "TRADITIONAL", "DATA PENDING VERIFICATION"],
+    "categories": ["DISCOVERY", "DEVELOPMENT", "DELIVERY", "SAFETY", "CARE"]
+  },
+  "domains": [
+    {
+      "slug": "pharmacognosy",
+      "name": "Pharmacognosy",
+      "short": "Medicines from plants, microbes and other natural sources.",
+      "categories": ["DISCOVERY"],
+      "icon": "plant",
+      "evidence": "ESTABLISHED",
+      "progress": { "foundation": 4, "applied": 3, "frontier": 2 },
+      "whatIsIt": "Pharmacognosy is the study of drugs and drug leads that come from natural sources: plants, fungi, bacteria, marine organisms and animals. It covers how these materials are identified, collected, standardised and analysed, and how their active constituents are isolated and characterised.",
+      "whereItFits": "It sits at the very start of the medicine pathway. Natural products have long supplied starting points for drug discovery, and pharmacognosy supplies the identification and quality-control methods that make herbal and natural materials consistent enough to study and use.",
+      "keyIdeas": [
+        { "title": "Identity comes first", "text": "A natural material must be correctly identified, using macroscopic and microscopic features and chemical fingerprints, before anything else can be trusted." },
+        { "title": "Variability is the challenge", "text": "The chemistry of a plant can vary with species, part used, growing conditions and processing, so standardisation is central to reliable use." },
+        { "title": "Active constituents guide discovery", "text": "Isolating and characterising individual constituents lets researchers study mechanism and can inspire semi-synthetic or synthetic analogues." }
+      ],
+      "pharmacistRole": [
+        "Verify identity and quality of crude drugs and herbal ingredients.",
+        "Advise patients on the fact that natural does not mean risk-free, including interactions with conventional medicines.",
+        "Support standardisation and quality control of herbal products."
+      ],
+      "related": ["medicinal-chemistry", "drug-discovery", "pharmaceutical-analysis"],
+      "modules": [{ "label": "Plant Explorer", "status": "planned" }],
+      "practice": [
+        { "q": "Why is correct botanical identification needed before studying a plant material?", "a": "Because different species can look similar but contain different constituents, so activity, quality and safety conclusions only apply to the correctly identified material." },
+        { "q": "Give one reason two batches of the same herb can differ chemically.", "a": "Growing conditions, harvest time, plant part used and post-harvest processing can all change constituent levels." }
+      ],
+      "references": [
+        { "source": "Pharmacopoeial monographs for crude drugs (national or regional pharmacopoeia of your jurisdiction)", "type": "Pharmacopoeia", "purpose": "Identity, purity and quality standards for herbal materials.", "verify": "Yes. Check the current edition and the exact monograph before citing." },
+        { "source": "Standard university-level pharmacognosy textbook (choose the edition prescribed by your institution)", "type": "Textbook", "purpose": "Background on classification, constituents and analysis of natural drugs.", "verify": "Yes. Confirm title, author and edition before citing." }
+      ]
+    },
+    {
+      "slug": "pharmaceutics",
+      "name": "Pharmaceutics",
+      "short": "Turning a drug into a safe, stable, usable medicine.",
+      "categories": ["DEVELOPMENT", "DELIVERY"],
+      "icon": "tablet",
+      "evidence": "ESTABLISHED",
+      "progress": { "foundation": 5, "applied": 4, "frontier": 3 },
+      "whatIsIt": "Pharmaceutics is the science of designing, preparing and evaluating dosage forms such as tablets, capsules, solutions, suspensions, creams and injections. It links the physical and chemical properties of a drug to how it is formulated, manufactured and used.",
+      "whereItFits": "It follows discovery and precedes patient use. A molecule with the right pharmacology still needs a dosage form that is stable, consistent and acceptable to the patient. Pharmaceutics provides that bridge.",
+      "keyIdeas": [
+        { "title": "Formulation is more than the drug", "text": "Excipients, particle properties and manufacturing process all influence stability, release and patient acceptability." },
+        { "title": "Stability defines shelf life", "text": "A product must keep its quality over its intended storage period, so degradation pathways and packaging are studied early." },
+        { "title": "Dosage form suits route and patient", "text": "The choice between oral, topical, parenteral and other forms reflects the drug's properties, the target site and the patient's needs." }
+      ],
+      "pharmacistRole": [
+        "Compound and prepare extemporaneous medicines when a suitable product is not available.",
+        "Advise on correct storage, handling and administration of dosage forms.",
+        "Apply formulation knowledge when assessing substitutions or patient-specific needs."
+      ],
+      "related": ["biopharmaceutics", "industrial-pharmacy", "nanotechnology"],
+      "modules": [{ "label": "Chitosan Lab", "status": "planned" }],
+      "practice": [
+        { "q": "Why can two tablets with the same drug content behave differently in the body?", "a": "Differences in excipients, particle properties and manufacturing can change how quickly the drug is released and absorbed." },
+        { "q": "Name one factor that can shorten a product's shelf life.", "a": "Examples include heat, moisture, light and oxygen, which can drive chemical or physical degradation." }
+      ],
+      "references": [
+        { "source": "Standard pharmaceutics or dosage form design textbook (edition per your course)", "type": "Textbook", "purpose": "Foundations of dosage form design and preparation.", "verify": "Yes. Confirm title, author and edition before citing." },
+        { "source": "ICH quality guidelines on stability testing (International Council for Harmonisation)", "type": "Regulatory guideline", "purpose": "Principles for stability studies supporting shelf life.", "verify": "Yes. Confirm the current guideline number and version on the issuing body's website before citing." }
+      ]
+    },
+    {
+      "slug": "pharmacology",
+      "name": "Pharmacology",
+      "short": "How drugs act on the body, and how the body handles them.",
+      "categories": ["DISCOVERY", "SAFETY"],
+      "icon": "syringe",
+      "evidence": "ESTABLISHED",
+      "progress": { "foundation": 5, "applied": 4, "frontier": 3 },
+      "whatIsIt": "Pharmacology studies how drugs interact with biological systems. Pharmacodynamics describes what a drug does to the body, such as receptor binding and the resulting effect. Pharmacokinetics describes what the body does to a drug: absorption, distribution, metabolism and excretion.",
+      "whereItFits": "It underpins nearly every other domain. Discovery relies on it to find and validate targets, clinical practice relies on it to choose and monitor therapy, and safety science relies on it to explain adverse effects.",
+      "keyIdeas": [
+        { "title": "Mechanism links drug to effect", "text": "Most drugs act by interacting with a molecular target such as a receptor, enzyme, transporter or ion channel." },
+        { "title": "Dose and response are related", "text": "Effect generally changes with exposure, and the balance between benefit and harm defines a usable therapeutic range." },
+        { "title": "Individuals differ", "text": "Age, organ function, genetics and other medicines can change both drug exposure and response." }
+      ],
+      "pharmacistRole": [
+        "Apply mechanism knowledge to anticipate effects, interactions and adverse reactions.",
+        "Explain how and why a medicine works in plain language.",
+        "Support dose adjustment decisions in patients whose handling of drugs differs."
+      ],
+      "related": ["medicinal-chemistry", "clinical-pharmacy", "pharmacovigilance"],
+      "modules": [{ "label": "Drug Explorer", "status": "planned" }],
+      "practice": [
+        { "q": "What is the difference between pharmacodynamics and pharmacokinetics?", "a": "Pharmacodynamics is what the drug does to the body. Pharmacokinetics is what the body does to the drug." },
+        { "q": "Why might the same dose affect two patients differently?", "a": "Differences in age, organ function, genetics and co-medication can alter exposure and response." }
+      ],
+      "references": [
+        { "source": "Standard medical pharmacology textbook (edition per your course)", "type": "Textbook", "purpose": "Core principles of pharmacodynamics and pharmacokinetics.", "verify": "Yes. Confirm title, author and edition before citing." },
+        { "source": "IUPHAR/BPS Guide to Pharmacology (online database)", "type": "Database", "purpose": "Curated information on drug targets and ligands.", "verify": "Yes. Check the current entry and access date before citing." }
+      ]
+    },
+    {
+      "slug": "medicinal-chemistry",
+      "name": "Medicinal Chemistry",
+      "short": "Designing and refining molecules that make good drugs.",
+      "categories": ["DISCOVERY"],
+      "icon": "flask",
+      "evidence": "ESTABLISHED",
+      "progress": { "foundation": 4, "applied": 4, "frontier": 3 },
+      "whatIsIt": "Medicinal chemistry applies organic and physical chemistry to design, synthesise and optimise drug molecules. It studies structure-activity relationships: how changing a molecule's structure changes its potency, selectivity, metabolism and safety.",
+      "whereItFits": "It works between target identification and preclinical development. Once a hit or lead compound is found, medicinal chemists modify it to improve activity and drug-like properties.",
+      "keyIdeas": [
+        { "title": "Structure drives activity", "text": "Small structural changes can alter binding, potency and selectivity, which is the basis of structure-activity relationships." },
+        { "title": "Drug-likeness matters", "text": "A potent molecule also needs suitable solubility, permeability and metabolic stability to become a usable medicine." },
+        { "title": "Optimisation is a balance", "text": "Improving one property can worsen another, so lead optimisation is a multi-parameter trade-off." }
+      ],
+      "pharmacistRole": [
+        "Use chemical structure knowledge to understand class effects, interactions and stability.",
+        "Recognise structural features behind allergies and cross-reactivity.",
+        "Contribute to research teams as a bridge between chemistry and clinical use."
+      ],
+      "related": ["pharmacology", "drug-discovery", "pharmacognosy"],
+      "modules": [{ "label": "Drug Explorer", "status": "planned" }],
+      "practice": [
+        { "q": "What does a structure-activity relationship describe?", "a": "How changes in a molecule's structure change its biological activity and other properties." },
+        { "q": "Why is a highly potent compound not automatically a good drug?", "a": "It may lack the solubility, permeability, stability or safety profile needed in practice." }
+      ],
+      "references": [
+        { "source": "Standard medicinal chemistry textbook (edition per your course)", "type": "Textbook", "purpose": "Principles of structure-activity relationships and lead optimisation.", "verify": "Yes. Confirm title, author and edition before citing." }
+      ]
+    },
+    {
+      "slug": "pharmaceutical-analysis",
+      "name": "Pharmaceutical Analysis",
+      "short": "Measuring identity, purity and strength of medicines.",
+      "categories": ["DEVELOPMENT", "SAFETY"],
+      "icon": "microscope",
+      "evidence": "ESTABLISHED",
+      "progress": { "foundation": 4, "applied": 4, "frontier": 2 },
+      "whatIsIt": "Pharmaceutical analysis is the set of chemical and instrumental methods used to test the identity, purity, strength and quality of drug substances and drug products. Typical tools include titration, spectroscopy and chromatography.",
+      "whereItFits": "It runs alongside every stage of development and manufacture. Quality control laboratories rely on validated analytical methods to confirm that each batch meets its specification.",
+      "keyIdeas": [
+        { "title": "Fit-for-purpose methods", "text": "A method is chosen and validated for what it must show, such as assay, impurities or dissolution." },
+        { "title": "Validation builds trust", "text": "Validation demonstrates that a method is reliable through characteristics such as accuracy, precision, specificity and range." },
+        { "title": "Results need context", "text": "Reference standards, sampling and specifications determine whether a result means a batch passes or fails." }
+      ],
+      "pharmacistRole": [
+        "Perform and review quality control testing in manufacturing and hospital settings.",
+        "Interpret certificates of analysis and specifications.",
+        "Support investigation when a product quality concern arises."
+      ],
+      "related": ["industrial-pharmacy", "regulatory-science", "pharmaceutics"],
+      "modules": [{ "label": "Instruments", "status": "planned" }],
+      "practice": [
+        { "q": "Why must an analytical method be validated?", "a": "To show it gives reliable, reproducible results suitable for its intended use." },
+        { "q": "What is a reference standard used for?", "a": "It is a well-characterised material used as a comparison point to identify and quantify a substance." }
+      ],
+      "references": [
+        { "source": "ICH guideline on validation of analytical procedures (International Council for Harmonisation)", "type": "Regulatory guideline", "purpose": "Framework for validation characteristics.", "verify": "Yes. Confirm the current guideline number and version on the issuing body's website before citing." },
+        { "source": "Pharmacopoeial general chapters on analytical techniques (pharmacopoeia of your jurisdiction)", "type": "Pharmacopoeia", "purpose": "Standard test procedures and requirements.", "verify": "Yes. Check the current edition and chapter before citing." }
+      ]
+    },
+    {
+      "slug": "clinical-pharmacy",
+      "name": "Clinical Pharmacy",
+      "short": "Optimising medicine use for individual patients.",
+      "categories": ["CARE", "SAFETY"],
+      "icon": "users",
+      "evidence": "ESTABLISHED",
+      "progress": { "foundation": 5, "applied": 5, "frontier": 3 },
+      "whatIsIt": "Clinical pharmacy focuses on the patient-facing use of medicines. It includes medication review, therapeutic monitoring, dose individualisation, interaction and adverse-effect assessment, and working with prescribers to reach safe, effective and appropriate therapy.",
+      "whereItFits": "It is where pharmacological and pharmaceutical knowledge meet the individual patient, usually in hospitals, clinics and primary care teams.",
+      "keyIdeas": [
+        { "title": "Right medicine for the right patient", "text": "Therapy is matched to the patient's condition, other medicines, organ function, preferences and goals." },
+        { "title": "Monitoring closes the loop", "text": "Checking response and adverse effects after starting a medicine shows whether the plan is working." },
+        { "title": "Teamwork improves outcomes", "text": "Pharmacists contribute medicine expertise within multidisciplinary care teams." }
+      ],
+      "pharmacistRole": [
+        "Perform medication reconciliation and review.",
+        "Identify and resolve drug-related problems together with prescribers.",
+        "Counsel patients and caregivers on safe and effective use."
+      ],
+      "related": ["pharmacology", "pharmacovigilance", "community-pharmacy"],
+      "modules": [],
+      "practice": [
+        { "q": "What is medication reconciliation?", "a": "Comparing what a patient is actually taking with what is prescribed, to find and resolve discrepancies, typically at care transitions." },
+        { "q": "Why is follow-up monitoring important after starting a medicine?", "a": "It shows whether the medicine is working and whether it is causing problems." }
+      ],
+      "references": [
+        { "source": "Standard clinical pharmacy practice textbook (edition per your course)", "type": "Textbook", "purpose": "Foundations of patient-centred medication management.", "verify": "Yes. Confirm title, author and edition before citing." },
+        { "source": "Guidance from your national pharmacy professional body on clinical services", "type": "Professional guidance", "purpose": "Scope and standards of pharmacist practice.", "verify": "Yes. Confirm the issuing body and current version before citing." }
+      ]
+    },
+    {
+      "slug": "pharmacovigilance",
+      "name": "Pharmacovigilance",
+      "short": "Detecting and preventing harm from medicines after approval.",
+      "categories": ["SAFETY"],
+      "icon": "search",
+      "evidence": "ESTABLISHED",
+      "progress": { "foundation": 4, "applied": 4, "frontier": 3 },
+      "whatIsIt": "Pharmacovigilance is the science and set of activities concerned with detecting, assessing, understanding and preventing adverse effects and other medicine-related problems. It relies on spontaneous reports, structured studies and signal detection.",
+      "whereItFits": "It continues after approval. Clinical trials involve limited numbers of patients for limited periods, so rarer or delayed effects often emerge only once a medicine is widely used.",
+      "keyIdeas": [
+        { "title": "Approval is not the end of safety work", "text": "Post-marketing surveillance keeps looking for effects that trials could not reveal." },
+        { "title": "Reports become signals", "text": "Individual case reports are collected and analysed together to identify patterns that may point to a real risk." },
+        { "title": "Causality needs careful judgement", "text": "Assessing whether a medicine caused an event uses structured reasoning, not assumption." }
+      ],
+      "pharmacistRole": [
+        "Recognise and report suspected adverse drug reactions through the appropriate national system.",
+        "Document events clearly so reports are useful.",
+        "Communicate identified risks and safety updates to patients and colleagues."
+      ],
+      "related": ["clinical-pharmacy", "regulatory-science", "biostatistics"],
+      "modules": [],
+      "practice": [
+        { "q": "Why are some adverse effects only discovered after a medicine is marketed?", "a": "Trials are limited in size and duration, so rare or delayed effects may not appear until many more people use the medicine." },
+        { "q": "What is a safety signal?", "a": "Information suggesting a possible new causal link between a medicine and an event that warrants further investigation." }
+      ],
+      "references": [
+        { "source": "World Health Organization pharmacovigilance guidance and the WHO Programme for International Drug Monitoring", "type": "International agency guidance", "purpose": "Global framework for adverse reaction monitoring.", "verify": "Yes. Confirm the specific publication and its current version before citing." },
+        { "source": "Your national medicines regulator's adverse reaction reporting pages", "type": "Regulator resource", "purpose": "How and where to report suspected reactions locally.", "verify": "Yes. Confirm the regulator and reporting route for your country before use." }
+      ]
+    },
+    {
+      "slug": "pharmaceutical-microbiology",
+      "name": "Pharmaceutical Microbiology",
+      "short": "Keeping medicines and manufacturing environments safe from microbes.",
+      "categories": ["DEVELOPMENT", "SAFETY"],
+      "icon": "microscope",
+      "evidence": "ESTABLISHED",
+      "progress": { "foundation": 4, "applied": 3, "frontier": 2 },
+      "whatIsIt": "Pharmaceutical microbiology deals with microorganisms relevant to medicines: sterility, microbial limits, preservative effectiveness, sterilisation methods, contamination control and antimicrobial agents themselves.",
+      "whereItFits": "It is essential wherever medicines must be free of, or limited in, microbial contamination, especially injectables, eye preparations and other sterile products, and in the design of cleanrooms and processes.",
+      "keyIdeas": [
+        { "title": "Sterile means free of viable microbes", "text": "Sterile products are made through validated sterilisation or aseptic processing, then tested and controlled." },
+        { "title": "Prevention beats detection", "text": "Environmental control, personnel practice and process design reduce contamination risk more reliably than end testing alone." },
+        { "title": "Preservatives protect multi-use products", "text": "Non-sterile and multi-dose products often need preservative systems shown to be effective." }
+      ],
+      "pharmacistRole": [
+        "Prepare sterile products using aseptic technique where appropriate.",
+        "Supervise or perform microbial quality control.",
+        "Promote infection prevention and appropriate use of antimicrobials."
+      ],
+      "related": ["industrial-pharmacy", "pharmaceutical-biotechnology", "public-health"],
+      "modules": [],
+      "practice": [
+        { "q": "Why is contamination control valued over end-product testing alone?", "a": "Testing samples cannot prove every unit is free of contamination, so preventing contamination through process and environment control is more reliable." },
+        { "q": "Why do multi-dose liquid products often contain preservatives?", "a": "Repeated use can introduce microbes, and a preservative helps limit their growth." }
+      ],
+      "references": [
+        { "source": "Pharmacopoeial chapters on sterility testing, microbial limits and sterilisation (pharmacopoeia of your jurisdiction)", "type": "Pharmacopoeia", "purpose": "Standard tests and requirements for microbiological quality.", "verify": "Yes. Check the current edition and chapter before citing." },
+        { "source": "WHO Good Manufacturing Practice guidance on sterile pharmaceutical products", "type": "International agency guidance", "purpose": "Principles for sterile manufacturing environments.", "verify": "Yes. Confirm the specific document and version before citing." }
+      ]
+    },
+    {
+      "slug": "biopharmaceutics",
+      "name": "Biopharmaceutics",
+      "short": "How a dosage form's design shapes what reaches the body.",
+      "categories": ["DEVELOPMENT", "DELIVERY"],
+      "icon": "capsule",
+      "evidence": "ESTABLISHED",
+      "progress": { "foundation": 4, "applied": 4, "frontier": 3 },
+      "whatIsIt": "Biopharmaceutics examines how the physical and chemical properties of a drug, its dosage form and its route of administration affect the rate and extent of drug absorption and therefore its effect. Dissolution, solubility, permeability and bioavailability are central ideas.",
+      "whereItFits": "It links formulation to pharmacokinetics. It explains why formulation changes can alter exposure and supports decisions about whether two products can be considered interchangeable.",
+      "keyIdeas": [
+        { "title": "Dissolve, then absorb", "text": "For many oral drugs, the drug must dissolve before it can cross membranes, so solubility and permeability both matter." },
+        { "title": "Bioavailability is measurable", "text": "The fraction of a dose reaching the systemic circulation, and how fast, can be measured and compared between products." },
+        { "title": "Formulation can change exposure", "text": "Release characteristics can be engineered to speed up, slow down or target drug delivery." }
+      ],
+      "pharmacistRole": [
+        "Understand and explain why brand and generic products or different release forms are not always used interchangeably in the same way.",
+        "Advise on administration factors that affect absorption, such as timing with food.",
+        "Support formulation and product selection decisions."
+      ],
+      "related": ["pharmaceutics", "pharmacology", "nanotechnology"],
+      "modules": [{ "label": "Chitosan Lab", "status": "planned" }],
+      "practice": [
+        { "q": "What does bioavailability describe?", "a": "The rate and extent to which the active substance reaches the systemic circulation after administration." },
+        { "q": "Why can food change absorption of some oral medicines?", "a": "Food can alter gastric emptying, gut conditions and drug dissolution, changing how much and how fast the drug is absorbed." }
+      ],
+      "references": [
+        { "source": "Standard biopharmaceutics and pharmacokinetics textbook (edition per your course)", "type": "Textbook", "purpose": "Principles of absorption, dissolution and bioavailability.", "verify": "Yes. Confirm title, author and edition before citing." },
+        { "source": "Regulatory guidance on bioavailability and bioequivalence from your national or regional regulator", "type": "Regulatory guideline", "purpose": "Standards for comparing products.", "verify": "Yes. Confirm the issuing authority and current version before citing." }
+      ]
+    },
+    {
+      "slug": "biostatistics",
+      "name": "Biostatistics",
+      "short": "Turning data into trustworthy conclusions.",
+      "categories": ["DEVELOPMENT", "SAFETY"],
+      "icon": "check",
+      "evidence": "ESTABLISHED",
+      "progress": { "foundation": 4, "applied": 3, "frontier": 2 },
+      "whatIsIt": "Biostatistics applies statistical methods to biological and health data. In pharmacy it supports trial design, analysis of results, bioequivalence assessment, quality control charts and interpretation of safety data.",
+      "whereItFits": "It cuts across the whole pathway, from designing experiments in discovery to interpreting trial outcomes and post-marketing safety data.",
+      "keyIdeas": [
+        { "title": "Design determines validity", "text": "A well-designed study with appropriate comparison, randomisation and sample size limits bias and chance." },
+        { "title": "Significance is not importance", "text": "A statistically significant difference may be too small to matter clinically, so effect size and context are needed." },
+        { "title": "Uncertainty should be reported", "text": "Confidence intervals and appropriate summaries communicate how precise an estimate is." }
+      ],
+      "pharmacistRole": [
+        "Critically appraise studies when evaluating evidence for practice.",
+        "Interpret statistics in product information and guidelines.",
+        "Apply statistical thinking in quality control and audit."
+      ],
+      "related": ["pharmacovigilance", "regulatory-science", "drug-discovery"],
+      "modules": [],
+      "practice": [
+        { "q": "Why can a statistically significant result still be unimportant?", "a": "The size of the effect may be too small to matter in practice, especially with very large samples." },
+        { "q": "What does a confidence interval communicate?", "a": "The range of values that are reasonably compatible with the data, showing the precision of an estimate." }
+      ],
+      "references": [
+        { "source": "Introductory biostatistics textbook for health sciences (edition per your course)", "type": "Textbook", "purpose": "Foundations of study design and statistical inference.", "verify": "Yes. Confirm title, author and edition before citing." },
+        { "source": "ICH guideline on statistical principles for clinical trials (International Council for Harmonisation)", "type": "Regulatory guideline", "purpose": "Statistical considerations in trial design and analysis.", "verify": "Yes. Confirm the current guideline number and version before citing." }
+      ]
+    },
+    {
+      "slug": "pharmaceutical-biotechnology",
+      "name": "Pharmaceutical Biotechnology",
+      "short": "Medicines made by or from living systems.",
+      "categories": ["DISCOVERY", "DEVELOPMENT"],
+      "icon": "dna",
+      "evidence": "ESTABLISHED",
+      "progress": { "foundation": 4, "applied": 3, "frontier": 4 },
+      "whatIsIt": "Pharmaceutical biotechnology uses living cells and biological processes to produce medicines such as therapeutic proteins, monoclonal antibodies, vaccines and other biologics, and develops the methods to purify, characterise and formulate them.",
+      "whereItFits": "It spans discovery, development and manufacture of biologics. Its products are large, complex molecules, so formulation, storage and analysis differ from small-molecule drugs.",
+      "keyIdeas": [
+        { "title": "The process defines the product", "text": "For biologics, the manufacturing process strongly influences the final product's properties." },
+        { "title": "Large molecules are delicate", "text": "Proteins can degrade or aggregate, so temperature, handling and formulation are critical." },
+        { "title": "Biosimilars are similar, not identical", "text": "Products intended to match a reference biologic are assessed through extensive comparability work." }
+      ],
+      "pharmacistRole": [
+        "Handle and store biologics correctly, including cold chain requirements.",
+        "Counsel patients on injectable devices and administration.",
+        "Support appropriate selection and monitoring of biologic therapy."
+      ],
+      "related": ["pharmaceutical-microbiology", "nanotechnology", "drug-discovery"],
+      "modules": [],
+      "practice": [
+        { "q": "Why do biologics often need cold storage?", "a": "Proteins can lose structure and activity at higher temperatures, so controlled storage protects quality." },
+        { "q": "Why is a biosimilar not called identical to its reference product?", "a": "Biological production yields inherent variability, so similarity is demonstrated through detailed comparison rather than exact sameness." }
+      ],
+      "references": [
+        { "source": "Standard pharmaceutical biotechnology textbook (edition per your course)", "type": "Textbook", "purpose": "Overview of biologics production and characterisation.", "verify": "Yes. Confirm title, author and edition before citing." },
+        { "source": "Regulatory guidance on biosimilar development from your national or regional regulator", "type": "Regulatory guideline", "purpose": "Framework for comparability assessment.", "verify": "Yes. Confirm the issuing authority and current version before citing." }
+      ]
+    },
+    {
+      "slug": "nanotechnology",
+      "name": "Nanotechnology",
+      "short": "Engineering drug carriers at the scale of billionths of a metre.",
+      "categories": ["DELIVERY", "DISCOVERY"],
+      "icon": "nanoparticle",
+      "evidence": "SUPPORTED",
+      "progress": { "foundation": 3, "applied": 3, "frontier": 5 },
+      "whatIsIt": "Nanotechnology in pharmacy involves designing carriers and materials at the nanometre scale, such as liposomes, polymeric nanoparticles and lipid nanoparticles, to change how a drug is dissolved, protected, distributed or released.",
+      "whereItFits": "It is a delivery strategy layered on top of formulation and biopharmaceutics. Some nanomedicines are established products, while many concepts remain at the research stage.",
+      "keyIdeas": [
+        { "title": "Size shapes behaviour", "text": "Particle size and surface properties influence stability, distribution and interaction with biological barriers." },
+        { "title": "Carriers can protect and direct", "text": "Encapsulation can protect fragile drugs and may modify where and how quickly a drug is released." },
+        { "title": "Characterisation is essential", "text": "Size, surface charge, drug loading and stability must be measured to know what a nanoformulation actually is." }
+      ],
+      "pharmacistRole": [
+        "Understand and explain how nanoformulated products differ from conventional forms.",
+        "Handle and administer specialised formulations according to product instructions.",
+        "Follow the developing evidence in this fast-moving area."
+      ],
+      "related": ["pharmaceutics", "biopharmaceutics", "pharmaceutical-analysis"],
+      "modules": [{ "label": "Chitosan Lab", "status": "planned" }],
+      "practice": [
+        { "q": "Why is characterisation important for a nanoformulation?", "a": "Properties such as size, surface charge and drug loading determine its behaviour, so they must be measured to understand and control the product." },
+        { "q": "Name one goal of using a nano-sized carrier.", "a": "Examples include improving solubility, protecting a fragile drug or modifying release." }
+      ],
+      "references": [
+        { "source": "Review literature on nanomedicine in drug delivery (search a reputable indexed database and select recent peer-reviewed reviews)", "type": "Literature search guidance", "purpose": "Starting point for current evidence in this area.", "verify": "Yes. This is a search direction, not a specific citation. Locate, read and verify a specific article before citing." },
+        { "source": "Regulatory guidance on nanomaterial-containing medicines from your national or regional regulator", "type": "Regulatory guideline", "purpose": "Expectations for quality and safety assessment.", "verify": "Yes. Confirm the issuing authority and current document before citing." }
+      ]
+    },
+    {
+      "slug": "drug-discovery",
+      "name": "Drug Discovery",
+      "short": "Finding and validating new medicines.",
+      "categories": ["DISCOVERY"],
+      "icon": "flask",
+      "evidence": "ESTABLISHED",
+      "progress": { "foundation": 4, "applied": 3, "frontier": 4 },
+      "whatIsIt": "Drug discovery is the process of identifying a disease-relevant target, finding compounds that act on it, and optimising them into candidates suitable for testing. It integrates biology, chemistry, screening, computation and early safety assessment.",
+      "whereItFits": "It is the front end of the pathway. Candidates that pass discovery move into preclinical and clinical development, and many do not make it through.",
+      "keyIdeas": [
+        { "title": "Target validation comes first", "text": "Confidence that modulating a target can affect disease is a foundation for everything that follows." },
+        { "title": "Hits become leads become candidates", "text": "Screening finds hits, chemistry improves them into leads, and further optimisation yields a candidate." },
+        { "title": "Attrition is high", "text": "Many candidates fail for efficacy or safety reasons, so early filtering of poor candidates is valuable." }
+      ],
+      "pharmacistRole": [
+        "Contribute pharmaceutical and clinical perspective to research teams.",
+        "Help translate laboratory findings into practical considerations for use.",
+        "Interpret early-stage research claims with appropriate caution."
+      ],
+      "related": ["medicinal-chemistry", "pharmacognosy", "ai-in-pharmacy"],
+      "modules": [{ "label": "Drug Explorer", "status": "planned" }],
+      "practice": [
+        { "q": "What is the difference between a hit and a lead?", "a": "A hit is a compound showing initial activity in a screen. A lead is a hit that has been shown to be worth optimising further." },
+        { "q": "Why is early attrition considered useful?", "a": "Stopping poor candidates early saves time and resources that would be lost on later failures." }
+      ],
+      "references": [
+        { "source": "Standard drug discovery and development textbook (edition per your course)", "type": "Textbook", "purpose": "Overview of the discovery pipeline.", "verify": "Yes. Confirm title, author and edition before citing." }
+      ]
+    },
+    {
+      "slug": "regulatory-science",
+      "name": "Regulatory Science",
+      "short": "The rules and evidence that decide what reaches patients.",
+      "categories": ["DEVELOPMENT", "SAFETY"],
+      "icon": "building",
+      "evidence": "ESTABLISHED",
+      "progress": { "foundation": 4, "applied": 3, "frontier": 2 },
+      "whatIsIt": "Regulatory science covers the frameworks, standards and assessment methods used to judge whether a medicine is of acceptable quality, safety and efficacy for authorisation and continued marketing, and to oversee manufacturing and distribution.",
+      "whereItFits": "It governs the gateway between development and the market, and continues throughout a product's life through inspection, variation control and safety oversight.",
+      "keyIdeas": [
+        { "title": "Quality, safety and efficacy", "text": "Authorisation decisions weigh evidence on all three aspects of a medicine." },
+        { "title": "Requirements differ by jurisdiction", "text": "Each country or region has its own regulator and rules, although international harmonisation efforts exist." },
+        { "title": "Oversight continues after approval", "text": "Inspections, change control and post-marketing obligations keep products under review." }
+      ],
+      "pharmacistRole": [
+        "Prepare and review regulatory submissions and product documentation.",
+        "Ensure compliance with good practice standards in manufacturing and supply.",
+        "Keep up to date with local law and guidance, which changes over time."
+      ],
+      "related": ["industrial-pharmacy", "pharmacovigilance", "pharmaceutical-analysis"],
+      "modules": [],
+      "practice": [
+        { "q": "Name the three pillars typically assessed for medicine authorisation.", "a": "Quality, safety and efficacy." },
+        { "q": "Why must pharmacists check local regulations rather than assume they are universal?", "a": "Regulatory requirements differ between countries and regions and are updated periodically." }
+      ],
+      "references": [
+        { "source": "Your national medicines regulator's official website and legislation pages", "type": "Regulator resource", "purpose": "Authoritative, current local requirements.", "verify": "Yes. Confirm the regulator and read the current text directly before relying on it." },
+        { "source": "International Council for Harmonisation (ICH) guidelines index", "type": "International guideline body", "purpose": "Overview of harmonised technical guidelines.", "verify": "Yes. Confirm the specific guideline and version on the ICH site before citing." }
+      ]
+    },
+    {
+      "slug": "industrial-pharmacy",
+      "name": "Industrial Pharmacy",
+      "short": "Making medicines consistently at scale.",
+      "categories": ["DEVELOPMENT", "DELIVERY"],
+      "icon": "building",
+      "evidence": "ESTABLISHED",
+      "progress": { "foundation": 4, "applied": 4, "frontier": 3 },
+      "whatIsIt": "Industrial pharmacy covers large-scale manufacture of medicines: scale-up from laboratory to production, unit operations such as mixing, granulation, compression and filling, process control, packaging, and quality systems.",
+      "whereItFits": "It converts a proven formulation into a reliable supply. It relies on pharmaceutics for the design, on analysis for testing and on regulatory science for compliance.",
+      "keyIdeas": [
+        { "title": "Scale-up is not just scaling", "text": "Behaviour at production scale can differ from the laboratory, so processes must be understood and controlled." },
+        { "title": "Good manufacturing practice", "text": "Documented, controlled procedures and quality systems ensure every batch is made and released consistently." },
+        { "title": "Quality is built in", "text": "Understanding the process and controlling critical steps is more effective than relying on final testing alone." }
+      ],
+      "pharmacistRole": [
+        "Work in production, quality assurance, quality control and process development.",
+        "Act as a qualified or responsible person where local law defines such roles.",
+        "Support investigation and improvement when deviations occur."
+      ],
+      "related": ["pharmaceutics", "regulatory-science", "pharmaceutical-analysis"],
+      "modules": [],
+      "practice": [
+        { "q": "Why can a process that works in the laboratory fail at production scale?", "a": "Mixing, heat transfer and material flow can behave differently at larger scale, changing product quality." },
+        { "q": "What is the purpose of good manufacturing practice?", "a": "To ensure medicines are consistently produced and controlled to the quality standards required for their intended use." }
+      ],
+      "references": [
+        { "source": "WHO Good Manufacturing Practice guidance for pharmaceutical products", "type": "International agency guidance", "purpose": "Baseline principles for manufacturing quality systems.", "verify": "Yes. Confirm the specific document and version before citing." },
+        { "source": "Standard industrial pharmacy or pharmaceutical technology textbook (edition per your course)", "type": "Textbook", "purpose": "Unit operations and scale-up principles.", "verify": "Yes. Confirm title, author and edition before citing." }
+      ]
+    },
+    {
+      "slug": "community-pharmacy",
+      "name": "Community Pharmacy",
+      "short": "The most accessible point of care for medicines advice.",
+      "categories": ["CARE", "DELIVERY"],
+      "icon": "home",
+      "evidence": "ESTABLISHED",
+      "progress": { "foundation": 5, "applied": 5, "frontier": 3 },
+      "whatIsIt": "Community pharmacy is pharmacy practice in neighbourhood settings. It includes dispensing prescriptions, advising on non-prescription medicines and self-care, counselling patients, supporting adherence and, where permitted, providing services such as screening or vaccination.",
+      "whereItFits": "It is the final step where a medicine reaches the patient's hands, and often the most frequent contact people have with a healthcare professional.",
+      "keyIdeas": [
+        { "title": "Accuracy and counselling together", "text": "Safe dispensing combines checking the prescription with helping the patient understand how to use the medicine." },
+        { "title": "Knowing when to refer", "text": "Recognising symptoms that need a doctor's attention is a core safety skill." },
+        { "title": "Access matters", "text": "Easy access makes community pharmacists valuable for prevention, advice and continuity of care." }
+      ],
+      "pharmacistRole": [
+        "Dispense accurately and verify prescriptions, checking for problems.",
+        "Advise on self-care, over-the-counter products and adherence.",
+        "Refer patients and coordinate with other healthcare professionals."
+      ],
+      "related": ["clinical-pharmacy", "public-health", "pharmacovigilance"],
+      "modules": [],
+      "practice": [
+        { "q": "Name one reason a pharmacist might refer a patient to a doctor instead of recommending a product.", "a": "Examples include persistent, severe or unusual symptoms, or signs that suggest a condition needing diagnosis." },
+        { "q": "Why is counselling part of dispensing?", "a": "A correctly dispensed medicine still needs to be used correctly, which depends on the patient understanding how and why to take it." }
+      ],
+      "references": [
+        { "source": "Your national pharmacy council or professional body standards of practice", "type": "Professional guidance", "purpose": "Local standards and permitted scope of practice.", "verify": "Yes. Confirm the issuing body and current version before citing." },
+        { "source": "International Pharmaceutical Federation (FIP) professional practice publications", "type": "International professional body", "purpose": "Global perspectives on pharmacy practice.", "verify": "Yes. Confirm the specific publication and version before citing." }
+      ]
+    },
+    {
+      "slug": "public-health",
+      "name": "Public Health",
+      "short": "Protecting and improving the health of populations.",
+      "categories": ["CARE", "SAFETY"],
+      "icon": "globe",
+      "evidence": "ESTABLISHED",
+      "progress": { "foundation": 4, "applied": 4, "frontier": 3 },
+      "whatIsIt": "Public health focuses on preventing disease and promoting health at the population level. Pharmacists contribute through immunisation support, medicine access, antimicrobial stewardship, health education and supply chain quality.",
+      "whereItFits": "It widens the view from the individual patient to communities and systems, linking medicine availability, safety and appropriate use with population outcomes.",
+      "keyIdeas": [
+        { "title": "Prevention scales", "text": "Actions such as vaccination and health education can benefit many people at once." },
+        { "title": "Appropriate use protects everyone", "text": "Stewardship of medicines such as antimicrobials helps preserve their effectiveness." },
+        { "title": "Access and quality both count", "text": "Medicines only help if they are available, affordable and of assured quality." }
+      ],
+      "pharmacistRole": [
+        "Support vaccination and health promotion where roles allow.",
+        "Promote appropriate antimicrobial use.",
+        "Help maintain the quality and integrity of medicine supply chains."
+      ],
+      "related": ["community-pharmacy", "pharmaceutical-microbiology", "regulatory-science"],
+      "modules": [],
+      "practice": [
+        { "q": "What is antimicrobial stewardship?", "a": "Coordinated efforts to promote appropriate use of antimicrobials to improve outcomes and limit resistance." },
+        { "q": "Why does medicine quality matter at population level?", "a": "Poor-quality or falsified medicines can cause treatment failure and harm, and undermine trust in health systems." }
+      ],
+      "references": [
+        { "source": "World Health Organization publications on essential medicines and antimicrobial resistance", "type": "International agency guidance", "purpose": "Global public health context for medicine use.", "verify": "Yes. Confirm the specific publication and version before citing." },
+        { "source": "Your national health ministry or public health agency guidance", "type": "Government resource", "purpose": "Local priorities and programmes.", "verify": "Yes. Confirm the issuing body and current version before citing." }
+      ]
+    },
+    {
+      "slug": "ai-in-pharmacy",
+      "name": "AI in Pharmacy",
+      "short": "Machine learning and data tools applied across the pathway.",
+      "categories": ["DISCOVERY", "CARE"],
+      "icon": "compass",
+      "evidence": "EMERGING",
+      "progress": { "foundation": 2, "applied": 2, "frontier": 5 },
+      "whatIsIt": "AI in pharmacy refers to the use of machine learning and related computational methods to support tasks such as predicting molecular properties, screening compounds, analysing pharmacovigilance data and supporting clinical decision tools.",
+      "whereItFits": "It is a cross-cutting toolset rather than a single stage. It may assist discovery, development, safety monitoring and care, but its outputs depend heavily on data quality and need human oversight.",
+      "keyIdeas": [
+        { "title": "Models learn from data", "text": "Predictions are only as good as the data and validation behind them, and can be biased or wrong outside the range they were trained on." },
+        { "title": "Human oversight stays essential", "text": "AI outputs support professional judgement and should be checked, especially where patient safety is involved." },
+        { "title": "Evidence is still developing", "text": "Many applications are promising but early, so claims should be assessed critically." }
+      ],
+      "pharmacistRole": [
+        "Evaluate AI tools critically before relying on them in practice.",
+        "Protect patient data privacy when using digital tools.",
+        "Contribute clinical and pharmaceutical expertise to tool development and validation."
+      ],
+      "related": ["drug-discovery", "pharmacovigilance", "clinical-pharmacy"],
+      "modules": [{ "label": "AI Section", "status": "planned" }],
+      "practice": [
+        { "q": "Why should AI outputs be verified before use in patient care?", "a": "Models can be wrong or biased, particularly outside the data they were trained on, so professional judgement must confirm results." },
+        { "q": "What does the quality of an AI prediction depend on?", "a": "The quality, relevance and representativeness of the data used to build and validate the model." }
+      ],
+      "references": [
+        { "source": "Regulatory or professional body guidance on digital health and AI-enabled tools (your national or regional authority)", "type": "Regulatory / professional guidance", "purpose": "Emerging expectations for AI in health.", "verify": "Yes. Confirm the issuing body, document and current version before citing." },
+        { "source": "Recent peer-reviewed reviews on machine learning in drug discovery (search a reputable indexed database)", "type": "Literature search guidance", "purpose": "Starting point for current evidence.", "verify": "Yes. This is a search direction, not a specific citation. Locate, read and verify a specific article before citing." }
+      ]
+    }
+  ]
+}

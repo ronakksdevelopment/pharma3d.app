@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Explore — PHARMA 3D</title>
+<meta name="description" content="Explore hub for PHARMA 3D: the Pharmacy Universe, site search, the drug, plant, instrument, manufacturing and formulation modules, upcoming modules, and the nine core topic doors.">
+<meta name="theme-color" content="#1F2E2C">
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/icons/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PHARMA 3D">
+<meta name="mobile-web-app-capable" content="yes">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/universe.css">
+<link rel="stylesheet" href="css/domain.css">
+<link rel="stylesheet" href="css/search.css">
+<style>
+  .hub-h{ font-size: var(--fs-h3); margin-bottom: var(--space-4); }
+  .hub-grid{ display:grid; gap: var(--space-3); grid-template-columns: 1fr; }
+  @media (min-width: 768px){ .hub-grid{ grid-template-columns: repeat(3, 1fr); } }
+  .hub-card{
+    display:grid; grid-template-columns: 48px 1fr 44px; align-items:center; gap: var(--space-3);
+    min-height: 88px; padding: var(--space-4);
+    background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg);
+    transition: border-color var(--dur-fast) var(--ease-standard), transform var(--dur-fast) var(--ease-standard);
+  }
+  .hub-card:hover, .hub-card:focus-visible{ border-color: var(--accent-soft); transform: translateY(-2px); }
+  .hub-icon{ width:48px; height:48px; border-radius:50%; background: var(--accent-tint); display:flex; align-items:center; justify-content:center; color: var(--accent-strong); }
+  .hub-icon svg{ width:24px; height:24px; }
+  .hub-body{ display:grid; gap:2px; min-width:0; }
+  .hub-title{ font-family: var(--font-display); font-weight:600; }
+  .hub-desc{ font-size:.85rem; color: var(--text-muted); }
+  .hub-go{ width:44px; height:44px; display:flex; align-items:center; justify-content:center; color: var(--accent-strong); }
+  .hub-go svg{ width:20px; height:20px; }
+</style>
+</head>
+<body>
+
+<div data-include="header"></div>
+<div data-include="mobile-nav"></div>
+<div data-include="search-modal"></div>
+<div data-include="a11y-drawer"></div>
+
+<main id="main-content">
+  <div class="breadcrumb-bar">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">Explore</span>
+    </nav>
+  </div>
+
+  <section class="container page-hero">
+    <span class="section-eyebrow">Explore</span>
+    <h1 style="max-width: 24ch;">Choose how to explore pharmacy</h1>
+    <p style="max-width: 60ch; color: var(--text-secondary); margin-top: var(--space-4);">
+      Start from the connected map of domains, search for a term, or check which modules are on the way.
+    </p>
+  </section>
+
+  <!-- ===== HUB: live destinations ===== -->
+  <section class="container section" style="padding-top:0;" aria-labelledby="hub-live">
+    <h2 id="hub-live" class="hub-h">Available now</h2>
+    <div class="hub-grid">
+      <a class="hub-card" href="universe.html">
+        <span class="hub-icon" data-icon="globe" aria-hidden="true"></span>
+        <span class="hub-body">
+          <span class="hub-title">Pharmacy Universe</span>
+          <span class="hub-desc">An interactive map of 18 domains with filters and a text-only list view.</span>
+        </span>
+        <span class="hub-go" data-icon="arrowRight" aria-hidden="true"></span>
+      </a>
+      <a class="hub-card" href="universe.html#list">
+        <span class="hub-icon" data-icon="book" aria-hidden="true"></span>
+        <span class="hub-body">
+          <span class="hub-title">Domain list</span>
+          <span class="hub-desc">Browse all 18 domains as compact cards.</span>
+        </span>
+        <span class="hub-go" data-icon="arrowRight" aria-hidden="true"></span>
+      </a>
+      <a class="hub-card" href="search.html">
+        <span class="hub-icon" data-icon="search" aria-hidden="true"></span>
+        <span class="hub-body">
+          <span class="hub-title">Search</span>
+          <span class="hub-desc">Typo-tolerant search across domains, concepts and modules. Also opens with Ctrl/Cmd+K.</span>
+        </span>
+        <span class="hub-go" data-icon="arrowRight" aria-hidden="true"></span>
+      </a>
+      <a class="hub-card" href="drug.html">
+        <span class="hub-icon" data-icon="capsule" aria-hidden="true"></span>
+        <span class="hub-body">
+          <span class="hub-title">Drug Explorer</span>
+          <span class="hub-desc">Twelve drug monographs with a consistent ten-topic layout.</span>
+        </span>
+        <span class="hub-go" data-icon="arrowRight" aria-hidden="true"></span>
+      </a>
+      <a class="hub-card" href="plants.html">
+        <span class="hub-icon" data-icon="plant" aria-hidden="true"></span>
+        <span class="hub-body">
+          <span class="hub-title">Plant Explorer</span>
+          <span class="hub-desc">Eight medicinal plants. Traditional use is kept separate from scientific evidence.</span>
+        </span>
+        <span class="hub-go" data-icon="arrowRight" aria-hidden="true"></span>
+      </a>
+      <a class="hub-card" href="instruments.html">
+        <span class="hub-icon" data-icon="microscope" aria-hidden="true"></span>
+        <span class="hub-body">
+          <span class="hub-title">Instruments</span>
+          <span class="hub-desc">Seven instruments with working learning calculators.</span>
+        </span>
+        <span class="hub-go" data-icon="arrowRight" aria-hidden="true"></span>
+      </a>
+      <a class="hub-card" href="manufacturing.html">
+        <span class="hub-icon" data-icon="flask" aria-hidden="true"></span>
+        <span class="hub-body">
+          <span class="hub-title">Manufacturing</span>
+          <span class="hub-desc">Twelve stages from raw material to batch release, plus a defect explorer.</span>
+        </span>
+        <span class="hub-go" data-icon="arrowRight" aria-hidden="true"></span>
+      </a>
+      <a class="hub-card" href="formulation.html">
+        <span class="hub-icon" data-icon="tablet" aria-hidden="true"></span>
+        <span class="hub-body">
+          <span class="hub-title">Formulation</span>
+          <span class="hub-desc">An exploded tablet diagram and release-system comparison.</span>
+        </span>
+        <span class="hub-go" data-icon="arrowRight" aria-hidden="true"></span>
+      </a>
+      <a class="hub-card" href="chitosan.html">
+        <span class="hub-icon" data-icon="nanoparticle" aria-hidden="true"></span>
+        <span class="hub-body">
+          <span class="hub-title">Chitosan nanoparticles</span>
+          <span class="hub-desc">Seven-stage path, schematic diagram, calculators and a release-model lab.</span>
+        </span>
+        <span class="hub-go" data-icon="arrowRight" aria-hidden="true"></span>
+      </a>
+      <a class="hub-card" href="lab.html">
+        <span class="hub-icon" data-icon="flask" aria-hidden="true"></span>
+        <span class="hub-body">
+          <span class="hub-title">Pharmacokinetic Lab</span>
+          <span class="hub-desc">Illustrative one-compartment, oral and IV bolus models.</span>
+        </span>
+        <span class="hub-go" data-icon="arrowRight" aria-hidden="true"></span>
+      </a>
+      <a class="hub-card" href="pharmacovigilance.html">
+        <span class="hub-icon" data-icon="alertTriangle" aria-hidden="true"></span>
+        <span class="hub-body">
+          <span class="hub-title">Pharmacovigilance</span>
+          <span class="hub-desc">From medicine to regulatory action, Naranjo and signal detection.</span>
+        </span>
+        <span class="hub-go" data-icon="arrowRight" aria-hidden="true"></span>
+      </a>
+      <a class="hub-card" href="ai.html">
+        <span class="hub-icon" data-icon="dna" aria-hidden="true"></span>
+        <span class="hub-body">
+          <span class="hub-title">AI in Pharmacy</span>
+          <span class="hub-desc">Six pillars and ten applications, with limits and human oversight.</span>
+        </span>
+        <span class="hub-go" data-icon="arrowRight" aria-hidden="true"></span>
+      </a>
+      <a class="hub-card" href="learn.html">
+        <span class="hub-icon" data-icon="book" aria-hidden="true"></span>
+        <span class="hub-body">
+          <span class="hub-title">Learn</span>
+          <span class="hub-desc">MCQs, flashcards, viva chains and a timed practice exam.</span>
+        </span>
+        <span class="hub-go" data-icon="arrowRight" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== HUB: future modules (rendered from the relationship graph, not hardcoded) ===== -->
+  <section class="container section" style="padding-top:0;" aria-labelledby="hub-planned">
+    <h2 id="hub-planned" class="hub-h">Coming later</h2>
+    <p class="muted" style="margin-bottom:var(--space-4); max-width:60ch;">These modules are planned and are not built yet, so they are not linked.</p>
+    <div id="hub-modules"></div>
+  </section>
+
+  <!-- ===== HUB: reusable related-topics component, driven by the relationship graph ===== -->
+  <section class="container section" style="padding-top:0;" aria-labelledby="hub-graph">
+    <h2 id="hub-graph" class="hub-h">How topics connect</h2>
+    <p class="muted" style="margin-bottom:var(--space-4); max-width:60ch;">Two chains from the site’s relationship data. Tap a node that has a link to visit that domain.</p>
+    <div id="hub-chains"></div>
+  </section>
+
+  <div class="container"><h2 class="hub-h" style="margin-bottom:var(--space-2);">Nine core topic doors</h2>
+  <p class="muted" style="max-width:60ch;">Starting points linked from the homepage. Some now have deeper modules above (drugs, plants, instruments, manufacturing, formulation, chitosan, pharmacokinetics, pharmacovigilance, AI); others do not yet.</p></div>
+<section class="container section" style="padding-top:0;">
+    <div class="grid-3">
+
+      <article class="card" id="capsule" tabindex="-1">
+        <span class="icon-wrap" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--accent-tint);border-radius:var(--radius-pill);margin-bottom:var(--space-3);"><span data-icon="capsule" style="width:26px;height:26px;"></span></span>
+        <h3 class="card-title">Capsule</h3>
+        <p class="card-body">Dosage forms built from two interlocking shells enclosing a powder, pellet, or liquid fill.</p>
+        <div style="margin-top:var(--space-3);"><span class="badge badge-pending">Data Pending Verification</span></div>
+      </article>
+
+      <article class="card" id="tablet" tabindex="-1">
+        <span class="icon-wrap" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--accent-tint);border-radius:var(--radius-pill);margin-bottom:var(--space-3);"><span data-icon="tablet" style="width:26px;height:26px;"></span></span>
+        <h3 class="card-title">Tablet</h3>
+        <p class="card-body">Compressed solid dosage forms — the most common way medicines are manufactured and dispensed.</p>
+        <div style="margin-top:var(--space-3);"><span class="badge badge-pending">Data Pending Verification</span></div>
+      </article>
+
+      <article class="card" id="vial" tabindex="-1">
+        <span class="icon-wrap" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--accent-tint);border-radius:var(--radius-pill);margin-bottom:var(--space-3);"><span data-icon="vial" style="width:26px;height:26px;"></span></span>
+        <h3 class="card-title">Vial</h3>
+        <p class="card-body">Sterile sealed containers used to hold injectable formulations and sensitive biologics.</p>
+        <div style="margin-top:var(--space-3);"><span class="badge badge-pending">Data Pending Verification</span></div>
+      </article>
+
+      <article class="card" id="syringe" tabindex="-1">
+        <span class="icon-wrap" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--accent-tint);border-radius:var(--radius-pill);margin-bottom:var(--space-3);"><span data-icon="syringe" style="width:26px;height:26px;"></span></span>
+        <h3 class="card-title">Syringe</h3>
+        <p class="card-body">The delivery device for parenteral routes — subcutaneous, intramuscular, and intravenous.</p>
+        <div style="margin-top:var(--space-3);"><span class="badge badge-pending">Data Pending Verification</span></div>
+      </article>
+
+      <article class="card" id="dna" tabindex="-1">
+        <span class="icon-wrap" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--accent-tint);border-radius:var(--radius-pill);margin-bottom:var(--space-3);"><span data-icon="dna" style="width:26px;height:26px;"></span></span>
+        <h3 class="card-title">DNA</h3>
+        <p class="card-body">The molecular blueprint behind biopharmaceuticals, gene therapies, and precision medicine.</p>
+        <div style="margin-top:var(--space-3);"><span class="badge badge-pending">Data Pending Verification</span></div>
+      </article>
+
+      <article class="card" id="nanoparticle" tabindex="-1">
+        <span class="icon-wrap" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--accent-tint);border-radius:var(--radius-pill);margin-bottom:var(--space-3);"><span data-icon="nanoparticle" style="width:26px;height:26px;"></span></span>
+        <h3 class="card-title">Nanoparticle</h3>
+        <p class="card-body">Engineered particles at the nanoscale that improve how drugs are targeted and delivered.</p>
+        <div style="margin-top:var(--space-3);"><span class="badge badge-pending">Data Pending Verification</span></div>
+      </article>
+
+      <article class="card" id="medicinal-plant" tabindex="-1">
+        <span class="icon-wrap" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--accent-tint);border-radius:var(--radius-pill);margin-bottom:var(--space-3);"><span data-icon="plant" style="width:26px;height:26px;"></span></span>
+        <h3 class="card-title">Medicinal Plant</h3>
+        <p class="card-body">The botanical origins of pharmacognosy, and traditional-to-modern drug discovery.</p>
+        <div style="margin-top:var(--space-3);"><span class="badge badge-pending">Data Pending Verification</span></div>
+      </article>
+
+      <article class="card" id="microscope" tabindex="-1">
+        <span class="icon-wrap" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--accent-tint);border-radius:var(--radius-pill);margin-bottom:var(--space-3);"><span data-icon="microscope" style="width:26px;height:26px;"></span></span>
+        <h3 class="card-title">Microscope</h3>
+        <p class="card-body">The analytical eye behind pharmaceutical quality control and characterization.</p>
+        <div style="margin-top:var(--space-3);"><span class="badge badge-pending">Data Pending Verification</span></div>
+      </article>
+
+      <article class="card" id="flask" tabindex="-1">
+        <span class="icon-wrap" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--accent-tint);border-radius:var(--radius-pill);margin-bottom:var(--space-3);"><span data-icon="flask" style="width:26px;height:26px;"></span></span>
+        <h3 class="card-title">Flask</h3>
+        <p class="card-body">Where drug discovery and formulation science begin, from bench to batch.</p>
+        <div style="margin-top:var(--space-3);"><span class="badge badge-pending">Data Pending Verification</span></div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<div data-include="footer"></div>
+<div data-include="bottom-nav"></div>
+
+<script src="js/paths.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/search-index.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/app.js"></script>
+<script src="js/data-store.js"></script>
+<script src="js/related.js"></script>
+<script src="js/explore-hub.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" defer></script>
+<script src="js/search.js" defer></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js').then((reg) => { if (window.pharma3dWatchForUpdates) window.pharma3dWatchForUpdates(reg); }).catch(() => {});
+    });
+  }
+  // Focus the target section when arriving via hash link, for accessibility
+  window.addEventListener('DOMContentLoaded', () => {
+    if (location.hash) {
+      const target = document.querySelector(location.hash);
+      if (target) setTimeout(() => target.focus(), 300);
+    }
+  });
+</script>
+</body>
+</html>

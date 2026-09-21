@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>World Pharmacist Day 2026 — Empowering Pharmacists for Healthier Futures | PHARMA 3D</title>
+<meta name="description" content="World Pharmacist Day 2026 — 25 September 2026. Theme: Empowering pharmacists for healthier futures. An interactive tribute built by RIPSAT, Tripura University, with a 7-role pharmacist carousel, journey narrative, and a local thank-you wall.">
+<meta name="theme-color" content="#1F2E2C">
+<link rel="canonical" href="https://pharma3d.example.org/wpd-2026.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="World Pharmacist Day 2026 — Empowering Pharmacists for Healthier Futures">
+<meta property="og:description" content="25 September 2026. An interactive World Pharmacist Day tribute from PHARMA 3D, RIPSAT, Tripura University.">
+<meta property="og:image" content="https://pharma3d.example.org/assets/logo.png">
+<meta property="og:url" content="https://pharma3d.example.org/wpd-2026.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="World Pharmacist Day 2026">
+<meta name="twitter:description" content="Empowering pharmacists for healthier futures — 25 September 2026.">
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/icons/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PHARMA 3D">
+<meta name="mobile-web-app-capable" content="yes">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/wpd2026.css">
+
+<style>
+  .wpd-hero{
+    padding: var(--space-10) 0 var(--space-8);
+    text-align: center;
+    background: radial-gradient(circle at 50% 20%, var(--c-100), var(--bg-page) 75%);
+  }
+  :root[data-theme="dark"] .wpd-hero{ background: radial-gradient(circle at 50% 20%, var(--c-600), var(--bg-page) 80%); }
+  .wpd-hero .wpd-date-badge{
+    font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--accent);
+    background: var(--bg-surface); border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-pill); padding: var(--space-2) var(--space-5);
+    display: inline-block; margin-bottom: var(--space-5);
+  }
+  .wpd-hero-theme{
+    font-family: var(--font-display); font-style: italic; font-weight: 500;
+    color: var(--accent-strong); max-width: 30ch; margin: var(--space-4) auto var(--space-6);
+    font-size: clamp(1.15rem, 1rem + 1vw, 1.6rem);
+  }
+</style>
+</head>
+<body>
+
+<div data-include="header"></div>
+<div data-include="mobile-nav"></div>
+<div data-include="search-modal"></div>
+<div data-include="a11y-drawer"></div>
+
+<!-- ============ OPENING SEQUENCE OVERLAY ============ -->
+<div id="wpd-intro" role="dialog" aria-modal="true" aria-label="World Pharmacist Day 2026 opening sequence"></div>
+
+<!-- ============ PRESENTATION MODE OVERLAY ============ -->
+<div id="wpd-present" hidden role="dialog" aria-modal="true" aria-label="Presentation mode">
+  <div class="wpd-present-slide is-active">
+    <h2>World Pharmacist Day 2026</h2>
+    <p>"Empowering pharmacists for healthier futures" — 25 September 2026</p>
+  </div>
+  <div class="wpd-present-slide">
+    <h2>Seven roles, one profession</h2>
+    <p>From dispensing and counselling to research, public health, and digital innovation — pharmacists work across every stage of care.</p>
+  </div>
+  <div class="wpd-present-slide">
+    <h2>A journey through pharmacy</h2>
+    <p>Pharmacists train for years across chemistry, biology, and clinical practice before they ever meet a patient at the counter.</p>
+  </div>
+  <div class="wpd-present-slide">
+    <h2>Say thank you</h2>
+    <p>PHARMA 3D includes a local, private space to write a message of thanks to a pharmacist — stored only on your own device.</p>
+  </div>
+  <div class="wpd-present-slide">
+    <h2>Built by RIPSAT</h2>
+    <p>Regional Institute of Pharmaceutical Science and Technology, Tripura University — Karnajit Reang &amp; Kishaloy Debnath.</p>
+  </div>
+  <div class="wpd-present-bar">
+    <button type="button" class="btn btn-secondary" data-action="wpd-present-exit">Exit (Esc)</button>
+    <span class="wpd-present-count" id="wpd-present-count">1 / 5</span>
+    <div style="display:flex;gap:var(--space-2);">
+      <button type="button" class="btn btn-secondary" data-action="wpd-present-prev">◀ Prev (Backspace)</button>
+      <button type="button" class="btn btn-primary" data-action="wpd-present-next">Next (Space) ▶</button>
+    </div>
+  </div>
+</div>
+
+<main id="main-content">
+
+  <div class="breadcrumb-bar">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">World Pharmacist Day 2026</span>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <section class="wpd-hero container">
+    <p class="wpd-date-badge">25 September 2026</p>
+    <h1 id="wpd-main-heading" style="max-width:22ch;margin:0 auto;">World Pharmacist Day 2026</h1>
+    <p class="wpd-hero-theme">"Empowering pharmacists for healthier futures"</p>
+    <p style="max-width:56ch;margin:0 auto var(--space-6);color:var(--text-secondary);">
+      A special edition space within PHARMA 3D, built by RIPSAT, Tripura University, to mark World Pharmacist Day 2026.
+    </p>
+    <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;justify-content:center;">
+      <button type="button" class="btn btn-primary" id="wpd-present-trigger">Enter Presentation Mode</button>
+      <a class="btn btn-secondary" href="#wpd-thanks">Thank a pharmacist</a>
+    </div>
+  </section>
+
+  <!-- PHARMACIST JOURNEY -->
+  <section class="wpd-section container">
+    <div class="wpd-section-head">
+      <span class="section-eyebrow">The journey</span>
+      <h2>From classroom to community</h2>
+    </div>
+    <div class="wpd-journey">
+      <div class="card wpd-journey-step">
+        <h3 class="card-title">Foundational study</h3>
+        <p class="card-body">Years of coursework across pharmaceutics, pharmacology, medicinal chemistry, and pharmaceutical analysis build the scientific base every pharmacist relies on.</p>
+      </div>
+      <div class="card wpd-journey-step">
+        <h3 class="card-title">Clinical and practical training</h3>
+        <p class="card-body">Hands-on rotations in hospitals, community pharmacies, and laboratories connect classroom knowledge to real patient care.</p>
+      </div>
+      <div class="card wpd-journey-step">
+        <h3 class="card-title">Licensure and specialization</h3>
+        <p class="card-body">Registration exams and further specialization — in clinical pharmacy, industrial pharmacy, regulatory science, or research — shape each pharmacist's path.</p>
+      </div>
+      <div class="card wpd-journey-step">
+        <h3 class="card-title">Everyday impact</h3>
+        <p class="card-body">Pharmacists then counsel patients, manage medication safety, support public health, and often serve as the most accessible healthcare professional in a community.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7-ROLE CAROUSEL -->
+  <section class="wpd-section container">
+    <div class="wpd-section-head">
+      <span class="section-eyebrow">Many roles, one profession</span>
+      <h2>Seven faces of pharmacy practice</h2>
+    </div>
+    <div class="wpd-carousel">
+      <div class="wpd-carousel-controls">
+        <div class="wpd-carousel-nav">
+          <button type="button" class="btn-icon" id="wpd-carousel-prev" aria-label="Previous role">
+            <span data-icon="chevronDown" style="transform:rotate(90deg);"></span>
+          </button>
+          <button type="button" class="btn-icon" id="wpd-carousel-next" aria-label="Next role">
+            <span data-icon="chevronDown" style="transform:rotate(-90deg);"></span>
+          </button>
+        </div>
+        <span class="wpd-carousel-progress" id="wpd-carousel-progress">1 / 7</span>
+      </div>
+      <div class="wpd-carousel-track" id="wpd-carousel-track" tabindex="0" aria-label="Pharmacist roles, scrollable">
+
+        <article class="card wpd-role-card">
+          <span data-icon="capsule" style="width:32px;height:32px;color:var(--accent-strong);"></span>
+          <h3 class="card-title">Community pharmacist</h3>
+          <p class="card-body">The most accessible healthcare professional — dispensing medicines, advising on minor ailments, and supporting adherence at the neighbourhood pharmacy.</p>
+        </article>
+
+        <article class="card wpd-role-card">
+          <span data-icon="vial" style="width:32px;height:32px;color:var(--accent-strong);"></span>
+          <h3 class="card-title">Hospital / clinical pharmacist</h3>
+          <p class="card-body">Works within care teams to optimize drug therapy, monitor interactions, and manage medication safety for hospitalized patients.</p>
+        </article>
+
+        <article class="card wpd-role-card">
+          <span data-icon="dna" style="width:32px;height:32px;color:var(--accent-strong);"></span>
+          <h3 class="card-title">Research &amp; drug discovery pharmacist</h3>
+          <p class="card-body">Develops and evaluates new medicines, from early molecular research through formulation and clinical trials.</p>
+        </article>
+
+        <article class="card wpd-role-card">
+          <span data-icon="building" style="width:32px;height:32px;color:var(--accent-strong);"></span>
+          <h3 class="card-title">Industrial pharmacist</h3>
+          <p class="card-body">Oversees manufacturing, quality control, and scale-up so medicines are produced safely and consistently.</p>
+        </article>
+
+        <article class="card wpd-role-card">
+          <span data-icon="alertTriangle" style="width:32px;height:32px;color:var(--accent-strong);"></span>
+          <h3 class="card-title">Pharmacovigilance specialist</h3>
+          <p class="card-body">Monitors medicines after approval, tracking adverse effects and safety signals to protect patients over time.</p>
+        </article>
+
+        <article class="card wpd-role-card">
+          <span data-icon="book" style="width:32px;height:32px;color:var(--accent-strong);"></span>
+          <h3 class="card-title">Academic pharmacist</h3>
+          <p class="card-body">Trains the next generation of pharmacists and advances the field through teaching and scholarship.</p>
+        </article>
+
+        <article class="card wpd-role-card">
+          <span data-icon="globe" style="width:32px;height:32px;color:var(--accent-strong);"></span>
+          <h3 class="card-title">Public health pharmacist</h3>
+          <p class="card-body">Works on immunization drives, health education, and population-level medicine access and safety programs.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="wpd-section container">
+    <div class="wpd-section-head">
+      <span class="section-eyebrow">About this occasion</span>
+      <h2>About World Pharmacist Day</h2>
+    </div>
+    <div class="card">
+      <p class="card-body">
+        World Pharmacist Day is observed annually on 25 September. It was established by the International
+        Pharmaceutical Federation (FIP) to recognize the role pharmacists play in improving health worldwide.
+        Each year carries a theme set to highlight a facet of pharmacy practice; the World Pharmacist Day 2026
+        theme used across this space, "Empowering pharmacists for healthier futures," reflects that same spirit
+        of recognition and forward-looking practice.
+      </p>
+      <p class="card-body" style="margin-top:var(--space-4);">
+        <a href="https://www.fip.org/" target="_blank" rel="noopener noreferrer">Visit FIP's official World Pharmacist Day page <span data-icon="externalLink" style="width:14px;height:14px;display:inline-block;vertical-align:-2px;"></span></a>
+      </p>
+    </div>
+
+    <div class="wpd-verify-box" style="margin-top:var(--space-6);">
+      <span data-icon="check"></span>
+      <p style="margin:0;color:var(--text-secondary);font-size:var(--fs-body-sm);">
+        <strong style="color:var(--text-primary);">Data verification notice:</strong> Factual statements on this page (the FIP origin of World Pharmacist Day, the 25 September date, and the general scope of pharmacist roles) reflect publicly available information at the time of writing. This page does not reproduce FIP's official logo or claim any endorsement by FIP. For the current official theme, materials, and logo, please visit FIP's page directly using the link above.
+      </p>
+    </div>
+  </section>
+
+  <!-- THANK A PHARMACIST -->
+  <section class="wpd-section container" id="wpd-thanks">
+    <div class="wpd-section-head">
+      <span class="section-eyebrow">Say thank you</span>
+      <h2>Thank a pharmacist</h2>
+      <p style="color:var(--text-secondary);margin-top:var(--space-3);max-width:60ch;">
+        Write a short message of thanks. It stays entirely on this device — saved in your browser's local storage only,
+        never sent anywhere. Clearing your browser data will remove it.
+      </p>
+    </div>
+    <div class="card">
+      <form class="wpd-thanks-form" id="wpd-thanks-form">
+        <label for="wpd-thanks-input" style="font-weight:600;">Your message (max 200 characters)</label>
+        <textarea id="wpd-thanks-input" placeholder="Thank you for..." required></textarea>
+        <span class="wpd-char-count" id="wpd-thanks-count">0 / 200</span>
+        <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Save thank-you message</button>
+      </form>
+    </div>
+    <div class="wpd-thanks-list" id="wpd-thanks-list"></div>
+  </section>
+
+  <!-- SHARE CARD GENERATOR -->
+  <section class="wpd-section container">
+    <div class="wpd-section-head">
+      <span class="section-eyebrow">Share</span>
+      <h2>Create a share card</h2>
+      <p style="color:var(--text-secondary);margin-top:var(--space-3);max-width:60ch;">
+        Generate an image card for World Pharmacist Day 2026, entirely in your browser. Nothing is uploaded anywhere.
+      </p>
+    </div>
+    <div class="wpd-share-wrap">
+      <div class="field" style="width:100%;max-width:420px;">
+        <label for="wpd-share-message">Optional personal message (shown on the card)</label>
+        <input id="wpd-share-message" type="text" maxlength="120" placeholder="e.g. Thank you to our RIPSAT pharmacists!">
+      </div>
+      <div class="wpd-share-canvas-frame">
+        <canvas id="wpd-share-canvas" width="1080" height="1080" role="img" aria-label="World Pharmacist Day 2026 share card preview"></canvas>
+      </div>
+      <div class="wpd-share-actions">
+        <button type="button" class="btn btn-primary" id="wpd-share-download">Download image</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDITS -->
+  <section class="wpd-section container" id="wpd-credits">
+    <div class="wpd-section-head">
+      <span class="section-eyebrow">Credits</span>
+      <h2>Credits</h2>
+    </div>
+    <div class="card">
+      <dl class="credits-list" style="margin:0;">
+        <dt style="font-weight:600;color:var(--text-primary);">Theme</dt>
+        <dd style="margin:0 0 var(--space-3);color:var(--text-secondary);">"Empowering pharmacists for healthier futures" — World Pharmacist Day 2026</dd>
+        <dt style="font-weight:600;color:var(--text-primary);">Created by</dt>
+        <dd style="margin:0 0 var(--space-3);color:var(--text-secondary);">Karnajit Reang and Kishaloy Debnath</dd>
+        <dt style="font-weight:600;color:var(--text-primary);">Institution</dt>
+        <dd style="margin:0 0 var(--space-3);color:var(--text-secondary);">Regional Institute of Pharmaceutical Science and Technology (RIPSAT), Tripura University, Agartala, Tripura, India</dd>
+        <dt style="font-weight:600;color:var(--text-primary);">Project</dt>
+        <dd style="margin:0;color:var(--text-secondary);">PHARMA 3D — The Interactive World of Pharmacy</dd>
+      </dl>
+    </div>
+    <div class="wpd-actions" style="margin-top:var(--space-6);">
+      <a class="btn btn-primary" href="about-authors.html">Meet the authors</a>
+    </div>
+  </section>
+
+</main>
+
+<div data-include="footer"></div>
+<div data-include="bottom-nav"></div>
+
+<script src="js/icons.js"></script>
+<script src="js/search-index.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/app.js"></script>
+<script src="js/wpd2026.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js').then((reg) => { if (window.pharma3dWatchForUpdates) window.pharma3dWatchForUpdates(reg); }).catch(() => {});
+    });
+  }
+</script>
+</body>
+</html>

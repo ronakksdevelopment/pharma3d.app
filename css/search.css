@@ -1,0 +1,215 @@
+/* =========================================================
+   PHARMA 3D — Search UI
+   Upgrades the existing search modal (overlay classes reused,
+   not edited) and styles /search.html. Mobile-first; every
+   target >= 44x44px.
+   ========================================================= */
+
+/* ---------- Modal upgrades (scoped by .is-p3d-search added by search.js) ---------- */
+#search-modal.is-p3d-search{
+  align-items: flex-start;
+  padding: 0;
+}
+#search-modal.is-p3d-search .modal{
+  max-width: 640px;
+  width: 100%;
+  max-height: 100dvh;
+  height: 100dvh;
+  border-radius: 0;
+  padding: var(--space-4) var(--space-4) calc(var(--space-4) + var(--safe-bottom));
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+@media (min-width: 720px){
+  #search-modal.is-p3d-search{ align-items: flex-start; padding: 8vh var(--space-4) 0; }
+  #search-modal.is-p3d-search .modal{
+    height: auto;
+    max-height: 80vh;
+    border-radius: var(--radius-lg);
+  }
+}
+
+.sm-top{
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+.sm-back{
+  flex-shrink: 0;
+  min-width: 44px; min-height: 44px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 0; background: transparent;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  color: var(--text-primary);
+}
+.sm-back:hover{ background: var(--bg-surface-alt); }
+.sm-back svg{ width: 22px; height: 22px; transform: rotate(180deg); }
+
+.sm-inputwrap{ position: relative; flex: 1; }
+.sm-inputwrap .sm-glass{
+  position: absolute; left: var(--space-4); top: 50%;
+  transform: translateY(-50%);
+  width: 20px; height: 20px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+.sm-inputwrap .sm-glass svg{ width: 20px; height: 20px; }
+#search-modal.is-p3d-search #search-input,
+.sp-input{
+  width: 100%;
+  min-height: 52px;
+  padding: 0 var(--space-4) 0 calc(var(--space-4) + 30px);
+  font-size: 1.05rem;
+  border: 2px solid var(--border-strong);
+  border-radius: var(--radius-pill);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+}
+#search-modal.is-p3d-search #search-input:focus-visible,
+.sp-input:focus-visible{ border-color: var(--focus-ring); }
+
+.sm-chips{
+  display: flex;
+  gap: var(--space-2);
+  overflow-x: auto;
+  padding-bottom: var(--space-2);
+  margin-bottom: var(--space-2);
+  scrollbar-width: none;
+}
+.sm-chips::-webkit-scrollbar{ display: none; }
+.sm-chips .chip[disabled]{
+  opacity: 0.45;
+  cursor: not-allowed;
+  border-style: dashed;
+}
+
+#search-modal.is-p3d-search #search-results{
+  flex: 1;
+  min-height: 0;
+  max-height: none;
+  overflow-y: auto;
+  display: grid;
+  gap: var(--space-2);
+  align-content: start;
+}
+
+/* ---------- Result cards (modal + results page) ---------- */
+.rcard{
+  display: grid;
+  gap: 4px;
+  min-height: 64px;
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--dur-fast) var(--ease-standard), background-color var(--dur-fast) var(--ease-standard);
+}
+a.rcard:hover, a.rcard:focus-visible{
+  border-color: var(--accent-soft);
+  background: var(--accent-tint);
+}
+.rcard-top{
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-3);
+}
+.rcard-title{
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.02rem;
+}
+.rcard-cat{
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.rcard-short{
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.rcard mark, .rpage mark{
+  background: var(--accent-soft);
+  color: var(--c-900);
+  border-radius: 3px;
+  padding: 0 2px;
+}
+.sm-status{
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  padding: var(--space-1) var(--space-1) var(--space-2);
+}
+.sm-fallback-note{
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: var(--bg-surface-alt);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+  margin-bottom: var(--space-2);
+}
+.sm-didyoumean{
+  padding: var(--space-3) var(--space-4);
+  font-size: 0.9rem;
+}
+.sm-didyoumean button{
+  min-height: 44px; padding: 0 var(--space-2);
+  border: 0; background: none; cursor: pointer;
+  font-weight: 700; text-decoration: underline; color: var(--accent-strong);
+}
+
+/* ---------- /search.html results page ---------- */
+.sp-head{ padding-block: var(--space-8) var(--space-4); }
+.sp-form{ display: grid; gap: var(--space-3); margin-top: var(--space-4); max-width: 640px; }
+.sp-chips{
+  display: flex; flex-wrap: wrap; gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+.sp-results{ display: grid; gap: var(--space-3); margin-top: var(--space-5); max-width: 720px; }
+.sp-count{ margin-top: var(--space-4); font-size: var(--fs-body-sm); color: var(--text-muted); }
+
+/* Answer page: SHORT ANSWER -> DEEPER EXPLANATION -> VISUAL -> RELATED TOPICS -> REFERENCES */
+.rpage{ max-width: 760px; padding-block: var(--space-4) var(--space-12); }
+.rpage-back{
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  min-height: 44px;
+  font-weight: 600;
+  color: var(--accent-strong);
+  margin-bottom: var(--space-4);
+}
+.rpage-back svg{ width: 18px; height: 18px; transform: rotate(180deg); }
+.rpage h1{ margin-bottom: var(--space-3); }
+.rsec{
+  padding-block: var(--space-6);
+  border-top: 1px solid var(--border-subtle);
+}
+.rsec-h{
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-3);
+}
+.rsec p{ color: var(--text-secondary); max-width: 66ch; }
+.rsec .rshort{
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  line-height: 1.4;
+}
+.rvisual{
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+}
+.rvisual .none{ color: var(--text-muted); font-size: 0.9rem; }

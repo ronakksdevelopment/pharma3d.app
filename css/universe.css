@@ -1,0 +1,419 @@
+/* =========================================================
+   PHARMA 3D — Pharmacy Universe
+   Network diagram, filters, view toggle, tooltip, bottom sheet,
+   and loyalty-app-style list cards. Flat 2D only.
+   Palette: #E9F7F2 #BFE8D6 #63C6A7 #2F7E6A #1F2E2C (via tokens).
+   All interactive targets are >= 44x44px.
+   ========================================================= */
+
+.universe-head{ padding-block: var(--space-8) var(--space-4); }
+.universe-head h1{ max-width: 22ch; }
+.universe-head p.lead{
+  max-width: 62ch;
+  color: var(--text-secondary);
+  margin-top: var(--space-4);
+}
+
+/* ---------- Toolbar: view toggle + filters ---------- */
+.uni-toolbar{
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding-block: var(--space-4);
+}
+
+.view-toggle{
+  display: inline-flex;
+  align-self: flex-start;
+  background: var(--bg-surface-alt);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-pill);
+  padding: 3px;
+}
+.view-toggle button{
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 var(--space-5);
+  border: 0;
+  background: transparent;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: var(--fs-body-sm);
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  transition: background-color var(--dur-fast) var(--ease-standard), color var(--dur-fast) var(--ease-standard);
+}
+.view-toggle button[aria-pressed="true"]{
+  background: var(--accent-strong);
+  color: #fff;
+}
+:root[data-theme="dark"] .view-toggle button[aria-pressed="true"]{ color: var(--c-900); }
+
+.filter-row{
+  display: flex;
+  gap: var(--space-2);
+  overflow-x: auto;
+  padding-bottom: var(--space-1);
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.filter-row::-webkit-scrollbar{ display: none; }
+
+.chip{
+  flex: 0 0 auto;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 var(--space-4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--border-strong);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background-color var(--dur-fast) var(--ease-standard), color var(--dur-fast) var(--ease-standard);
+}
+.chip:hover{ background: var(--accent-tint); }
+.chip[aria-pressed="true"]{
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
+  color: #fff;
+}
+:root[data-theme="dark"] .chip[aria-pressed="true"]{ color: var(--c-900); }
+.chip .chip-count{
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.uni-status{
+  font-size: var(--fs-body-sm);
+  color: var(--text-muted);
+  min-height: 1.6em;
+}
+
+/* ---------- Diagram ---------- */
+.uni-stage{
+  position: relative;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.uni-stage[hidden]{ display: none; }
+
+.uni-svg{
+  width: 100%;
+  height: auto;
+  display: block;
+  touch-action: manipulation;
+}
+
+/* Journey axis labels (flat decoration, aria-hidden in markup) */
+.uni-axis text{
+  font-family: var(--font-mono);
+  font-size: 13px;
+  fill: var(--text-muted);
+  letter-spacing: 0.06em;
+}
+
+/* Edges */
+.uni-edge{
+  fill: none;
+  stroke: var(--border-strong);
+  stroke-width: 1.6;
+  opacity: 0.55;
+  transition: opacity var(--dur-base) var(--ease-standard), stroke var(--dur-base) var(--ease-standard);
+}
+.uni-edge.is-lit{ stroke: var(--accent-strong); stroke-width: 2.6; opacity: 1; }
+.uni-edge.is-dim{ opacity: 0.08; }
+
+/* Nodes: each is a real <a> so it is keyboard focusable and works without JS hover */
+.uni-node{ cursor: pointer; outline: none; }
+.uni-node .n-hit{ fill: transparent; }               /* enlarged invisible touch target */
+.uni-node .n-disc{
+  fill: var(--bg-surface);
+  stroke: var(--accent-soft);
+  stroke-width: 3;
+  transition: fill var(--dur-fast) var(--ease-standard), stroke var(--dur-fast) var(--ease-standard);
+}
+.uni-node .n-ring{
+  fill: none;
+  stroke: var(--accent-strong);
+  stroke-width: 3;
+  opacity: 0;
+}
+.uni-node .n-label{
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  fill: var(--text-primary);
+  text-anchor: middle;
+  pointer-events: none;
+}
+.uni-node .n-icon{ color: var(--accent-strong); pointer-events: none; }
+
+.uni-node:hover .n-disc,
+.uni-node:focus-visible .n-disc,
+.uni-node.is-selected .n-disc{
+  fill: var(--accent-tint);
+  stroke: var(--accent-strong);
+}
+.uni-node:focus-visible .n-ring,
+.uni-node.is-selected .n-ring{ opacity: 1; }
+.uni-node.is-dim{ opacity: 0.22; }
+.uni-node.is-match .n-disc{ stroke: var(--accent-strong); fill: var(--accent-tint); }
+.uni-node.is-neighbour .n-disc{ stroke: var(--accent-strong); }
+
+/* Suppress default focus outline on SVG anchors (a custom ring replaces it) */
+.uni-node:focus{ outline: none; }
+
+/* On narrow screens, labels move below nodes and shrink; touch discs stay large */
+@media (max-width: 640px){
+  .uni-node .n-label{ font-size: 15px; }
+}
+
+/* ---------- Hover tooltip (desktop, pointer:fine) ---------- */
+.uni-tooltip{
+  position: absolute;
+  z-index: 5;
+  max-width: 260px;
+  background: var(--c-900);
+  color: var(--c-50);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  box-shadow: var(--shadow-lg);
+  pointer-events: none;
+  font-size: var(--fs-body-sm);
+  line-height: 1.45;
+}
+.uni-tooltip[hidden]{ display: none; }
+.uni-tooltip .tt-title{
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+.uni-tooltip .tt-cats{
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--c-400);
+  margin-top: var(--space-2);
+}
+@media (hover: none){
+  .uni-tooltip{ display: none !important; }
+}
+
+/* ---------- Bottom sheet / side panel (tap to open) ---------- */
+.sheet-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(31,46,44,0.45);
+  z-index: var(--z-drawer);
+}
+.sheet-overlay[hidden]{ display: none; }
+
+.sheet{
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: calc(var(--z-drawer) + 1);
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  padding: var(--space-4) var(--space-5) calc(var(--space-6) + var(--safe-bottom));
+  max-height: 78vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+  transform: translateY(0);
+  animation: sheet-up var(--dur-slow) var(--ease-standard);
+}
+.sheet[hidden]{ display: none; }
+@keyframes sheet-up{
+  from{ transform: translateY(24px); opacity: 0; }
+  to{ transform: translateY(0); opacity: 1; }
+}
+.sheet-handle{
+  width: 40px; height: 4px;
+  border-radius: var(--radius-pill);
+  background: var(--border-strong);
+  margin: 0 auto var(--space-4);
+}
+.sheet-head{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+.sheet-head h2{ font-size: var(--fs-h3); }
+.sheet .sheet-cats{
+  display: flex; flex-wrap: wrap; gap: var(--space-2);
+  margin-block: var(--space-3);
+}
+.sheet .sheet-summary{ color: var(--text-secondary); margin-bottom: var(--space-4); }
+.sheet .sheet-related-title{
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+  color: var(--text-muted);
+  margin-bottom: var(--space-2);
+}
+.sheet .sheet-related{
+  display: flex; flex-wrap: wrap; gap: var(--space-2);
+  margin-bottom: var(--space-5);
+}
+.sheet .sheet-related a{
+  min-height: 44px;
+  display: inline-flex; align-items: center;
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--border-strong);
+  font-size: var(--fs-body-sm);
+  font-weight: 600;
+}
+.sheet .sheet-related a:hover{ background: var(--accent-tint); }
+.sheet .sheet-cta{ width: 100%; }
+
+/* Desktop: sheet becomes a docked side panel instead of covering the diagram */
+@media (min-width: 1024px){
+  .sheet-overlay{ background: transparent; pointer-events: none; }
+  .sheet{
+    left: auto;
+    right: var(--space-6);
+    bottom: var(--space-6);
+    width: 380px;
+    max-height: calc(100vh - var(--header-h) - var(--space-12));
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+  }
+}
+
+/* ---------- Category chips shown on cards / sheet ---------- */
+.cat-chip{
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--accent-strong);
+  background: var(--accent-tint);
+  border: 1px solid var(--border-subtle);
+  padding: 2px var(--space-3);
+  border-radius: var(--radius-pill);
+}
+:root[data-theme="dark"] .cat-chip{ color: var(--c-100); }
+
+/* ---------- List mode: loyalty-app style compact cards ---------- */
+.uni-list[hidden]{ display: none; }
+.uni-list ul{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+@media (min-width: 720px){
+  .uni-list ul{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1100px){
+  .uni-list ul{ grid-template-columns: repeat(3, 1fr); }
+}
+.uni-list li[hidden]{ display: none; }
+
+.dcard{
+  display: grid;
+  grid-template-columns: 52px 1fr auto;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 72px;
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--dur-fast) var(--ease-standard), box-shadow var(--dur-fast) var(--ease-standard), border-color var(--dur-fast) var(--ease-standard);
+}
+.dcard:hover, .dcard:focus-visible{
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-soft);
+}
+.dcard-badge{
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: var(--accent-tint);
+  border: 2px solid var(--border-strong);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent-strong);
+}
+.dcard-badge svg{ width: 26px; height: 26px; }
+.dcard-body{ min-width: 0; }
+.dcard-name{
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+.dcard-short{
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.dcard-meter{
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+.dcard-meter .bar{
+  flex: 1;
+  height: 6px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-surface-alt);
+  overflow: hidden;
+}
+.dcard-meter .bar > span{
+  display: block;
+  height: 100%;
+  background: var(--accent-strong);
+  border-radius: inherit;
+}
+.dcard-meter .pct{
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  min-width: 3.2em;
+  text-align: right;
+}
+.dcard-go{
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent-strong);
+}
+.dcard-go svg{ width: 20px; height: 20px; }
+
+/* Key / legend line below the diagram */
+.uni-note{
+  margin-top: var(--space-4);
+  font-size: var(--fs-caption);
+  color: var(--text-muted);
+  max-width: 72ch;
+}
+.uni-note a{ text-decoration: underline; text-underline-offset: 2px; }
+
+/* Empty state for filters */
+.uni-empty{
+  text-align: center;
+  padding: var(--space-8) var(--space-4);
+  color: var(--text-muted);
+}

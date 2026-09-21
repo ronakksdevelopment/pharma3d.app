@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-root="{{ROOT}}"{{DATA_ATTR}}>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{TITLE}} — PHARMA 3D</title>
+<meta name="description" content="{{DESC}}">
+<meta name="theme-color" content="#1F2E2C">
+
+<link rel="manifest" href="{{ROOT}}manifest.json">
+<link rel="icon" href="{{ROOT}}assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="{{ROOT}}assets/icons/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="{{ROOT}}assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PHARMA 3D">
+<meta name="mobile-web-app-capable" content="yes">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ROOT}}css/tokens.css">
+<link rel="stylesheet" href="{{ROOT}}css/base.css">
+<link rel="stylesheet" href="{{ROOT}}css/components.css">
+<link rel="stylesheet" href="{{ROOT}}css/layout.css">
+<link rel="stylesheet" href="{{ROOT}}css/universe.css">
+<link rel="stylesheet" href="{{ROOT}}css/domain.css">
+<link rel="stylesheet" href="{{ROOT}}css/search.css">
+<link rel="stylesheet" href="{{ROOT}}css/modules.css">
+</head>
+<body>
+
+<div data-include="header"></div>
+<div data-include="mobile-nav"></div>
+<div data-include="search-modal"></div>
+<div data-include="a11y-drawer"></div>
+
+<main id="main-content">
+  <div class="breadcrumb-bar">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+{{CRUMBS}}
+    </nav>
+  </div>
+
+  <!-- Content is rendered by {{SCRIPT}} from data/{{DATAFILE}}. -->
+  <div id="{{ROOTID}}" class="container mod-root{{ROOTCLASS}}" aria-live="polite">
+    <noscript>
+      <section class="domain-section">
+        <h1>{{TITLE}}</h1>
+        <p>{{DESC}}</p>
+        <p>This page renders its full content with JavaScript. <a href="{{ROOT}}explore.html">Return to Explore</a>.</p>
+      </section>
+    </noscript>
+    <div class="state-block"><p>Loading…</p></div>
+  </div>
+</main>
+
+<div data-include="footer"></div>
+<div data-include="bottom-nav"></div>
+
+<script src="{{ROOT}}js/paths.js"></script>
+<script src="{{ROOT}}js/icons.js"></script>
+<script src="{{ROOT}}js/search-index.js"></script>
+<script src="{{ROOT}}js/partials.js"></script>
+<script src="{{ROOT}}js/app.js"></script>
+<script src="{{ROOT}}js/data-store.js"></script>
+<script src="{{ROOT}}js/related.js"></script>
+<script src="{{ROOT}}js/module-ui.js"></script>
+{{EXTRA_SCRIPTS}}
+<script src="{{ROOT}}js/{{SCRIPT}}"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" defer></script>
+<script src="{{ROOT}}js/search.js" defer></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('{{ROOT}}service-worker.js').then((reg) => { if (window.pharma3dWatchForUpdates) window.pharma3dWatchForUpdates(reg); }).catch(() => {});
+    });
+  }
+</script>
+</body>
+</html>

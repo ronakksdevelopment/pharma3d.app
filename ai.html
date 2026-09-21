@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI in Pharmacy — PHARMA 3D</title>
+<meta name="description" content="Six pillars and ten applications of artificial intelligence in pharmacy, described cautiously with limitations, human oversight and evidence tiers.">
+<meta name="theme-color" content="#1F2E2C">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/icons/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PHARMA 3D">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/modules.css">
+<link rel="stylesheet" href="css/phase4.css">
+</head>
+<body>
+
+<div data-include="header"></div>
+<div data-include="mobile-nav"></div>
+<div data-include="search-modal"></div>
+<div data-include="a11y-drawer"></div>
+
+<main id="main-content">
+  <div class="breadcrumb-bar">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span aria-hidden="true">/</span>
+      <a href="explore.html">Explore</a><span aria-hidden="true">/</span>
+      <span aria-current="page">AI in Pharmacy</span>
+    </nav>
+  </div>
+
+  <div class="container p4-root">
+    <header class="p4-head">
+      <span class="section-eyebrow">Artificial intelligence · Pharmacy</span>
+      <h1>AI in pharmacy</h1>
+      <p class="lead">Artificial intelligence is a set of computational methods that can assist with certain pharmacy tasks. This page explains six areas of interest and ten practical applications, with attention to what each needs, what it may support, and where it falls short.</p>
+      <div class="p4-meta">
+        <span class="badge badge-emerging">EVIDENCE VARIES BY TOPIC</span>
+        <span class="p4-label dash">EACH TOPIC SHOWS ITS OWN TIER</span>
+      </div>
+      <p class="mod-limit" role="note"><strong>How to read this page.</strong> AI tools can assist, may support and have potential to help with defined tasks, and they require validation and human oversight. They do not guarantee outcomes, are not always correct, do not replace pharmacists and do not remove the need for professional judgement. Examples are general descriptions, not endorsements of any product.</p>
+    </header>
+
+    <section class="p4-sec" aria-labelledby="h-pillars">
+      <h2 id="h-pillars">Six pillars</h2>
+      <p class="sub">Broad areas where AI methods are being explored. Tap a pillar to expand it.</p>
+      <div class="ai-list" id="pillars"></div>
+    </section>
+
+    <section class="p4-sec" aria-labelledby="h-apps">
+      <h2 id="h-apps">Ten applications</h2>
+      <p class="sub">Practical areas where AI can assist. Tap an application to expand it.</p>
+      <div class="ai-list" id="apps"></div>
+    </section>
+
+    <section class="p4-sec" aria-labelledby="h-rules">
+      <h2 id="h-rules">Principles that apply to every topic</h2>
+      <div class="p4-grid c2">
+        <div class="p4-card" style="margin:0"><h3>Requires validation</h3><p>An AI model should be tested on data that reflect where it will be used, before and after deployment. Performance in one setting may not carry over to another.</p></div>
+        <div class="p4-card" style="margin:0"><h3>Requires human oversight</h3><p>Qualified people remain responsible for decisions. AI output can be wrong, incomplete or out of date, and should be checked.</p></div>
+        <div class="p4-card" style="margin:0"><h3>Data quality and bias</h3><p>Models reflect the data they learn from. Missing, biased or unrepresentative data can lead to unreliable or unfair results.</p></div>
+        <div class="p4-card" style="margin:0"><h3>Privacy and governance</h3><p>Patient data need appropriate consent, protection and legal compliance. Regulation of AI in health is evolving and differs between countries.</p></div>
+      </div>
+    </section>
+
+    <section class="p4-sec" aria-labelledby="h-ev">
+      <h2 id="h-ev">Evidence and limits</h2>
+      <div class="p4-card">
+        <p>Evidence tiers are assigned per topic and reflect how well established the use is, in general terms. They are editorial judgements for education and should be checked against current primary literature and regulator guidance. Content should be reviewed by a qualified pharmacy informatics or clinical AI specialist before public release.</p>
+      </div>
+    </section>
+
+    <nav class="mod-pn" aria-label="Related modules">
+      <a class="prev" href="pharmacovigilance.html"><span class="dir">← Related</span><span class="nm">Pharmacovigilance</span></a>
+      <a class="next" href="learn.html"><span class="dir">Related →</span><span class="nm">Learn</span></a>
+    </nav>
+  </div>
+</main>
+
+<div data-include="footer"></div>
+<div data-include="bottom-nav"></div>
+
+<script src="js/paths.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/search-index.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/app.js"></script>
+<script src="js/p4-shared.js"></script>
+<script src="js/ai-data.js"></script>
+<script src="js/ai.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" defer></script>
+<script src="js/search.js" defer></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => { navigator.serviceWorker.register('service-worker.js').then((reg) => { if (window.pharma3dWatchForUpdates) window.pharma3dWatchForUpdates(reg); }).catch(() => {}); });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,2586 @@
+{
+  "meta": {
+    "generated": "by tools/build-search-corpus.js",
+    "categories": [
+      "domain",
+      "concept",
+      "module",
+      "drug",
+      "plant",
+      "instrument"
+    ],
+    "emptyCategoriesNote": "AI section and learning entries are intentionally absent: that content does not exist yet in this build."
+  },
+  "entries": [
+    {
+      "id": "domain:pharmacognosy",
+      "category": "domain",
+      "title": "Pharmacognosy",
+      "keywords": [
+        "pharmacognosy",
+        "discovery"
+      ],
+      "shortAnswer": "Medicines from plants, microbes and other natural sources.",
+      "deeper": "Pharmacognosy is the study of drugs and drug leads that come from natural sources: plants, fungi, bacteria, marine organisms and animals. It covers how these materials are identified, collected, standardised and analysed, and how their active constituents are isolated and characterised.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "pharmacognosy"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "medicinal-chemistry"
+        },
+        {
+          "kind": "domain",
+          "id": "drug-discovery"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-analysis"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monographs for crude drugs (national or regional pharmacopoeia of your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity, purity and quality standards for herbal materials.",
+          "verify": "Yes. Check the current edition and the exact monograph before citing."
+        },
+        {
+          "source": "Standard university-level pharmacognosy textbook (choose the edition prescribed by your institution)",
+          "type": "Textbook",
+          "purpose": "Background on classification, constituents and analysis of natural drugs.",
+          "verify": "Yes. Confirm title, author and edition before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "domain/pharmacognosy.html"
+    },
+    {
+      "id": "domain:pharmaceutics",
+      "category": "domain",
+      "title": "Pharmaceutics",
+      "keywords": [
+        "pharmaceutics",
+        "development",
+        "delivery"
+      ],
+      "shortAnswer": "Turning a drug into a safe, stable, usable medicine.",
+      "deeper": "Pharmaceutics is the science of designing, preparing and evaluating dosage forms such as tablets, capsules, solutions, suspensions, creams and injections. It links the physical and chemical properties of a drug to how it is formulated, manufactured and used.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "pharmaceutics"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "biopharmaceutics"
+        },
+        {
+          "kind": "domain",
+          "id": "nanotechnology"
+        },
+        {
+          "kind": "domain",
+          "id": "industrial-pharmacy"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-analysis"
+        }
+      ],
+      "references": [
+        {
+          "source": "Standard pharmaceutics or dosage form design textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Foundations of dosage form design and preparation.",
+          "verify": "Yes. Confirm title, author and edition before citing."
+        },
+        {
+          "source": "ICH quality guidelines on stability testing (International Council for Harmonisation)",
+          "type": "Regulatory guideline",
+          "purpose": "Principles for stability studies supporting shelf life.",
+          "verify": "Yes. Confirm the current guideline number and version on the issuing body's website before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "domain/pharmaceutics.html"
+    },
+    {
+      "id": "domain:pharmacology",
+      "category": "domain",
+      "title": "Pharmacology",
+      "keywords": [
+        "pharmacology",
+        "discovery",
+        "safety"
+      ],
+      "shortAnswer": "How drugs act on the body, and how the body handles them.",
+      "deeper": "Pharmacology studies how drugs interact with biological systems. Pharmacodynamics describes what a drug does to the body, such as receptor binding and the resulting effect. Pharmacokinetics describes what the body does to a drug: absorption, distribution, metabolism and excretion.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "pharmacology"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "medicinal-chemistry"
+        },
+        {
+          "kind": "domain",
+          "id": "clinical-pharmacy"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmacovigilance"
+        },
+        {
+          "kind": "domain",
+          "id": "biopharmaceutics"
+        }
+      ],
+      "references": [
+        {
+          "source": "Standard medical pharmacology textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Core principles of pharmacodynamics and pharmacokinetics.",
+          "verify": "Yes. Confirm title, author and edition before citing."
+        },
+        {
+          "source": "IUPHAR/BPS Guide to Pharmacology (online database)",
+          "type": "Database",
+          "purpose": "Curated information on drug targets and ligands.",
+          "verify": "Yes. Check the current entry and access date before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "domain/pharmacology.html"
+    },
+    {
+      "id": "domain:medicinal-chemistry",
+      "category": "domain",
+      "title": "Medicinal Chemistry",
+      "keywords": [
+        "medicinal chemistry",
+        "discovery"
+      ],
+      "shortAnswer": "Designing and refining molecules that make good drugs.",
+      "deeper": "Medicinal chemistry applies organic and physical chemistry to design, synthesise and optimise drug molecules. It studies structure-activity relationships: how changing a molecule's structure changes its potency, selectivity, metabolism and safety.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "medicinal-chemistry"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacognosy"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "drug-discovery"
+        }
+      ],
+      "references": [
+        {
+          "source": "Standard medicinal chemistry textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Principles of structure-activity relationships and lead optimisation.",
+          "verify": "Yes. Confirm title, author and edition before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "domain/medicinal-chemistry.html"
+    },
+    {
+      "id": "domain:pharmaceutical-analysis",
+      "category": "domain",
+      "title": "Pharmaceutical Analysis",
+      "keywords": [
+        "pharmaceutical analysis",
+        "development",
+        "safety"
+      ],
+      "shortAnswer": "Measuring identity, purity and strength of medicines.",
+      "deeper": "Pharmaceutical analysis is the set of chemical and instrumental methods used to test the identity, purity, strength and quality of drug substances and drug products. Typical tools include titration, spectroscopy and chromatography.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "pharmaceutical-analysis"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacognosy"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmaceutics"
+        },
+        {
+          "kind": "domain",
+          "id": "industrial-pharmacy"
+        },
+        {
+          "kind": "domain",
+          "id": "regulatory-science"
+        },
+        {
+          "kind": "domain",
+          "id": "nanotechnology"
+        }
+      ],
+      "references": [
+        {
+          "source": "ICH guideline on validation of analytical procedures (International Council for Harmonisation)",
+          "type": "Regulatory guideline",
+          "purpose": "Framework for validation characteristics.",
+          "verify": "Yes. Confirm the current guideline number and version on the issuing body's website before citing."
+        },
+        {
+          "source": "Pharmacopoeial general chapters on analytical techniques (pharmacopoeia of your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Standard test procedures and requirements.",
+          "verify": "Yes. Check the current edition and chapter before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "domain/pharmaceutical-analysis.html"
+    },
+    {
+      "id": "domain:clinical-pharmacy",
+      "category": "domain",
+      "title": "Clinical Pharmacy",
+      "keywords": [
+        "clinical pharmacy",
+        "care",
+        "safety"
+      ],
+      "shortAnswer": "Optimising medicine use for individual patients.",
+      "deeper": "Clinical pharmacy focuses on the patient-facing use of medicines. It includes medication review, therapeutic monitoring, dose individualisation, interaction and adverse-effect assessment, and working with prescribers to reach safe, effective and appropriate therapy.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "clinical-pharmacy"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmacovigilance"
+        },
+        {
+          "kind": "domain",
+          "id": "community-pharmacy"
+        },
+        {
+          "kind": "domain",
+          "id": "ai-in-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Standard clinical pharmacy practice textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Foundations of patient-centred medication management.",
+          "verify": "Yes. Confirm title, author and edition before citing."
+        },
+        {
+          "source": "Guidance from your national pharmacy professional body on clinical services",
+          "type": "Professional guidance",
+          "purpose": "Scope and standards of pharmacist practice.",
+          "verify": "Yes. Confirm the issuing body and current version before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "domain/clinical-pharmacy.html"
+    },
+    {
+      "id": "domain:pharmacovigilance",
+      "category": "domain",
+      "title": "Pharmacovigilance",
+      "keywords": [
+        "pharmacovigilance",
+        "safety"
+      ],
+      "shortAnswer": "Detecting and preventing harm from medicines after approval.",
+      "deeper": "Pharmacovigilance is the science and set of activities concerned with detecting, assessing, understanding and preventing adverse effects and other medicine-related problems. It relies on spontaneous reports, structured studies and signal detection.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "pharmacovigilance"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "clinical-pharmacy"
+        },
+        {
+          "kind": "domain",
+          "id": "regulatory-science"
+        },
+        {
+          "kind": "domain",
+          "id": "biostatistics"
+        },
+        {
+          "kind": "domain",
+          "id": "community-pharmacy"
+        },
+        {
+          "kind": "domain",
+          "id": "ai-in-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "World Health Organization pharmacovigilance guidance and the WHO Programme for International Drug Monitoring",
+          "type": "International agency guidance",
+          "purpose": "Global framework for adverse reaction monitoring.",
+          "verify": "Yes. Confirm the specific publication and its current version before citing."
+        },
+        {
+          "source": "Your national medicines regulator's adverse reaction reporting pages",
+          "type": "Regulator resource",
+          "purpose": "How and where to report suspected reactions locally.",
+          "verify": "Yes. Confirm the regulator and reporting route for your country before use."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "domain/pharmacovigilance.html"
+    },
+    {
+      "id": "domain:pharmaceutical-microbiology",
+      "category": "domain",
+      "title": "Pharmaceutical Microbiology",
+      "keywords": [
+        "pharmaceutical microbiology",
+        "development",
+        "safety"
+      ],
+      "shortAnswer": "Keeping medicines and manufacturing environments safe from microbes.",
+      "deeper": "Pharmaceutical microbiology deals with microorganisms relevant to medicines: sterility, microbial limits, preservative effectiveness, sterilisation methods, contamination control and antimicrobial agents themselves.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "pharmaceutical-microbiology"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "industrial-pharmacy"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-biotechnology"
+        },
+        {
+          "kind": "domain",
+          "id": "public-health"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial chapters on sterility testing, microbial limits and sterilisation (pharmacopoeia of your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Standard tests and requirements for microbiological quality.",
+          "verify": "Yes. Check the current edition and chapter before citing."
+        },
+        {
+          "source": "WHO Good Manufacturing Practice guidance on sterile pharmaceutical products",
+          "type": "International agency guidance",
+          "purpose": "Principles for sterile manufacturing environments.",
+          "verify": "Yes. Confirm the specific document and version before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "domain/pharmaceutical-microbiology.html"
+    },
+    {
+      "id": "domain:biopharmaceutics",
+      "category": "domain",
+      "title": "Biopharmaceutics",
+      "keywords": [
+        "biopharmaceutics",
+        "development",
+        "delivery"
+      ],
+      "shortAnswer": "How a dosage form's design shapes what reaches the body.",
+      "deeper": "Biopharmaceutics examines how the physical and chemical properties of a drug, its dosage form and its route of administration affect the rate and extent of drug absorption and therefore its effect. Dissolution, solubility, permeability and bioavailability are central ideas.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "biopharmaceutics"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmaceutics"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "nanotechnology"
+        }
+      ],
+      "references": [
+        {
+          "source": "Standard biopharmaceutics and pharmacokinetics textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Principles of absorption, dissolution and bioavailability.",
+          "verify": "Yes. Confirm title, author and edition before citing."
+        },
+        {
+          "source": "Regulatory guidance on bioavailability and bioequivalence from your national or regional regulator",
+          "type": "Regulatory guideline",
+          "purpose": "Standards for comparing products.",
+          "verify": "Yes. Confirm the issuing authority and current version before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "domain/biopharmaceutics.html"
+    },
+    {
+      "id": "domain:biostatistics",
+      "category": "domain",
+      "title": "Biostatistics",
+      "keywords": [
+        "biostatistics",
+        "development",
+        "safety"
+      ],
+      "shortAnswer": "Turning data into trustworthy conclusions.",
+      "deeper": "Biostatistics applies statistical methods to biological and health data. In pharmacy it supports trial design, analysis of results, bioequivalence assessment, quality control charts and interpretation of safety data.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "biostatistics"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacovigilance"
+        },
+        {
+          "kind": "domain",
+          "id": "regulatory-science"
+        },
+        {
+          "kind": "domain",
+          "id": "drug-discovery"
+        }
+      ],
+      "references": [
+        {
+          "source": "Introductory biostatistics textbook for health sciences (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Foundations of study design and statistical inference.",
+          "verify": "Yes. Confirm title, author and edition before citing."
+        },
+        {
+          "source": "ICH guideline on statistical principles for clinical trials (International Council for Harmonisation)",
+          "type": "Regulatory guideline",
+          "purpose": "Statistical considerations in trial design and analysis.",
+          "verify": "Yes. Confirm the current guideline number and version before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "domain/biostatistics.html"
+    },
+    {
+      "id": "domain:pharmaceutical-biotechnology",
+      "category": "domain",
+      "title": "Pharmaceutical Biotechnology",
+      "keywords": [
+        "pharmaceutical biotechnology",
+        "discovery",
+        "development"
+      ],
+      "shortAnswer": "Medicines made by or from living systems.",
+      "deeper": "Pharmaceutical biotechnology uses living cells and biological processes to produce medicines such as therapeutic proteins, monoclonal antibodies, vaccines and other biologics, and develops the methods to purify, characterise and formulate them.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "pharmaceutical-biotechnology"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-microbiology"
+        },
+        {
+          "kind": "domain",
+          "id": "nanotechnology"
+        },
+        {
+          "kind": "domain",
+          "id": "drug-discovery"
+        }
+      ],
+      "references": [
+        {
+          "source": "Standard pharmaceutical biotechnology textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Overview of biologics production and characterisation.",
+          "verify": "Yes. Confirm title, author and edition before citing."
+        },
+        {
+          "source": "Regulatory guidance on biosimilar development from your national or regional regulator",
+          "type": "Regulatory guideline",
+          "purpose": "Framework for comparability assessment.",
+          "verify": "Yes. Confirm the issuing authority and current version before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "domain/pharmaceutical-biotechnology.html"
+    },
+    {
+      "id": "domain:nanotechnology",
+      "category": "domain",
+      "title": "Nanotechnology",
+      "keywords": [
+        "nanotechnology",
+        "delivery",
+        "discovery"
+      ],
+      "shortAnswer": "Engineering drug carriers at the scale of billionths of a metre.",
+      "deeper": "Nanotechnology in pharmacy involves designing carriers and materials at the nanometre scale, such as liposomes, polymeric nanoparticles and lipid nanoparticles, to change how a drug is dissolved, protected, distributed or released.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "nanotechnology"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmaceutics"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-analysis"
+        },
+        {
+          "kind": "domain",
+          "id": "biopharmaceutics"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-biotechnology"
+        }
+      ],
+      "references": [
+        {
+          "source": "Review literature on nanomedicine in drug delivery (search a reputable indexed database and select recent peer-reviewed reviews)",
+          "type": "Literature search guidance",
+          "purpose": "Starting point for current evidence in this area.",
+          "verify": "Yes. This is a search direction, not a specific citation. Locate, read and verify a specific article before citing."
+        },
+        {
+          "source": "Regulatory guidance on nanomaterial-containing medicines from your national or regional regulator",
+          "type": "Regulatory guideline",
+          "purpose": "Expectations for quality and safety assessment.",
+          "verify": "Yes. Confirm the issuing authority and current document before citing."
+        }
+      ],
+      "evidence": "SUPPORTED",
+      "url": "domain/nanotechnology.html"
+    },
+    {
+      "id": "domain:drug-discovery",
+      "category": "domain",
+      "title": "Drug Discovery",
+      "keywords": [
+        "drug discovery",
+        "discovery"
+      ],
+      "shortAnswer": "Finding and validating new medicines.",
+      "deeper": "Drug discovery is the process of identifying a disease-relevant target, finding compounds that act on it, and optimising them into candidates suitable for testing. It integrates biology, chemistry, screening, computation and early safety assessment.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "drug-discovery"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacognosy"
+        },
+        {
+          "kind": "domain",
+          "id": "medicinal-chemistry"
+        },
+        {
+          "kind": "domain",
+          "id": "biostatistics"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-biotechnology"
+        },
+        {
+          "kind": "domain",
+          "id": "ai-in-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Standard drug discovery and development textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Overview of the discovery pipeline.",
+          "verify": "Yes. Confirm title, author and edition before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "domain/drug-discovery.html"
+    },
+    {
+      "id": "domain:regulatory-science",
+      "category": "domain",
+      "title": "Regulatory Science",
+      "keywords": [
+        "regulatory science",
+        "development",
+        "safety"
+      ],
+      "shortAnswer": "The rules and evidence that decide what reaches patients.",
+      "deeper": "Regulatory science covers the frameworks, standards and assessment methods used to judge whether a medicine is of acceptable quality, safety and efficacy for authorisation and continued marketing, and to oversee manufacturing and distribution.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "regulatory-science"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-analysis"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmacovigilance"
+        },
+        {
+          "kind": "domain",
+          "id": "biostatistics"
+        },
+        {
+          "kind": "domain",
+          "id": "industrial-pharmacy"
+        },
+        {
+          "kind": "domain",
+          "id": "public-health"
+        }
+      ],
+      "references": [
+        {
+          "source": "Your national medicines regulator's official website and legislation pages",
+          "type": "Regulator resource",
+          "purpose": "Authoritative, current local requirements.",
+          "verify": "Yes. Confirm the regulator and read the current text directly before relying on it."
+        },
+        {
+          "source": "International Council for Harmonisation (ICH) guidelines index",
+          "type": "International guideline body",
+          "purpose": "Overview of harmonised technical guidelines.",
+          "verify": "Yes. Confirm the specific guideline and version on the ICH site before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "domain/regulatory-science.html"
+    },
+    {
+      "id": "domain:industrial-pharmacy",
+      "category": "domain",
+      "title": "Industrial Pharmacy",
+      "keywords": [
+        "industrial pharmacy",
+        "development",
+        "delivery"
+      ],
+      "shortAnswer": "Making medicines consistently at scale.",
+      "deeper": "Industrial pharmacy covers large-scale manufacture of medicines: scale-up from laboratory to production, unit operations such as mixing, granulation, compression and filling, process control, packaging, and quality systems.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "industrial-pharmacy"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmaceutics"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-analysis"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-microbiology"
+        },
+        {
+          "kind": "domain",
+          "id": "regulatory-science"
+        }
+      ],
+      "references": [
+        {
+          "source": "WHO Good Manufacturing Practice guidance for pharmaceutical products",
+          "type": "International agency guidance",
+          "purpose": "Baseline principles for manufacturing quality systems.",
+          "verify": "Yes. Confirm the specific document and version before citing."
+        },
+        {
+          "source": "Standard industrial pharmacy or pharmaceutical technology textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Unit operations and scale-up principles.",
+          "verify": "Yes. Confirm title, author and edition before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "domain/industrial-pharmacy.html"
+    },
+    {
+      "id": "domain:community-pharmacy",
+      "category": "domain",
+      "title": "Community Pharmacy",
+      "keywords": [
+        "community pharmacy",
+        "care",
+        "delivery"
+      ],
+      "shortAnswer": "The most accessible point of care for medicines advice.",
+      "deeper": "Community pharmacy is pharmacy practice in neighbourhood settings. It includes dispensing prescriptions, advising on non-prescription medicines and self-care, counselling patients, supporting adherence and, where permitted, providing services such as screening or vaccination.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "community-pharmacy"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "clinical-pharmacy"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmacovigilance"
+        },
+        {
+          "kind": "domain",
+          "id": "public-health"
+        }
+      ],
+      "references": [
+        {
+          "source": "Your national pharmacy council or professional body standards of practice",
+          "type": "Professional guidance",
+          "purpose": "Local standards and permitted scope of practice.",
+          "verify": "Yes. Confirm the issuing body and current version before citing."
+        },
+        {
+          "source": "International Pharmaceutical Federation (FIP) professional practice publications",
+          "type": "International professional body",
+          "purpose": "Global perspectives on pharmacy practice.",
+          "verify": "Yes. Confirm the specific publication and version before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "domain/community-pharmacy.html"
+    },
+    {
+      "id": "domain:public-health",
+      "category": "domain",
+      "title": "Public Health",
+      "keywords": [
+        "public health",
+        "care",
+        "safety"
+      ],
+      "shortAnswer": "Protecting and improving the health of populations.",
+      "deeper": "Public health focuses on preventing disease and promoting health at the population level. Pharmacists contribute through immunisation support, medicine access, antimicrobial stewardship, health education and supply chain quality.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "public-health"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-microbiology"
+        },
+        {
+          "kind": "domain",
+          "id": "community-pharmacy"
+        },
+        {
+          "kind": "domain",
+          "id": "regulatory-science"
+        }
+      ],
+      "references": [
+        {
+          "source": "World Health Organization publications on essential medicines and antimicrobial resistance",
+          "type": "International agency guidance",
+          "purpose": "Global public health context for medicine use.",
+          "verify": "Yes. Confirm the specific publication and version before citing."
+        },
+        {
+          "source": "Your national health ministry or public health agency guidance",
+          "type": "Government resource",
+          "purpose": "Local priorities and programmes.",
+          "verify": "Yes. Confirm the issuing body and current version before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "domain/public-health.html"
+    },
+    {
+      "id": "domain:ai-in-pharmacy",
+      "category": "domain",
+      "title": "AI in Pharmacy",
+      "keywords": [
+        "ai in pharmacy",
+        "discovery",
+        "care"
+      ],
+      "shortAnswer": "Machine learning and data tools applied across the pathway.",
+      "deeper": "AI in pharmacy refers to the use of machine learning and related computational methods to support tasks such as predicting molecular properties, screening compounds, analysing pharmacovigilance data and supporting clinical decision tools.",
+      "visual": {
+        "type": "domain-node",
+        "slug": "ai-in-pharmacy"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "clinical-pharmacy"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmacovigilance"
+        },
+        {
+          "kind": "domain",
+          "id": "drug-discovery"
+        }
+      ],
+      "references": [
+        {
+          "source": "Regulatory or professional body guidance on digital health and AI-enabled tools (your national or regional authority)",
+          "type": "Regulatory / professional guidance",
+          "purpose": "Emerging expectations for AI in health.",
+          "verify": "Yes. Confirm the issuing body, document and current version before citing."
+        },
+        {
+          "source": "Recent peer-reviewed reviews on machine learning in drug discovery (search a reputable indexed database)",
+          "type": "Literature search guidance",
+          "purpose": "Starting point for current evidence.",
+          "verify": "Yes. This is a search direction, not a specific citation. Locate, read and verify a specific article before citing."
+        }
+      ],
+      "evidence": "EMERGING",
+      "url": "domain/ai-in-pharmacy.html"
+    },
+    {
+      "id": "concept:drug",
+      "category": "concept",
+      "title": "Drug",
+      "keywords": [
+        "drug"
+      ],
+      "shortAnswer": "A substance used to prevent, diagnose or treat disease, or to change a body function.",
+      "deeper": "In pharmacy a drug is studied from many angles at once: its structure, how it acts on the body, how it is formulated, how its quality is measured and how its safety is monitored. This site connects those angles rather than treating them separately.",
+      "visual": {
+        "type": "chain",
+        "concept": "drug"
+      },
+      "related": [
+        {
+          "kind": "concept",
+          "id": "mechanism"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "medicinal-chemistry"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmacognosy"
+        },
+        {
+          "kind": "domain",
+          "id": "drug-discovery"
+        }
+      ],
+      "references": [
+        {
+          "source": "See the reference lists on the linked domain pages",
+          "type": "Pointer",
+          "purpose": "Concept summary; sources are held on the related domain pages.",
+          "verify": "Yes. Verify any statement against primary sources before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "search.html?concept=drug"
+    },
+    {
+      "id": "concept:mechanism",
+      "category": "concept",
+      "title": "Mechanism",
+      "keywords": [
+        "mechanism"
+      ],
+      "shortAnswer": "The specific way a drug produces its effect, usually by acting on a molecular target.",
+      "deeper": "Mechanism of action typically describes binding to a receptor, enzyme, transporter or ion channel and the downstream change that follows. Understanding mechanism helps predict effects, interactions and adverse reactions.",
+      "visual": {
+        "type": "chain",
+        "concept": "mechanism"
+      },
+      "related": [
+        {
+          "kind": "concept",
+          "id": "drug"
+        },
+        {
+          "kind": "concept",
+          "id": "formulation"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "medicinal-chemistry"
+        }
+      ],
+      "references": [
+        {
+          "source": "See the reference lists on the linked domain pages",
+          "type": "Pointer",
+          "purpose": "Concept summary; sources are held on the related domain pages.",
+          "verify": "Yes. Verify any statement against primary sources before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "search.html?concept=mechanism"
+    },
+    {
+      "id": "concept:formulation",
+      "category": "concept",
+      "title": "Formulation",
+      "keywords": [
+        "formulation"
+      ],
+      "shortAnswer": "The design of a dosage form so a drug can be given safely, stably and effectively.",
+      "deeper": "Formulation combines the active substance with excipients and a manufacturing process to produce a tablet, capsule, liquid, cream, injection or other form. Choices here influence stability, release and patient acceptability.",
+      "visual": {
+        "type": "chain",
+        "concept": "formulation"
+      },
+      "related": [
+        {
+          "kind": "concept",
+          "id": "mechanism"
+        },
+        {
+          "kind": "concept",
+          "id": "analysis"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmaceutics"
+        },
+        {
+          "kind": "domain",
+          "id": "industrial-pharmacy"
+        },
+        {
+          "kind": "domain",
+          "id": "biopharmaceutics"
+        }
+      ],
+      "references": [
+        {
+          "source": "See the reference lists on the linked domain pages",
+          "type": "Pointer",
+          "purpose": "Concept summary; sources are held on the related domain pages.",
+          "verify": "Yes. Verify any statement against primary sources before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "search.html?concept=formulation"
+    },
+    {
+      "id": "concept:analysis",
+      "category": "concept",
+      "title": "Analysis",
+      "keywords": [
+        "analysis"
+      ],
+      "shortAnswer": "Testing that confirms the identity, purity and strength of a medicine.",
+      "deeper": "Analytical methods such as titration, spectroscopy and chromatography are validated for their purpose and used by quality control laboratories to decide whether a batch meets its specification.",
+      "visual": {
+        "type": "chain",
+        "concept": "analysis"
+      },
+      "related": [
+        {
+          "kind": "concept",
+          "id": "formulation"
+        },
+        {
+          "kind": "concept",
+          "id": "safety"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-analysis"
+        }
+      ],
+      "references": [
+        {
+          "source": "See the reference lists on the linked domain pages",
+          "type": "Pointer",
+          "purpose": "Concept summary; sources are held on the related domain pages.",
+          "verify": "Yes. Verify any statement against primary sources before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "search.html?concept=analysis"
+    },
+    {
+      "id": "concept:safety",
+      "category": "concept",
+      "title": "Safety",
+      "keywords": [
+        "safety"
+      ],
+      "shortAnswer": "The study and assurance that the benefits of a medicine outweigh its risks.",
+      "deeper": "Safety work spans preclinical testing, clinical trials, manufacturing quality, microbial control and post-marketing surveillance. It is continuous rather than a single checkpoint.",
+      "visual": {
+        "type": "chain",
+        "concept": "safety"
+      },
+      "related": [
+        {
+          "kind": "concept",
+          "id": "analysis"
+        },
+        {
+          "kind": "concept",
+          "id": "pharmacovigilance"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmacovigilance"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-microbiology"
+        },
+        {
+          "kind": "domain",
+          "id": "regulatory-science"
+        },
+        {
+          "kind": "domain",
+          "id": "biostatistics"
+        }
+      ],
+      "references": [
+        {
+          "source": "See the reference lists on the linked domain pages",
+          "type": "Pointer",
+          "purpose": "Concept summary; sources are held on the related domain pages.",
+          "verify": "Yes. Verify any statement against primary sources before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "search.html?concept=safety"
+    },
+    {
+      "id": "concept:ai",
+      "category": "concept",
+      "title": "AI",
+      "keywords": [
+        "ai"
+      ],
+      "shortAnswer": "Machine learning and data tools applied to tasks across the medicine pathway.",
+      "deeper": "Applications under exploration include property prediction, compound screening, safety data analysis and decision support. Outputs depend on data quality and need professional oversight; much of the evidence is still developing.",
+      "visual": {
+        "type": "chain",
+        "concept": "ai"
+      },
+      "related": [
+        {
+          "kind": "concept",
+          "id": "clinical-pharmacy"
+        },
+        {
+          "kind": "domain",
+          "id": "ai-in-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "See the reference lists on the linked domain pages",
+          "type": "Pointer",
+          "purpose": "Concept summary; sources are held on the related domain pages.",
+          "verify": "Yes. Verify any statement against primary sources before citing."
+        }
+      ],
+      "evidence": "EMERGING",
+      "url": "search.html?concept=ai"
+    },
+    {
+      "id": "concept:chitosan",
+      "category": "concept",
+      "title": "Chitosan",
+      "keywords": [
+        "chitosan"
+      ],
+      "shortAnswer": "A polysaccharide derived from chitin, studied as a material in pharmaceutical formulation and delivery research.",
+      "deeper": "Chitosan is investigated for uses such as forming particles, films and gels in delivery systems. Its properties depend on source and processing, and specific claims about performance require verification against current primary literature. A dedicated Chitosan Lab module is planned and does not exist yet.",
+      "visual": {
+        "type": "chain",
+        "concept": "chitosan"
+      },
+      "related": [
+        {
+          "kind": "concept",
+          "id": "pharmaceutics"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmaceutics"
+        },
+        {
+          "kind": "domain",
+          "id": "nanotechnology"
+        }
+      ],
+      "references": [
+        {
+          "source": "See the reference lists on the linked domain pages",
+          "type": "Pointer",
+          "purpose": "Concept summary; sources are held on the related domain pages.",
+          "verify": "Yes. Verify any statement against primary sources before citing."
+        }
+      ],
+      "evidence": "SUPPORTED",
+      "url": "search.html?concept=chitosan"
+    },
+    {
+      "id": "concept:drug-delivery",
+      "category": "concept",
+      "title": "Drug delivery",
+      "keywords": [
+        "drug delivery"
+      ],
+      "shortAnswer": "Approaches for getting a drug to where it is needed, at the right rate, in the right form.",
+      "deeper": "Delivery draws on formulation design, absorption science, nanoscale carriers and manufacturing. It is a meeting point of several domains rather than a single discipline.",
+      "visual": {
+        "type": "chain",
+        "concept": "drug-delivery"
+      },
+      "related": [
+        {
+          "kind": "concept",
+          "id": "pharmaceutical-analysis"
+        },
+        {
+          "kind": "domain",
+          "id": "pharmaceutics"
+        },
+        {
+          "kind": "domain",
+          "id": "biopharmaceutics"
+        },
+        {
+          "kind": "domain",
+          "id": "nanotechnology"
+        },
+        {
+          "kind": "domain",
+          "id": "industrial-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "See the reference lists on the linked domain pages",
+          "type": "Pointer",
+          "purpose": "Concept summary; sources are held on the related domain pages.",
+          "verify": "Yes. Verify any statement against primary sources before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "search.html?concept=drug-delivery"
+    },
+    {
+      "id": "module:universe",
+      "category": "module",
+      "title": "Pharmacy Universe",
+      "keywords": [
+        "universe"
+      ],
+      "shortAnswer": "An interactive map of 18 pharmacy domains and how they connect.",
+      "deeper": "A live page on this site. Modules that are not yet built are not indexed.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [],
+      "references": [
+        {
+          "source": "This site",
+          "type": "Internal page",
+          "purpose": "Navigation.",
+          "verify": "Not applicable. Internal link."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "universe.html"
+    },
+    {
+      "id": "module:explore",
+      "category": "module",
+      "title": "Explore hub",
+      "keywords": [
+        "explore"
+      ],
+      "shortAnswer": "A hub linking the universe, search and the explorer modules.",
+      "deeper": "A live page on this site. Modules that are not yet built are not indexed.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [],
+      "references": [
+        {
+          "source": "This site",
+          "type": "Internal page",
+          "purpose": "Navigation.",
+          "verify": "Not applicable. Internal link."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "explore.html"
+    },
+    {
+      "id": "module:search",
+      "category": "module",
+      "title": "Site search",
+      "keywords": [
+        "search"
+      ],
+      "shortAnswer": "Search across all indexed domains, concepts and modules.",
+      "deeper": "A live page on this site. Modules that are not yet built are not indexed.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [],
+      "references": [
+        {
+          "source": "This site",
+          "type": "Internal page",
+          "purpose": "Navigation.",
+          "verify": "Not applicable. Internal link."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "search.html"
+    },
+    {
+      "id": "module:drug-explorer",
+      "category": "module",
+      "title": "Drug Explorer",
+      "keywords": [
+        "drug explorer"
+      ],
+      "shortAnswer": "Twelve drug monographs with a consistent ten-topic layout.",
+      "deeper": "A live page on this site. Modules that are not yet built are not indexed.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [],
+      "references": [
+        {
+          "source": "This site",
+          "type": "Internal page",
+          "purpose": "Navigation.",
+          "verify": "Not applicable. Internal link."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "drug.html"
+    },
+    {
+      "id": "module:plant-explorer",
+      "category": "module",
+      "title": "Plant Explorer",
+      "keywords": [
+        "plant explorer"
+      ],
+      "shortAnswer": "Eight medicinal plants, with traditional use kept separate from scientific evidence.",
+      "deeper": "A live page on this site. Modules that are not yet built are not indexed.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [],
+      "references": [
+        {
+          "source": "This site",
+          "type": "Internal page",
+          "purpose": "Navigation.",
+          "verify": "Not applicable. Internal link."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "plants.html"
+    },
+    {
+      "id": "module:instruments",
+      "category": "module",
+      "title": "Instruments",
+      "keywords": [
+        "instruments"
+      ],
+      "shortAnswer": "Seven pharmaceutical instruments with working learning calculators.",
+      "deeper": "A live page on this site. Modules that are not yet built are not indexed.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [],
+      "references": [
+        {
+          "source": "This site",
+          "type": "Internal page",
+          "purpose": "Navigation.",
+          "verify": "Not applicable. Internal link."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "instruments.html"
+    },
+    {
+      "id": "module:manufacturing",
+      "category": "module",
+      "title": "Manufacturing",
+      "keywords": [
+        "manufacturing"
+      ],
+      "shortAnswer": "Twelve manufacturing stages from raw materials to batch release, plus a tablet defect explorer.",
+      "deeper": "A live page on this site. Modules that are not yet built are not indexed.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [],
+      "references": [
+        {
+          "source": "This site",
+          "type": "Internal page",
+          "purpose": "Navigation.",
+          "verify": "Not applicable. Internal link."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "manufacturing.html"
+    },
+    {
+      "id": "module:formulation",
+      "category": "module",
+      "title": "Formulation",
+      "keywords": [
+        "formulation"
+      ],
+      "shortAnswer": "An exploded tablet diagram and a comparison of immediate, sustained and enteric release.",
+      "deeper": "A live page on this site. Modules that are not yet built are not indexed.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [],
+      "references": [
+        {
+          "source": "This site",
+          "type": "Internal page",
+          "purpose": "Navigation.",
+          "verify": "Not applicable. Internal link."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "formulation.html"
+    },
+    {
+      "id": "module:chitosan-lab",
+      "category": "module",
+      "title": "Chitosan Nanoparticles",
+      "keywords": [
+        "chitosan lab"
+      ],
+      "shortAnswer": "A seven-stage path through chitosan nanoparticles by ionic gelation, with a schematic diagram, parameter panel, EE% and DL% calculators and a release-model laboratory.",
+      "deeper": "A live page on this site. Modules that are not yet built are not indexed.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [],
+      "references": [
+        {
+          "source": "This site",
+          "type": "Internal page",
+          "purpose": "Navigation.",
+          "verify": "Not applicable. Internal link."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "chitosan.html"
+    },
+    {
+      "id": "module:ai-section",
+      "category": "module",
+      "title": "AI in Pharmacy",
+      "keywords": [
+        "ai section"
+      ],
+      "shortAnswer": "Six pillars and ten applications of AI in pharmacy, each with limitations, human oversight and an evidence tier.",
+      "deeper": "A live page on this site. Modules that are not yet built are not indexed.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [],
+      "references": [
+        {
+          "source": "This site",
+          "type": "Internal page",
+          "purpose": "Navigation.",
+          "verify": "Not applicable. Internal link."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "ai.html"
+    },
+    {
+      "id": "module:learning-center",
+      "category": "module",
+      "title": "Learning Center",
+      "keywords": [
+        "learning center"
+      ],
+      "shortAnswer": "Practice MCQs, Leitner flashcards, viva chains, a progress dashboard and a timed exam mode.",
+      "deeper": "A live page on this site. Modules that are not yet built are not indexed.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [],
+      "references": [
+        {
+          "source": "This site",
+          "type": "Internal page",
+          "purpose": "Navigation.",
+          "verify": "Not applicable. Internal link."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "learn.html"
+    },
+    {
+      "id": "module:pk-lab",
+      "category": "module",
+      "title": "Pharmacokinetic Lab",
+      "keywords": [
+        "pk lab"
+      ],
+      "shortAnswer": "Illustrative one-compartment, oral (Bateman) and IV bolus models computing Cmax, Tmax, AUC, half-life, clearance, Vd and F.",
+      "deeper": "A live page on this site. Modules that are not yet built are not indexed.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [],
+      "references": [
+        {
+          "source": "This site",
+          "type": "Internal page",
+          "purpose": "Navigation.",
+          "verify": "Not applicable. Internal link."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "lab.html"
+    },
+    {
+      "id": "module:pharmacovigilance-module",
+      "category": "module",
+      "title": "Pharmacovigilance",
+      "keywords": [
+        "pharmacovigilance module"
+      ],
+      "shortAnswer": "The chain from medicine to regulatory action, a fictional Naranjo case, and PRR, ROR and chi-square signal detection.",
+      "deeper": "A live page on this site. Modules that are not yet built are not indexed.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [],
+      "references": [
+        {
+          "source": "This site",
+          "type": "Internal page",
+          "purpose": "Navigation.",
+          "verify": "Not applicable. Internal link."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "pharmacovigilance.html"
+    },
+    {
+      "id": "drug:paracetamol",
+      "category": "drug",
+      "title": "Paracetamol",
+      "keywords": [
+        "paracetamol",
+        "analgesic / antipyretic",
+        "Acetaminophen"
+      ],
+      "shortAnswer": "A widely used analgesic and antipyretic with weak anti-inflammatory activity.",
+      "deeper": "Analgesic and antipyretic (para-aminophenol derivative). Not classed as an NSAID because its anti-inflammatory effect is weak. The exact mechanism is not fully settled.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "clinical-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monograph for paracetamol (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity, purity and assay standards.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "National or hospital drug formulary / drug information reference",
+          "type": "Formulary",
+          "purpose": "Current indications, dosing bands and safety information.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmacology textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Mechanism and pharmacokinetic background.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "drug/paracetamol.html"
+    },
+    {
+      "id": "drug:ibuprofen",
+      "category": "drug",
+      "title": "Ibuprofen",
+      "keywords": [
+        "ibuprofen",
+        "nsaid"
+      ],
+      "shortAnswer": "A propionic acid non-steroidal anti-inflammatory drug (NSAID) with analgesic, antipyretic and anti-inflammatory effects.",
+      "deeper": "Non-steroidal anti-inflammatory drug (NSAID), arylpropionic acid derivative. Inhibits cyclooxygenase (COX-1 and COX-2), reducing prostaglandin synthesis.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "clinical-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monograph for ibuprofen (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity, purity and assay standards.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "National or hospital drug formulary",
+          "type": "Formulary",
+          "purpose": "Current indications, contraindications and safety information.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmacology textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "COX inhibition and NSAID adverse-effect background.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "drug/ibuprofen.html"
+    },
+    {
+      "id": "drug:aspirin",
+      "category": "drug",
+      "title": "Aspirin",
+      "keywords": [
+        "aspirin",
+        "nsaid / antiplatelet",
+        "Acetylsalicylic acid"
+      ],
+      "shortAnswer": "An acetylated salicylate with analgesic, antipyretic, anti-inflammatory and antiplatelet effects.",
+      "deeper": "Non-steroidal anti-inflammatory drug (salicylate) and antiplatelet agent. Irreversibly acetylates cyclooxygenase (COX), blocking prostaglandin and thromboxane synthesis.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "clinical-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monograph for aspirin (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity, purity (free salicylic acid) and assay standards.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "National or hospital drug formulary",
+          "type": "Formulary",
+          "purpose": "Current indications and safety information.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmaceutics textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Hydrolytic stability of esters.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "drug/aspirin.html"
+    },
+    {
+      "id": "drug:atenolol",
+      "category": "drug",
+      "title": "Atenolol",
+      "keywords": [
+        "atenolol",
+        "cardiovascular"
+      ],
+      "shortAnswer": "A cardioselective (beta-1) adrenergic blocker used in cardiovascular conditions.",
+      "deeper": "Beta-adrenergic receptor antagonist (beta-blocker); relatively beta-1 selective and hydrophilic. Competitively blocks beta-1 adrenergic receptors, mainly in the heart.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "clinical-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monograph for atenolol (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity, purity and assay standards.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "National cardiovascular guideline or formulary",
+          "type": "Guideline",
+          "purpose": "Current place in therapy and safety information.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmacology textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Adrenergic receptors and beta-blocker properties.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "drug/atenolol.html"
+    },
+    {
+      "id": "drug:metformin",
+      "category": "drug",
+      "title": "Metformin",
+      "keywords": [
+        "metformin",
+        "endocrine",
+        "Metformin hydrochloride (common salt form)"
+      ],
+      "shortAnswer": "A biguanide antihyperglycaemic used in type 2 diabetes mellitus.",
+      "deeper": "Biguanide; oral antidiabetic (insulin sensitiser). Mainly reduces hepatic glucose production.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "clinical-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monograph for metformin hydrochloride (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity, purity and assay standards.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "National diabetes guideline or formulary",
+          "type": "Guideline",
+          "purpose": "Current place in therapy, renal thresholds and safety information.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmacology textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Antidiabetic drug classes.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "drug/metformin.html"
+    },
+    {
+      "id": "drug:amoxicillin",
+      "category": "drug",
+      "title": "Amoxicillin",
+      "keywords": [
+        "amoxicillin",
+        "anti-infective"
+      ],
+      "shortAnswer": "A broad-spectrum aminopenicillin antibiotic.",
+      "deeper": "Beta-lactam antibiotic; aminopenicillin. Inhibits bacterial cell-wall synthesis by binding penicillin-binding proteins.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "clinical-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monograph for amoxicillin (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity, purity and assay standards.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Local or national antimicrobial guideline",
+          "type": "Guideline",
+          "purpose": "Current indications and resistance-informed choices.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard medicinal chemistry or pharmacology textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Beta-lactam mechanism and structure-activity background.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "drug/amoxicillin.html"
+    },
+    {
+      "id": "drug:atorvastatin",
+      "category": "drug",
+      "title": "Atorvastatin",
+      "keywords": [
+        "atorvastatin",
+        "lipid-lowering",
+        "Atorvastatin calcium (common salt form)"
+      ],
+      "shortAnswer": "A statin used to lower blood cholesterol and reduce cardiovascular risk.",
+      "deeper": "HMG-CoA reductase inhibitor (statin); lipid-lowering agent. Competitively inhibits HMG-CoA reductase, the rate-limiting enzyme in hepatic cholesterol synthesis.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "clinical-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monograph for atorvastatin calcium (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity, purity and assay standards.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "National lipid or cardiovascular guideline",
+          "type": "Guideline",
+          "purpose": "Current place in therapy and monitoring.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmacology textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Cholesterol biosynthesis and statin mechanism.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "drug/atorvastatin.html"
+    },
+    {
+      "id": "drug:salbutamol",
+      "category": "drug",
+      "title": "Salbutamol",
+      "keywords": [
+        "salbutamol",
+        "respiratory",
+        "Albuterol (US name)"
+      ],
+      "shortAnswer": "A short-acting beta-2 adrenergic agonist used as a reliever bronchodilator.",
+      "deeper": "Selective beta-2 adrenergic agonist; short-acting bronchodilator. Stimulates beta-2 receptors on airway smooth muscle, raising intracellular cyclic AMP.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "clinical-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monograph for salbutamol (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity, purity and assay standards.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "National or international asthma and COPD guideline",
+          "type": "Guideline",
+          "purpose": "Current place in therapy.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmaceutics textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Inhalation dosage forms and device principles.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "drug/salbutamol.html"
+    },
+    {
+      "id": "drug:omeprazole",
+      "category": "drug",
+      "title": "Omeprazole",
+      "keywords": [
+        "omeprazole",
+        "gastrointestinal"
+      ],
+      "shortAnswer": "A proton pump inhibitor that strongly reduces gastric acid secretion.",
+      "deeper": "Proton pump inhibitor (PPI). A prodrug that is activated in the acidic environment of the parietal-cell canaliculus.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "clinical-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monograph for omeprazole (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity, purity and assay standards.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "National gastroenterology guideline or formulary",
+          "type": "Guideline",
+          "purpose": "Current indications and duration.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmaceutics textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Enteric coating principles.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "drug/omeprazole.html"
+    },
+    {
+      "id": "drug:warfarin",
+      "category": "drug",
+      "title": "Warfarin",
+      "keywords": [
+        "warfarin",
+        "anticoagulant",
+        "Warfarin sodium (common salt form)"
+      ],
+      "shortAnswer": "A vitamin K antagonist oral anticoagulant that needs regular blood-test monitoring.",
+      "deeper": "Vitamin K antagonist; oral anticoagulant (coumarin derivative). Inhibits vitamin K epoxide reductase, so the vitamin K-dependent clotting factors (II, VII, IX, X) and proteins C and S are made in a less active form.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "clinical-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monograph for warfarin sodium (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity, purity and assay standards.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "National anticoagulation guideline or formulary",
+          "type": "Guideline",
+          "purpose": "INR targets and management.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard clinical pharmacy textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Therapeutic drug monitoring of anticoagulants.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "drug/warfarin.html"
+    },
+    {
+      "id": "drug:ciprofloxacin",
+      "category": "drug",
+      "title": "Ciprofloxacin",
+      "keywords": [
+        "ciprofloxacin",
+        "anti-infective"
+      ],
+      "shortAnswer": "A fluoroquinolone antibiotic with broad activity, especially against Gram-negative bacteria.",
+      "deeper": "Fluoroquinolone antibiotic. Inhibits bacterial DNA gyrase (topoisomerase II) and topoisomerase IV.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "clinical-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monograph for ciprofloxacin (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity, purity and assay standards.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Local or national antimicrobial guideline and regulator safety communications",
+          "type": "Guideline",
+          "purpose": "Current restrictions and safety warnings.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard medicinal chemistry textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Quinolone structure-activity and mechanism.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "drug/ciprofloxacin.html"
+    },
+    {
+      "id": "drug:levothyroxine",
+      "category": "drug",
+      "title": "Levothyroxine",
+      "keywords": [
+        "levothyroxine",
+        "endocrine",
+        "L-thyroxine; Levothyroxine sodium (common salt form)"
+      ],
+      "shortAnswer": "Synthetic thyroid hormone replacement.",
+      "deeper": "Thyroid hormone (T4) replacement. Levothyroxine is converted in tissues to the active hormone triiodothyronine (T3).",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacology"
+        },
+        {
+          "kind": "domain",
+          "id": "clinical-pharmacy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monograph for levothyroxine sodium (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity, purity and assay standards.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "National or professional thyroid guideline",
+          "type": "Guideline",
+          "purpose": "Monitoring targets and management.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard endocrine pharmacology textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Thyroid hormone physiology and replacement.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "drug/levothyroxine.html"
+    },
+    {
+      "id": "plant:turmeric",
+      "category": "plant",
+      "title": "Turmeric",
+      "keywords": [
+        "Curcuma longa",
+        "zingiberaceae",
+        "turmeric"
+      ],
+      "shortAnswer": "Turmeric (Curcuma longa), family Zingiberaceae. Traditional use and scientific evidence are shown separately.",
+      "deeper": "Curcuminoids and turmeric extracts are widely studied. Turmeric is a common food spice and colouring agent, and a source of interest in natural-product research.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacognosy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monograph for turmeric / Curcuma longa rhizome (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity, purity and quality parameters.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmacognosy textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Macroscopy, microscopy, constituents and adulteration.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Current systematic reviews on curcumin (search a scholarly database)",
+          "type": "Search direction",
+          "purpose": "Evidence for and against clinical effects. Not a citation.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "EMERGING",
+      "url": "plants/turmeric.html"
+    },
+    {
+      "id": "plant:cinchona",
+      "category": "plant",
+      "title": "Cinchona",
+      "keywords": [
+        "Cinchona species (e.g. Cinchona officinalis, C. succirubra, C. ledgeriana)",
+        "rubiaceae",
+        "cinchona"
+      ],
+      "shortAnswer": "Cinchona (Cinchona species (e.g. Cinchona officinalis, C. succirubra, C. ledgeriana)), family Rubiaceae. Traditional use and scientific evidence are shown separately.",
+      "deeper": "Cinchona is the historical natural source of quinine, an important antimalarial, and quinidine, an antiarrhythmic. It is a classic example of a plant leading to a drug.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacognosy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monograph for cinchona bark and for quinine salts (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity and alkaloid content standards.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmacognosy textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Bark macroscopy, microscopy and alkaloid chemistry.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Current antimalarial treatment guideline of your national programme or the WHO",
+          "type": "Guideline",
+          "purpose": "Current role of quinine in therapy.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "plants/cinchona.html"
+    },
+    {
+      "id": "plant:catharanthus-roseus",
+      "category": "plant",
+      "title": "Catharanthus roseus",
+      "keywords": [
+        "Catharanthus roseus (L.) G. Don",
+        "apocynaceae",
+        "catharanthus roseus"
+      ],
+      "shortAnswer": "Catharanthus roseus (Catharanthus roseus (L.) G. Don), family Apocynaceae. Traditional use and scientific evidence are shown separately.",
+      "deeper": "The vinca alkaloids vinblastine and vincristine, derived from this plant, are established anticancer drugs. The plant is a classic example of natural-product drug discovery.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacognosy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monographs for vinblastine and vincristine (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Quality standards for the drug substances.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmacognosy textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Alkaloid classes and natural-product drug discovery.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Oncology drug reference or formulary",
+          "type": "Reference",
+          "purpose": "Current use and safety of vinca alkaloids.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "plants/catharanthus-roseus.html"
+    },
+    {
+      "id": "plant:rauvolfia-serpentina",
+      "category": "plant",
+      "title": "Rauvolfia serpentina",
+      "keywords": [
+        "Rauvolfia serpentina (L.) Benth. ex Kurz",
+        "apocynaceae",
+        "rauvolfia serpentina"
+      ],
+      "shortAnswer": "Rauvolfia serpentina (Rauvolfia serpentina (L.) Benth. ex Kurz), family Apocynaceae. Traditional use and scientific evidence are shown separately.",
+      "deeper": "Reserpine, isolated from this plant, was historically important as an antihypertensive and antipsychotic and was central to the early history of psychopharmacology.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacognosy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monograph for rauwolfia root and reserpine (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity and alkaloid content standards.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmacognosy textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Indole alkaloids and root characteristics.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmacology textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Monoamine depletion and reserpine pharmacology.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "plants/rauvolfia-serpentina.html"
+    },
+    {
+      "id": "plant:digitalis",
+      "category": "plant",
+      "title": "Digitalis",
+      "keywords": [
+        "Digitalis purpurea L. and Digitalis lanata Ehrh.",
+        "plantaginaceae (formerly scrophulariaceae)",
+        "digitalis"
+      ],
+      "shortAnswer": "Digitalis (Digitalis purpurea L. and Digitalis lanata Ehrh.), family Plantaginaceae (formerly Scrophulariaceae). Traditional use and scientific evidence are shown separately.",
+      "deeper": "Digoxin, from Digitalis lanata, is a cardiac glycoside used in certain heart-failure and arrhythmia settings. It is a classic example of a narrow-therapeutic-index natural-product drug.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacognosy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monograph for digitalis leaf and digoxin (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity, assay and quality standards.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmacognosy textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Cardiac glycoside chemistry and tests.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Current heart-failure and arrhythmia guideline",
+          "type": "Guideline",
+          "purpose": "Current place of digoxin in therapy.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "plants/digitalis.html"
+    },
+    {
+      "id": "plant:papaver-somniferum",
+      "category": "plant",
+      "title": "Papaver somniferum",
+      "keywords": [
+        "Papaver somniferum L.",
+        "papaveraceae",
+        "papaver somniferum"
+      ],
+      "shortAnswer": "Papaver somniferum (Papaver somniferum L.), family Papaveraceae. Traditional use and scientific evidence are shown separately.",
+      "deeper": "Morphine and codeine are established analgesics and antitussive, and thebaine is a precursor for other semi-synthetic opioids. These drugs are central to pain management and are subject to legal control.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacognosy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial monographs for opium, morphine and codeine (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Quality standards.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "National controlled-drug legislation and regulator guidance",
+          "type": "Regulation",
+          "purpose": "Legal control of opium-derived drugs.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmacology textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Opioid receptor pharmacology.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "plants/papaver-somniferum.html"
+    },
+    {
+      "id": "plant:tulsi",
+      "category": "plant",
+      "title": "Tulsi",
+      "keywords": [
+        "Ocimum tenuiflorum L. (syn. Ocimum sanctum L.)",
+        "lamiaceae",
+        "tulsi"
+      ],
+      "shortAnswer": "Tulsi (Ocimum tenuiflorum L. (syn. Ocimum sanctum L.)), family Lamiaceae. Traditional use and scientific evidence are shown separately.",
+      "deeper": "Tulsi is widely used as a herbal tea and traditional preparation, and it is studied for its volatile oil and phenolic constituents.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacognosy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial or herbal-pharmacopoeia monograph for Ocimum sanctum leaf (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity and quality parameters.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmacognosy textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Lamiaceae microscopy and volatile oils.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Current systematic reviews on Ocimum tenuiflorum (search a scholarly database)",
+          "type": "Search direction",
+          "purpose": "Evidence overview. Not a citation.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "EMERGING",
+      "url": "plants/tulsi.html"
+    },
+    {
+      "id": "plant:ashwagandha",
+      "category": "plant",
+      "title": "Ashwagandha",
+      "keywords": [
+        "Withania somnifera (L.) Dunal",
+        "solanaceae",
+        "ashwagandha"
+      ],
+      "shortAnswer": "Ashwagandha (Withania somnifera (L.) Dunal), family Solanaceae. Traditional use and scientific evidence are shown separately.",
+      "deeper": "Ashwagandha is a widely used traditional herb and a common ingredient of dietary supplements. It is the subject of ongoing research.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmacognosy"
+        }
+      ],
+      "references": [
+        {
+          "source": "Pharmacopoeial or herbal-pharmacopoeia monograph for ashwagandha root (your jurisdiction)",
+          "type": "Pharmacopoeia",
+          "purpose": "Identity and quality parameters.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Standard pharmacognosy textbook (edition per your course)",
+          "type": "Textbook",
+          "purpose": "Solanaceous root characters and steroidal lactones.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        },
+        {
+          "source": "Regulator or national poison-centre safety communications on ashwagandha products",
+          "type": "Safety",
+          "purpose": "Current safety information.",
+          "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+        }
+      ],
+      "evidence": "EMERGING",
+      "url": "plants/ashwagandha.html"
+    },
+    {
+      "id": "instrument:microscope",
+      "category": "instrument",
+      "title": "Microscope",
+      "keywords": [
+        "microscope"
+      ],
+      "shortAnswer": "Uses lenses to magnify small objects such as crude-drug tissues, powders, crystals and particles.",
+      "deeper": "An objective lens forms a magnified real image of the specimen, and an eyepiece magnifies that image again for the eye or a camera. Resolution depends on the wavelength of light and the numerical aperture of the objective, not on magnification alone.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-analysis"
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "instruments/microscope.html"
+    },
+    {
+      "id": "instrument:hplc",
+      "category": "instrument",
+      "title": "HPLC",
+      "keywords": [
+        "hplc"
+      ],
+      "shortAnswer": "High-performance liquid chromatography separates components of a mixture so each can be identified and measured.",
+      "deeper": "A pump pushes a liquid mobile phase at a controlled flow through a column packed with a stationary phase. Sample components interact differently with the two phases, so they leave the column at different times. A detector records each as a peak.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-analysis"
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "instruments/hplc.html"
+    },
+    {
+      "id": "instrument:uv-vis",
+      "category": "instrument",
+      "title": "UV-Vis spectrophotometer",
+      "keywords": [
+        "uv vis"
+      ],
+      "shortAnswer": "Measures how much ultraviolet or visible light a solution absorbs, which can be related to concentration.",
+      "deeper": "A light source passes through a wavelength selector, then through the sample in a cuvette. A detector compares the light transmitted through the sample with a reference (blank). Absorbance is calculated from the ratio.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-analysis"
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "instruments/uv-vis.html"
+    },
+    {
+      "id": "instrument:dissolution-apparatus",
+      "category": "instrument",
+      "title": "Dissolution apparatus",
+      "keywords": [
+        "dissolution apparatus"
+      ],
+      "shortAnswer": "Measures how quickly and how much of a drug dissolves from a dosage form under controlled conditions.",
+      "deeper": "A dosage form is placed in a vessel of dissolution medium held at a controlled temperature and agitated by a rotating basket or paddle at a set speed. Samples are withdrawn at time points and analysed.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-analysis"
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "instruments/dissolution-apparatus.html"
+    },
+    {
+      "id": "instrument:tablet-press",
+      "category": "instrument",
+      "title": "Tablet press",
+      "keywords": [
+        "tablet press"
+      ],
+      "shortAnswer": "Compresses powder or granules into tablets of consistent shape, weight and hardness.",
+      "deeper": "Powder fills a die cavity from a feed system. Upper and lower punches move together and apply compression force, forming a tablet, which is then ejected. Rotary presses repeat this with many stations on a turret.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-analysis"
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "instruments/tablet-press.html"
+    },
+    {
+      "id": "instrument:capsule-filler",
+      "category": "instrument",
+      "title": "Capsule filler",
+      "keywords": [
+        "capsule filler"
+      ],
+      "shortAnswer": "Fills empty capsule shells with a measured amount of powder, pellets or liquid and closes them.",
+      "deeper": "Empty capsule shells are separated into body and cap, the body is filled with a measured dose of the fill material, and the cap is rejoined. Dosing may use a tamping-pin dosator or a dosing disc, depending on the machine.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-analysis"
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "instruments/capsule-filler.html"
+    },
+    {
+      "id": "instrument:centrifuge",
+      "category": "instrument",
+      "title": "Centrifuge",
+      "keywords": [
+        "centrifuge"
+      ],
+      "shortAnswer": "Spins samples at high speed so that denser components settle out of a mixture.",
+      "deeper": "A rotor spins tubes around an axis. The resulting centrifugal force is much larger than gravity, so denser particles move outward and settle to the bottom of the tube. RCF depends on rotor radius and rotation speed.",
+      "visual": {
+        "type": "none"
+      },
+      "related": [
+        {
+          "kind": "domain",
+          "id": "pharmaceutical-analysis"
+        }
+      ],
+      "evidence": "ESTABLISHED",
+      "url": "instruments/centrifuge.html"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+/* =========================================================
+   PHARMA 3D — World Pharmacist Day 2026
+   Opening sequence, content sections, presentation mode.
+   Uses only tokens from tokens.css (5-color system).
+   ========================================================= */
+
+/* ---------- Opening sequence overlay ---------- */
+#wpd-intro{
+  position: fixed; inset: 0;
+  z-index: var(--z-modal, 300);
+  background: var(--c-50);
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+#wpd-intro[hidden]{ display: none; }
+
+.wpd-intro-controls{
+  position: absolute;
+  top: calc(var(--space-4) + var(--safe-top));
+  right: calc(var(--space-4) + var(--safe-right));
+  display: flex; gap: var(--space-2);
+  z-index: 5;
+}
+.wpd-intro-controls .btn{ min-height: 44px; }
+
+.wpd-intro-stage{
+  position: relative;
+  width: min(92vw, 560px);
+  height: min(70vh, 520px);
+  display: flex; align-items: center; justify-content: center;
+}
+
+.wpd-scene{
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: var(--space-5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 420ms var(--ease-standard);
+  text-align: center;
+  padding: var(--space-4);
+}
+.wpd-scene.is-active{ opacity: 1; visibility: visible; }
+
+/* Scene 1: glass vial */
+.wpd-vial{
+  width: 90px; height: 150px;
+  position: relative;
+}
+.wpd-vial svg{ width: 100%; height: 100%; }
+.wpd-vial-fill{
+  transform-origin: bottom;
+  animation: wpd-fill 2.2s var(--ease-standard) forwards;
+}
+@keyframes wpd-fill{
+  0%{ transform: scaleY(0); }
+  100%{ transform: scaleY(1); }
+}
+.wpd-vial-bubble{
+  animation: wpd-bubble 1.8s ease-in-out infinite;
+}
+@keyframes wpd-bubble{
+  0%, 100%{ transform: translateY(0); opacity: 0.9; }
+  50%{ transform: translateY(-14px); opacity: 0.3; }
+}
+
+/* Scene 2: rotating molecule */
+.wpd-molecule{ width: 130px; height: 130px; }
+.wpd-molecule-group{
+  transform-origin: 65px 65px;
+  animation: wpd-rotate 6s linear infinite;
+}
+@keyframes wpd-rotate{
+  from{ transform: rotate(0deg); }
+  to{ transform: rotate(360deg); }
+}
+
+/* Scene 3: 18-domain activation */
+.wpd-domain-ring{ width: 220px; height: 220px; position: relative; }
+.wpd-domain-dot{
+  position: absolute;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--c-400);
+  top: 50%; left: 50%;
+  opacity: 0.25;
+  animation: wpd-dot-pop 1.6s var(--ease-standard) forwards;
+}
+@keyframes wpd-dot-pop{
+  0%{ opacity: 0.15; transform: translate(-50%,-50%) scale(0.6); }
+  60%{ opacity: 1; transform: translate(-50%,-50%) scale(1.15); background: var(--c-600); }
+  100%{ opacity: 1; transform: translate(-50%,-50%) scale(1); background: var(--c-600); }
+}
+.wpd-domain-center{
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-mono); font-size: var(--fs-caption);
+  color: var(--accent-strong); font-weight: 600;
+}
+
+/* Scene 4: mortar & pestle (original symbol) */
+.wpd-mortar{ width: 130px; height: 130px; }
+.wpd-pestle{
+  transform-origin: 85px 30px;
+  animation: wpd-grind 1.4s var(--ease-standard) infinite;
+}
+@keyframes wpd-grind{
+  0%, 100%{ transform: rotate(-14deg); }
+  50%{ transform: rotate(10deg); }
+}
+
+/* Text scenes */
+.wpd-intro-title{
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 1.2rem + 2vw, 2.6rem);
+  color: var(--accent-strong);
+  letter-spacing: 0.01em;
+}
+.wpd-intro-sub{
+  font-family: var(--font-mono);
+  font-size: var(--fs-h3);
+  color: var(--accent);
+}
+
+.wpd-intro-progress{
+  position: absolute;
+  bottom: calc(var(--space-6) + var(--safe-bottom));
+  left: 50%; transform: translateX(-50%);
+  display: flex; gap: var(--space-2);
+}
+.wpd-intro-progress .dot{
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--c-100);
+  transition: background var(--dur-base) var(--ease-standard);
+}
+.wpd-intro-progress .dot.is-active{ background: var(--c-600); }
+
+/* Reduced-motion static fallback card */
+.wpd-static-card{
+  display: flex; flex-direction: column; align-items: center; gap: var(--space-5);
+  text-align: center;
+  padding: var(--space-6);
+}
+.wpd-static-card .wpd-emblem-static{
+  width: 110px; height: 110px; border-radius: 50%;
+  background: var(--bg-surface);
+  border: 2px solid var(--accent-soft);
+  display: flex; align-items: center; justify-content: center;
+}
+.wpd-static-card .wpd-emblem-static span{ width: 56px; height: 56px; color: var(--accent-strong); }
+
+@media (prefers-reduced-motion: reduce){
+  .wpd-vial-fill, .wpd-vial-bubble, .wpd-molecule-group, .wpd-domain-dot, .wpd-pestle{
+    animation: none !important;
+  }
+}
+
+/* ---------- Content sections ---------- */
+.wpd-section{ padding: var(--space-10) 0; }
+.wpd-section-head{ max-width: 62ch; margin-bottom: var(--space-6); }
+
+.wpd-journey{
+  display: flex; flex-direction: column; gap: var(--space-4);
+  counter-reset: journey;
+}
+.wpd-journey-step{
+  position: relative;
+  padding: var(--space-5) var(--space-5) var(--space-5) var(--space-12);
+  counter-increment: journey;
+}
+.wpd-journey-step::before{
+  content: counter(journey);
+  position: absolute;
+  left: var(--space-5); top: var(--space-5);
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--accent-strong);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-mono); font-weight: 600; font-size: var(--fs-caption);
+}
+
+/* 7-role carousel */
+.wpd-carousel{
+  position: relative;
+}
+.wpd-carousel-track{
+  display: flex;
+  gap: var(--space-4);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: var(--space-3);
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+.wpd-role-card{
+  flex: 0 0 min(78vw, 300px);
+  scroll-snap-align: start;
+  min-height: 44px;
+}
+.wpd-carousel-controls{
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: var(--space-3);
+}
+.wpd-carousel-nav{ display: flex; gap: var(--space-2); }
+.wpd-carousel-progress{
+  font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--text-muted);
+}
+
+/* Thank a pharmacist */
+.wpd-thanks-form{ display: flex; flex-direction: column; gap: var(--space-3); }
+.wpd-thanks-form textarea{
+  width: 100%; min-height: 100px; resize: vertical;
+  font-family: var(--font-body); font-size: var(--fs-body);
+  padding: var(--space-3);
+  border: 2px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+}
+.wpd-thanks-form textarea:focus-visible{ outline: 3px solid var(--focus-ring); outline-offset: 1px; }
+.wpd-char-count{ font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--text-muted); align-self: flex-end; }
+.wpd-char-count.is-limit{ color: var(--c-600); font-weight: 700; }
+
+.wpd-thanks-list{ display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-5); }
+.wpd-thanks-item{
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--bg-surface-alt);
+  border-left: 4px solid var(--c-600);
+}
+.wpd-thanks-item time{ font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--text-muted); display: block; margin-top: var(--space-2); }
+.wpd-thanks-empty{ color: var(--text-muted); text-align: center; padding: var(--space-6); }
+
+/* Share card generator */
+.wpd-share-wrap{ display: flex; flex-direction: column; gap: var(--space-4); align-items: center; }
+.wpd-share-canvas-frame{
+  width: 100%; max-width: 420px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-md);
+}
+#wpd-share-canvas{ width: 100%; height: auto; display: block; }
+.wpd-share-actions{ display: flex; gap: var(--space-3); flex-wrap: wrap; justify-content: center; }
+
+/* Verification notice */
+.wpd-verify-box{
+  background: var(--accent-tint);
+  border: 1px solid var(--accent-soft);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  display: flex; gap: var(--space-3); align-items: flex-start;
+}
+.wpd-verify-box span[data-icon]{ width: 22px; height: 22px; flex-shrink: 0; color: var(--accent-strong); margin-top: 2px; }
+
+.credits-list{ max-width: none; }
+.wpd-actions{ display: flex; gap: var(--space-3); flex-wrap: wrap; }
+
+/* ---------- Presentation mode ---------- */
+#wpd-present{
+  position: fixed; inset: 0;
+  background: var(--c-900);
+  color: var(--c-50);
+  z-index: var(--z-modal, 300);
+  display: flex; flex-direction: column;
+}
+#wpd-present[hidden]{ display: none; }
+.wpd-present-slide{
+  flex: 1;
+  display: none;
+  flex-direction: column; align-items: center; justify-content: center;
+  text-align: center;
+  padding: calc(var(--space-8) + var(--safe-top)) var(--space-6) calc(var(--space-8) + var(--safe-bottom));
+  gap: var(--space-5);
+}
+.wpd-present-slide.is-active{ display: flex; }
+.wpd-present-slide h2{
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 1.2rem + 3vw, 3.4rem);
+  color: var(--c-50);
+  max-width: 24ch;
+}
+.wpd-present-slide p{
+  font-size: clamp(1.1rem, 1rem + 0.8vw, 1.5rem);
+  color: var(--c-100);
+  max-width: 60ch;
+  line-height: var(--lh-body);
+}
+.wpd-present-bar{
+  display: flex; align-items: center; justify-content: space-between;
+  padding: var(--space-4) var(--space-5) calc(var(--space-4) + var(--safe-bottom));
+  border-top: 1px solid rgba(233,247,242,0.15);
+}
+.wpd-present-bar .btn{ min-height: 48px; }
+.wpd-present-bar .btn-secondary{ border-color: var(--c-50); color: var(--c-50); }
+.wpd-present-bar .btn-secondary:hover{ background: rgba(233,247,242,0.1); }
+.wpd-present-count{ font-family: var(--font-mono); color: var(--c-100); font-size: var(--fs-caption); }
+.wpd-enter-present{ position: fixed; }
+
+@media (min-width: 768px){
+  .wpd-role-card{ flex-basis: min(38vw, 320px); }
+}

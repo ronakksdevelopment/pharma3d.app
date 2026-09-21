@@ -1,0 +1,86 @@
+import json, os
+ROOT=os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+I=[]
+def inst(**k): I.append(k)
+
+REFS_GEN=lambda s,t,p:{"source":s,"type":t,"purpose":p,"verify":"Yes. Confirm the current edition, version and exact entry from the source before citing."}
+
+inst(id="microscope", name="Microscope", icon="microscope", evidence="ESTABLISHED", calc="microscope",
+ short="Uses lenses to magnify small objects such as crude-drug tissues, powders, crystals and particles.",
+ measures="Size, shape and structural features of small objects. In pharmacy this includes cell types in crude-drug powders, crystal habit, and particle appearance. With a calibrated eyepiece scale it can give approximate dimensions.",
+ how="An objective lens forms a magnified real image of the specimen, and an eyepiece magnifies that image again for the eye or a camera. Resolution depends on the wavelength of light and the numerical aperture of the objective, not on magnification alone.",
+ sample="Thin sections, powders mounted in a suitable medium and covered with a cover slip, or dispersions of particles on a slide. Staining or clearing agents may be used to bring out features.",
+ output="An image, and with calibration, dimensions of features. It is a visual and largely qualitative technique.",
+ application="Identity checks on crude drugs and herbal powders, detection of adulterants, crystal and particle examination, and inspection of foreign particles.",
+ errors=["Poor illumination or misaligned condenser reducing contrast and resolution.","Uncalibrated eyepiece scale giving wrong sizes.","Air bubbles, thick or uneven samples, and dirty lenses.","Confusing artefacts with real structures.","Treating magnification as if it were resolution."],
+ limitations="Optical microscopy cannot resolve details smaller than roughly the diffraction limit of visible light. Electron microscopy and other techniques are needed for finer detail.",
+ refs=[REFS_GEN("Standard pharmacognosy and pharmaceutical analysis textbooks (edition per your course)","Textbook","Microscopy of powdered drugs and particle examination."),REFS_GEN("Pharmacopoeial general chapter on optical microscopy and particle size (your jurisdiction)","Pharmacopoeia","Method requirements.")])
+
+inst(id="hplc", name="HPLC", icon="flask", evidence="ESTABLISHED", calc="hplc",
+ short="High-performance liquid chromatography separates components of a mixture so each can be identified and measured.",
+ measures="The amount and identity of individual components in a mixture, for example the active ingredient and its impurities in a formulation.",
+ how="A pump pushes a liquid mobile phase at a controlled flow through a column packed with a stationary phase. Sample components interact differently with the two phases, so they leave the column at different times. A detector records each as a peak.",
+ sample="A solution of the sample, usually filtered and often diluted, injected in a small measured volume. Solid dosage forms are extracted or dissolved first.",
+ output="A chromatogram: detector response against time. Peak retention time supports identification, and peak area or height, compared with standards, supports quantification.",
+ application="Assay of active ingredients, impurity and degradation-product profiling, dissolution sample analysis, stability testing and content uniformity.",
+ errors=["Mobile phase not degassed or prepared inconsistently, causing baseline noise and drifting retention times.","Poorly equilibrated or aged column.","Sample not filtered, blocking the column or system.","Injection volume or solvent mismatched to the method, distorting peaks.","Integrating peaks inconsistently.","Using a method that has not been validated for its purpose."],
+ limitations="Methods are compound-specific and must be validated for their intended use. A single peak does not by itself prove purity.",
+ refs=[REFS_GEN("Pharmacopoeial general chapter on liquid chromatography (your jurisdiction)","Pharmacopoeia","System suitability and method requirements."),REFS_GEN("ICH guideline on validation of analytical procedures","Guideline","Method validation principles."),REFS_GEN("Standard pharmaceutical analysis textbook (edition per your course)","Textbook","Chromatography theory.")])
+
+inst(id="uv-vis", name="UV-Vis spectrophotometer", icon="flask", evidence="ESTABLISHED", calc="uvvis",
+ short="Measures how much ultraviolet or visible light a solution absorbs, which can be related to concentration.",
+ measures="Absorbance of a solution at one or more wavelengths. Within the valid range, absorbance is proportional to concentration.",
+ how="A light source passes through a wavelength selector, then through the sample in a cuvette. A detector compares the light transmitted through the sample with a reference (blank). Absorbance is calculated from the ratio.",
+ sample="A clear solution in a suitable solvent, placed in a matched cuvette of known path length. A blank of the same solvent is used to zero the instrument.",
+ output="An absorbance value at a chosen wavelength, or a spectrum of absorbance against wavelength.",
+ application="Assay of drugs that absorb in the UV or visible range, dissolution testing, identification against a reference spectrum, and reaction monitoring.",
+ errors=["Absorbance outside the linear range (often too high), so the reading is not proportional to concentration.","Dirty, scratched or mismatched cuvettes.","Wrong or missing blank.","Air bubbles in the light path.","Interference from other absorbing species or turbidity.","Reading at the wrong wavelength."],
+ limitations="Not specific if several components absorb at the same wavelength. Beer-Lambert behaviour can fail at high concentration.",
+ refs=[REFS_GEN("Pharmacopoeial general chapter on ultraviolet-visible spectrophotometry (your jurisdiction)","Pharmacopoeia","Method requirements."),REFS_GEN("Standard pharmaceutical analysis textbook (edition per your course)","Textbook","Absorption spectroscopy and the Beer-Lambert law.")])
+
+inst(id="dissolution-apparatus", name="Dissolution apparatus", icon="flask", evidence="ESTABLISHED", calc="dissolution",
+ short="Measures how quickly and how much of a drug dissolves from a dosage form under controlled conditions.",
+ measures="The amount of drug released into a dissolution medium over time, usually as percentage of the labelled content.",
+ how="A dosage form is placed in a vessel of dissolution medium held at a controlled temperature and agitated by a rotating basket or paddle at a set speed. Samples are withdrawn at time points and analysed.",
+ sample="Whole tablets or capsules, tested in a specified volume of medium. Withdrawn medium is filtered and analysed by UV-Vis or HPLC.",
+ output="A dissolution profile: percentage dissolved against time, compared with the product specification.",
+ application="Quality control of batches, formulation development, comparison of release between products, and supporting the link between formulation and bioavailability.",
+ errors=["Medium not degassed, so bubbles form on the dosage form.","Temperature or rotation speed outside tolerance.","Vessel or shaft misalignment and wobble.","Sampling from the wrong position or not replacing withdrawn medium.","Sinkers omitted or misused for floating capsules.","Filter binding the drug and lowering the result."],
+ limitations="A dissolution result is an in vitro test. It supports but does not by itself prove clinical performance, and the method must be shown to be discriminating for the product.",
+ refs=[REFS_GEN("Pharmacopoeial general chapter on dissolution testing (your jurisdiction)","Pharmacopoeia","Apparatus, calibration and acceptance criteria."),REFS_GEN("Regulatory guidance on dissolution testing for solid oral dosage forms (your regulator)","Guideline","Expectations for method and specification."),REFS_GEN("Standard biopharmaceutics textbook (edition per your course)","Textbook","Dissolution theory.")])
+
+inst(id="tablet-press", name="Tablet press", icon="tablet", evidence="ESTABLISHED", calc="qualitative-press",
+ short="Compresses powder or granules into tablets of consistent shape, weight and hardness.",
+ measures="A tablet press is a manufacturing machine, not an analytical instrument, so it does not measure a sample. It applies force and its settings are adjusted so tablets meet weight, hardness, thickness and disintegration targets that are measured separately.",
+ how="Powder fills a die cavity from a feed system. Upper and lower punches move together and apply compression force, forming a tablet, which is then ejected. Rotary presses repeat this with many stations on a turret.",
+ sample="Free-flowing granulate or powder blend, including active ingredient and excipients such as diluent, binder, disintegrant, glidant and lubricant.",
+ output="Compressed tablets. Machine settings such as fill depth, compression force and speed are adjusted, and the tablets are checked for weight, hardness, thickness, friability and disintegration.",
+ application="Commercial and pilot-scale manufacture of tablets, and development of tablet formulations.",
+ errors=["Poor powder flow causing weight variation.","Too little lubrication causing sticking or picking; too much lowering tablet strength.","Excess moisture or insufficient binder leading to capping or lamination.","Worn or damaged punches and dies causing defects.","Incorrect fill depth or compression force settings."],
+ limitations="This module explains the process qualitatively. It does not give machine settings, because appropriate values depend on the formulation, tooling and equipment, and must be established by the manufacturer.",
+ refs=[REFS_GEN("Standard industrial pharmacy and pharmaceutics textbook (edition per your course)","Textbook","Tablet compression principles."),REFS_GEN("Applicable GMP guidance for your jurisdiction","Guideline","Manufacturing controls.")])
+
+inst(id="capsule-filler", name="Capsule filler", icon="capsule", evidence="ESTABLISHED", calc="qualitative-filler",
+ short="Fills empty capsule shells with a measured amount of powder, pellets or liquid and closes them.",
+ measures="A capsule filler is a manufacturing machine, not an analytical instrument. It does not measure a sample. Fill weight is controlled by machine settings and checked separately.",
+ how="Empty capsule shells are separated into body and cap, the body is filled with a measured dose of the fill material, and the cap is rejoined. Dosing may use a tamping-pin dosator or a dosing disc, depending on the machine.",
+ sample="A powder blend, granules, pellets or, with suitable equipment, a liquid or semi-solid fill.",
+ output="Filled, closed capsules. Fill weight, closure and appearance are checked in-process.",
+ application="Manufacture of hard capsules for commercial supply and clinical trial materials.",
+ errors=["Poor flow or compressibility of the fill, causing fill-weight variation.","Static or stickiness.","Mismatched capsule size and fill volume.","Incomplete closure or damaged shells.","Unsuitable humidity, making shells brittle or soft."],
+ limitations="This module explains the process qualitatively. It gives no machine settings, since appropriate values depend on the formulation, capsule size and equipment.",
+ refs=[REFS_GEN("Standard pharmaceutics textbook (edition per your course)","Textbook","Hard capsule filling."),REFS_GEN("Applicable GMP guidance for your jurisdiction","Guideline","Manufacturing controls.")])
+
+inst(id="centrifuge", name="Centrifuge", icon="flask", evidence="ESTABLISHED", calc="centrifuge",
+ short="Spins samples at high speed so that denser components settle out of a mixture.",
+ measures="A centrifuge is a separation device rather than a measuring instrument. Its key performance quantity is relative centrifugal force (RCF), which reflects how strongly particles are driven to settle.",
+ how="A rotor spins tubes around an axis. The resulting centrifugal force is much larger than gravity, so denser particles move outward and settle to the bottom of the tube. RCF depends on rotor radius and rotation speed.",
+ sample="Suspensions, emulsions or biological fluids, in balanced tubes of the correct type.",
+ output="A separated pellet (sediment) and supernatant. RCF and time are recorded as part of the method.",
+ application="Separating precipitates, cells and particles, clarifying samples before analysis, and preparing samples in the laboratory.",
+ errors=["Unbalanced tubes, which is a safety hazard and can damage the machine.","Quoting speed in RPM without the rotor radius, so the RCF cannot be reproduced.","Using tubes not rated for the speed.","Lid not secured.","Overfilled tubes leaking."],
+ limitations="The same RPM gives different RCF for different rotors. Always specify RCF for reproducibility.",
+ refs=[REFS_GEN("Manufacturer manual for your centrifuge and rotor","Manual","Rotor radius, speed limits and safety."),REFS_GEN("Standard laboratory techniques textbook (edition per your course)","Textbook","Centrifugation principles.")])
+
+json.dump({"meta":{"version":"1.0.0","note":"Educational descriptions of laboratory and manufacturing instruments. Calculators are learning tools, not validated analytical or manufacturing methods."},"instruments":I},open(os.path.join(ROOT,"data","instruments.json"),"w"),indent=1,ensure_ascii=False)
+print(len(I),[i["id"] for i in I])

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Authors — PHARMA 3D</title>
+<meta name="description" content="About the creators of PHARMA 3D — Karnajit Reang and Kishaloy Debnath, RIPSAT, Tripura University.">
+<meta name="theme-color" content="#1F2E2C">
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/icons/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PHARMA 3D">
+<meta name="mobile-web-app-capable" content="yes">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
+
+<style>
+  .author-photo-placeholder{
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    background: var(--bg-surface-alt);
+    border: 2px dashed var(--border-strong);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    text-align: center;
+    padding: var(--space-2);
+    margin: 0 auto var(--space-5);
+    flex-shrink: 0;
+  }
+  .author-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  @media (min-width: 640px){
+    .author-card{ text-align: left; align-items: flex-start; }
+    .author-card .author-photo-placeholder{ margin-inline: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div data-include="header"></div>
+<div data-include="mobile-nav"></div>
+<div data-include="search-modal"></div>
+<div data-include="a11y-drawer"></div>
+
+<main id="main-content">
+  <div class="breadcrumb-bar">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">Authors</span>
+    </nav>
+  </div>
+
+  <section class="container page-hero">
+    <span class="section-eyebrow">About</span>
+    <h1 style="max-width:22ch;">The people behind PHARMA 3D</h1>
+    <p style="max-width:60ch; color:var(--text-secondary); margin-top:var(--space-4);">
+      PHARMA 3D is created by two members of the Regional Institute of Pharmaceutical Science and Technology
+      (RIPSAT), Tripura University, Agartala, Tripura, India.
+    </p>
+  </section>
+
+  <section class="container section" style="padding-top:0;">
+    <div class="grid-2">
+
+      <article class="card author-card">
+        <!-- PLACEHOLDER: drop author photo at /assets/authors/karnajit-reang.jpg and replace this block's
+             background-image / img src accordingly. Until then this dashed circle is shown. -->
+        <div class="author-photo-placeholder" role="img" aria-label="Photo placeholder for Karnajit Reang">
+          PHOTO<br>PLACEHOLDER
+        </div>
+        <h3 class="card-title">Karnajit Reang</h3>
+        <p class="card-body">Co-creator, PHARMA 3D. Regional Institute of Pharmaceutical Science and Technology (RIPSAT), Tripura University.</p>
+      </article>
+
+      <article class="card author-card">
+        <!-- PLACEHOLDER: drop author photo at /assets/authors/kishaloy-debnath.jpg and replace this block's
+             background-image / img src accordingly. Until then this dashed circle is shown. -->
+        <div class="author-photo-placeholder" role="img" aria-label="Photo placeholder for Kishaloy Debnath">
+          PHOTO<br>PLACEHOLDER
+        </div>
+        <h3 class="card-title">Kishaloy Debnath</h3>
+        <p class="card-body">Co-creator, PHARMA 3D. Regional Institute of Pharmaceutical Science and Technology (RIPSAT), Tripura University.</p>
+      </article>
+
+    </div>
+
+    <div class="card" style="margin-top:var(--space-6);">
+      <h3 class="card-title">Institution</h3>
+      <p class="card-body">
+        Regional Institute of Pharmaceutical Science and Technology (RIPSAT), Tripura University, Agartala,
+        Tripura, India.
+      </p>
+    </div>
+
+    <div class="card" style="margin-top:var(--space-6); background: var(--accent-tint); border-color: var(--accent-soft);">
+      <h3 class="card-title">Non-affiliation notice</h3>
+      <p class="card-body">
+        PHARMA 3D is an independent educational project created by the individuals named above. It is not an
+        official publication of, and is not endorsed or certified by, Tripura University or RIPSAT.
+      </p>
+    </div>
+  </section>
+</main>
+
+<div data-include="footer"></div>
+<div data-include="bottom-nav"></div>
+
+<script src="js/icons.js"></script>
+<script src="js/search-index.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/app.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js').then((reg) => { if (window.pharma3dWatchForUpdates) window.pharma3dWatchForUpdates(reg); }).catch(() => {});
+    });
+  }
+</script>
+</body>
+</html>

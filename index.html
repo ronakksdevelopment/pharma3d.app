@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PHARMA 3D — The Interactive World of Pharmacy</title>
+<meta name="description" content="PHARMA 3D is an interactive learning world of pharmaceutical science by RIPSAT, Tripura University — a World Pharmacist Day 2026 special edition.">
+<meta name="theme-color" content="#1F2E2C">
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/icons/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PHARMA 3D">
+<meta name="mobile-web-app-capable" content="yes">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<div data-include="header"></div>
+<div data-include="mobile-nav"></div>
+<div data-include="search-modal"></div>
+<div data-include="a11y-drawer"></div>
+
+<main id="main-content">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero container">
+    <p class="hero-kicker">RIPSAT · Tripura University · World Pharmacist Day 2026 Special Edition</p>
+    <h1>PHARMA 3D — The Interactive World of Pharmacy</h1>
+    <p class="lead">
+      Explore how a single molecule becomes a medicine — from discovery through formulation,
+      manufacturing, regulation, and into the hands of a pharmacist and patient.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="explore.html">
+        Start exploring <span data-icon="arrowRight" style="width:18px;height:18px;"></span>
+      </a>
+      <a class="btn btn-secondary" href="wpd-2026.html">World Pharmacist Day 2026</a>
+    </div>
+
+    <!-- Hero stage: flat 2D schematic aspirin illustration with orbiting topic icons -->
+    <div class="hero-stage" aria-label="Illustration of an aspirin molecule surrounded by icons representing capsule, tablet, vial, syringe, DNA, nanoparticle, medicinal plant, microscope, and flask, each linking to a related topic">
+      <svg class="hero-molecule" viewBox="0 0 300 300" role="img" aria-labelledby="aspirin-title aspirin-desc">
+        <title id="aspirin-title">Schematic diagram of an aspirin (acetylsalicylic acid) molecule</title>
+        <desc id="aspirin-desc">A simplified flat 2D line diagram showing a benzene ring connected to a carboxylic acid group and an acetyl ester group, representing the aspirin molecule.</desc>
+
+        <!-- benzene ring -->
+        <polygon points="150,70 190,93 190,139 150,162 110,139 110,93"
+          fill="none" stroke="#2F7E6A" stroke-width="4" stroke-linejoin="round"/>
+        <!-- inner ring lines to suggest aromaticity -->
+        <polygon points="150,82 178,98 178,134 150,150 122,134 122,98"
+          fill="none" stroke="#63C6A7" stroke-width="2.5" stroke-linejoin="round" opacity="0.7"/>
+
+        <!-- Bond to ester group (top) -->
+        <line x1="150" y1="70" x2="150" y2="40" stroke="#2F7E6A" stroke-width="4"/>
+        <circle cx="150" cy="40" r="7" fill="#2F7E6A"/>
+        <text x="150" y="30" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1F2E2C">O</text>
+
+        <line x1="150" y1="33" x2="150" y2="14" stroke="#2F7E6A" stroke-width="4"/>
+        <circle cx="150" cy="14" r="6" fill="#63C6A7"/>
+        <text x="176" y="18" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1F2E2C">C=O</text>
+        <line x1="150" y1="14" x2="178" y2="4" stroke="#2F7E6A" stroke-width="4"/>
+        <text x="200" y="6" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1F2E2C">CH3</text>
+
+        <!-- Bond to carboxylic acid group (right) -->
+        <line x1="190" y1="93" x2="220" y2="76" stroke="#2F7E6A" stroke-width="4"/>
+        <circle cx="220" cy="76" r="7" fill="#2F7E6A"/>
+        <text x="238" y="70" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1F2E2C">COOH</text>
+
+        <!-- Ring vertex nodes -->
+        <circle cx="150" cy="70" r="5" fill="#1F2E2C"/>
+        <circle cx="190" cy="93" r="5" fill="#1F2E2C"/>
+        <circle cx="190" cy="139" r="5" fill="#1F2E2C"/>
+        <circle cx="150" cy="162" r="5" fill="#1F2E2C"/>
+        <circle cx="110" cy="139" r="5" fill="#1F2E2C"/>
+        <circle cx="110" cy="93" r="5" fill="#1F2E2C"/>
+
+        <!-- caption -->
+        <text x="150" y="188" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#2F7E6A" font-weight="600">C9H8O4</text>
+        <text x="150" y="204" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" fill="#3E524F">Acetylsalicylic acid</text>
+      </svg>
+
+      <!-- Orbit icons -->
+      <a class="hero-orbit-icon decorative-motion orbit-1" href="explore.html#capsule" aria-label="Capsule — explore dosage forms">
+        <span data-icon="capsule"></span><span class="icon-tip">Capsule</span>
+      </a>
+      <a class="hero-orbit-icon decorative-motion orbit-2" href="explore.html#tablet" aria-label="Tablet — explore dosage forms">
+        <span data-icon="tablet"></span><span class="icon-tip">Tablet</span>
+      </a>
+      <a class="hero-orbit-icon decorative-motion orbit-3" href="explore.html#vial" aria-label="Vial — explore sterile formulations">
+        <span data-icon="vial"></span><span class="icon-tip">Vial</span>
+      </a>
+      <a class="hero-orbit-icon decorative-motion orbit-4" href="explore.html#syringe" aria-label="Syringe — explore parenteral delivery">
+        <span data-icon="syringe"></span><span class="icon-tip">Syringe</span>
+      </a>
+      <a class="hero-orbit-icon decorative-motion orbit-5" href="explore.html#dna" aria-label="DNA — explore molecular biology">
+        <span data-icon="dna"></span><span class="icon-tip">DNA</span>
+      </a>
+      <a class="hero-orbit-icon decorative-motion orbit-6" href="explore.html#nanoparticle" aria-label="Nanoparticle — explore nanotechnology">
+        <span data-icon="nanoparticle"></span><span class="icon-tip">Nanoparticle</span>
+      </a>
+      <a class="hero-orbit-icon decorative-motion orbit-7" href="explore.html#medicinal-plant" aria-label="Medicinal plant — explore pharmacognosy">
+        <span data-icon="plant"></span><span class="icon-tip">Plant</span>
+      </a>
+      <a class="hero-orbit-icon decorative-motion orbit-8" href="explore.html#microscope" aria-label="Microscope — explore pharmaceutical analysis">
+        <span data-icon="microscope"></span><span class="icon-tip">Microscope</span>
+      </a>
+      <a class="hero-orbit-icon orbit-9" href="explore.html#flask" aria-label="Flask — explore drug discovery">
+        <span data-icon="flask"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY / PROGRESS PATH ============ -->
+  <section class="journey-section">
+    <div class="container section" style="padding-block: var(--space-8);">
+      <div class="section-head">
+        <span class="section-eyebrow">The Journey of a Medicine</span>
+        <h2>From molecule to healthcare system</h2>
+      </div>
+      <div class="journey-path" role="list" aria-label="Stages in the journey of a medicine">
+        <div class="progress-step is-complete" role="listitem">
+          <span class="dot">1</span><span class="step-label">Molecule</span>
+        </div>
+        <div class="progress-step is-complete" role="listitem">
+          <span class="dot">2</span><span class="step-label">Discovery</span>
+        </div>
+        <div class="progress-step is-current" role="listitem" aria-current="step">
+          <span class="dot">3</span><span class="step-label">Formulation</span>
+        </div>
+        <div class="progress-step" role="listitem">
+          <span class="dot">4</span><span class="step-label">Nanotechnology</span>
+        </div>
+        <div class="progress-step" role="listitem">
+          <span class="dot">5</span><span class="step-label">Manufacturing</span>
+        </div>
+        <div class="progress-step" role="listitem">
+          <span class="dot">6</span><span class="step-label">Quality</span>
+        </div>
+        <div class="progress-step" role="listitem">
+          <span class="dot">7</span><span class="step-label">Regulation</span>
+        </div>
+        <div class="progress-step" role="listitem">
+          <span class="dot">8</span><span class="step-label">Safety</span>
+        </div>
+        <div class="progress-step" role="listitem">
+          <span class="dot">9</span><span class="step-label">Patient</span>
+        </div>
+        <div class="progress-step" role="listitem">
+          <span class="dot">10</span><span class="step-label">Pharmacist</span>
+        </div>
+        <div class="progress-step" role="listitem">
+          <span class="dot">11</span><span class="step-label">Healthcare System</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPLORE GRID ============ -->
+  <section class="container section">
+    <div class="section-head">
+      <span class="section-eyebrow">Explore by Topic</span>
+      <h2>Nine doors into the world of pharmacy</h2>
+    </div>
+    <div class="explore-grid">
+      <a class="icon-card" href="explore.html#capsule">
+        <span class="icon-wrap"><span data-icon="capsule"></span></span>
+        <span class="label">Capsule</span>
+      </a>
+      <a class="icon-card" href="explore.html#tablet">
+        <span class="icon-wrap"><span data-icon="tablet"></span></span>
+        <span class="label">Tablet</span>
+      </a>
+      <a class="icon-card" href="explore.html#vial">
+        <span class="icon-wrap"><span data-icon="vial"></span></span>
+        <span class="label">Vial</span>
+      </a>
+      <a class="icon-card" href="explore.html#syringe">
+        <span class="icon-wrap"><span data-icon="syringe"></span></span>
+        <span class="label">Syringe</span>
+      </a>
+      <a class="icon-card" href="explore.html#dna">
+        <span class="icon-wrap"><span data-icon="dna"></span></span>
+        <span class="label">DNA</span>
+      </a>
+      <a class="icon-card" href="explore.html#nanoparticle">
+        <span class="icon-wrap"><span data-icon="nanoparticle"></span></span>
+        <span class="label">Nanoparticle</span>
+      </a>
+      <a class="icon-card" href="explore.html#medicinal-plant">
+        <span class="icon-wrap"><span data-icon="plant"></span></span>
+        <span class="label">Medicinal Plant</span>
+      </a>
+      <a class="icon-card" href="explore.html#microscope">
+        <span class="icon-wrap"><span data-icon="microscope"></span></span>
+        <span class="label">Microscope</span>
+      </a>
+      <a class="icon-card" href="explore.html#flask">
+        <span class="icon-wrap"><span data-icon="flask"></span></span>
+        <span class="label">Flask</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ FEATURE STRIP ============ -->
+  <section class="container section">
+    <div class="feature-strip">
+      <div class="card">
+        <span class="card-eyebrow">Special Edition</span>
+        <h3 class="card-title">World Pharmacist Day 2026</h3>
+        <p class="card-body">"Empowering pharmacists for healthier futures" — 25 September 2026. Visit the dedicated space built for the occasion.</p>
+        <div style="margin-top: var(--space-4);">
+          <a class="btn btn-secondary btn-sm" href="wpd-2026.html">Visit</a>
+        </div>
+      </div>
+      <div class="card">
+        <span class="card-eyebrow">Evidence-aware</span>
+        <h3 class="card-title">Clearly labeled content</h3>
+        <p class="card-body">Every claim across PHARMA 3D will carry an evidence badge — Established, Supported, Emerging, Traditional, or Data Pending Verification.</p>
+        <div style="margin-top: var(--space-4); display:flex; gap:var(--space-2); flex-wrap:wrap;">
+          <span class="badge badge-established">Established</span>
+          <span class="badge badge-emerging">Emerging</span>
+        </div>
+      </div>
+      <div class="card">
+        <span class="card-eyebrow">Built by</span>
+        <h3 class="card-title">RIPSAT, Tripura University</h3>
+        <p class="card-body">Created by Karnajit Reang and Kishaloy Debnath at the Regional Institute of Pharmaceutical Science and Technology.</p>
+        <div style="margin-top: var(--space-4);">
+          <a class="btn btn-secondary btn-sm" href="about-authors.html">Meet the authors</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div data-include="footer"></div>
+<div data-include="bottom-nav"></div>
+
+<script src="js/icons.js"></script>
+<script src="js/search-index.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/app.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js').then((reg) => { if (window.pharma3dWatchForUpdates) window.pharma3dWatchForUpdates(reg); }).catch(() => {});
+    });
+  }
+</script>
+</body>
+</html>

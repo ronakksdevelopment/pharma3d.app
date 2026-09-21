@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chitosan Nanoparticles — PHARMA 3D</title>
+<meta name="description" content="Chitosan nanoparticles by ionic gelation: a learning path, schematic diagram, parameter panel, characterisation, calculators and release-model laboratory. Emerging / research-dependent evidence.">
+<meta name="theme-color" content="#1F2E2C">
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/icons/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PHARMA 3D">
+<meta name="mobile-web-app-capable" content="yes">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/modules.css">
+<link rel="stylesheet" href="css/phase4.css">
+</head>
+<body>
+
+<div data-include="header"></div>
+<div data-include="mobile-nav"></div>
+<div data-include="search-modal"></div>
+<div data-include="a11y-drawer"></div>
+
+<main id="main-content">
+  <div class="breadcrumb-bar">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span aria-hidden="true">/</span>
+      <a href="explore.html">Explore</a><span aria-hidden="true">/</span>
+      <span aria-current="page">Chitosan</span>
+    </nav>
+  </div>
+
+  <div class="container p4-root">
+
+    <header class="p4-head">
+      <span class="section-eyebrow">Pharmaceutics · Nanotechnology</span>
+      <h1>Chitosan nanoparticles</h1>
+      <p class="lead">A guided path through how a natural-polymer-derived material can be formed into crosslinked nanoparticles by ionic gelation, how drug can associate with it, how the result is characterised, and how release data are modelled. Everything here is conceptual and educational.</p>
+      <div class="p4-meta">
+        <span class="badge badge-emerging">EVIDENCE TIER: EMERGING / RESEARCH-DEPENDENT</span>
+        <span class="p4-label dash">NOT A FORMULATION RECIPE</span>
+      </div>
+      <p class="mod-limit" role="note"><strong>Read this first.</strong> Chitosan is a family of materials, not one substance. Its behaviour depends on source, molecular weight, degree of deacetylation, purity and the exact preparation conditions. Findings from one study do not transfer automatically to another. No statement on this page should be read as a universal rule, a dosing statement or a claim that any product works clinically.</p>
+    </header>
+
+    <!-- ============ LEARNING PATH ============ -->
+    <nav class="p4-path" aria-label="Learning path: chitosan nanoparticles">
+      <div class="p4-path-track" id="pathTrack" role="tablist" aria-label="Seven stages"></div>
+      <div class="p4-path-meta">
+        <div class="progress-bar" aria-hidden="true"><div class="progress-bar-fill" id="pathFill" style="width:14%"></div></div>
+        <span class="txt" id="pathTxt" role="status" aria-live="polite">Stage 1 of 7</span>
+      </div>
+    </nav>
+
+    <div id="stagePanels">
+
+      <!-- 1 CHITOSAN -->
+      <section class="p4-stagepanel" id="stage-chitosan" role="tabpanel" aria-labelledby="st-chitosan">
+        <div class="p4-sec" style="margin-top:var(--space-6)">
+          <h2>1 · Chitosan</h2>
+          <p class="sub">The starting material.</p>
+          <div class="whwl">
+            <div class="cell"><h4>What</h4><p>Chitosan is a linear polysaccharide obtained by partially deacetylating chitin, a structural polymer found in crustacean shells and some fungi. It is a copolymer of glucosamine and N-acetylglucosamine units. The fraction of glucosamine units is described by the degree of deacetylation (DD).</p></div>
+            <div class="cell"><h4>How</h4><p>Free amino groups on glucosamine units can accept a proton in mildly acidic solution, giving the polymer a positive charge and letting it dissolve. At higher pH these groups lose that charge and the polymer becomes much less soluble.</p></div>
+            <div class="cell"><h4>Why it matters</h4><p>The positive charge in acid is what makes electrostatic crosslinking with negatively charged species possible. Chitosan is also studied for biocompatibility and biodegradability, although these properties depend on the grade and have to be tested for each material.</p></div>
+            <div class="cell lim"><h4>Limitations</h4><p>Chitosan varies between suppliers and batches. Molecular weight, DD and residual protein or metal content differ. It is soluble only in acidic conditions, which limits some uses. Regulatory status and suitability depend on grade and intended route.</p></div>
+          </div>
+          <div class="p4-nav-row"><span></span><button class="btn btn-primary" data-go="ionic">Next: Ionic gelation →</button></div>
+        </div>
+      </section>
+
+      <!-- 2 IONIC GELATION -->
+      <section class="p4-stagepanel" id="stage-ionic" role="tabpanel" aria-labelledby="st-ionic" hidden>
+        <div class="p4-sec" style="margin-top:var(--space-6)">
+          <h2>2 · Ionic gelation</h2>
+          <p class="sub">A sequence of five conceptual steps. Tap a step to read it.</p>
+          <div class="flow" id="ionicFlow" role="group" aria-label="Ionic gelation sequence"></div>
+          <div class="p4-card" id="ionicDetail" style="margin-top:var(--space-3)" aria-live="polite"></div>
+          <div class="p4-nav-row"><button class="btn btn-secondary" data-go="chitosan">← Chitosan</button><button class="btn btn-primary" data-go="nano">Next: Nanoparticle formation →</button></div>
+        </div>
+      </section>
+
+      <!-- 3 NANOPARTICLE FORMATION + SVG -->
+      <section class="p4-stagepanel" id="stage-nano" role="tabpanel" aria-labelledby="st-nano" hidden>
+        <div class="p4-sec" style="margin-top:var(--space-6)">
+          <h2>3 · Nanoparticle formation</h2>
+          <p class="sub">A flat schematic cutaway. Tap a labelled part to read what it represents.</p>
+          <div class="p4-fig">
+            <div>
+              <svg class="p4-svg" id="nanoSvg" viewBox="0 0 520 440" role="img" aria-labelledby="nanoT nanoD" focusable="false">
+                <title id="nanoT">Schematic cutaway of a chitosan nanoparticle</title>
+                <desc id="nanoD">A circle representing a nanoparticle with a section removed. Inside are curved polymer chains joined by short crosslink bars, small round drug molecules among the chains, and a surrounding aqueous environment with small ions.</desc>
+                <rect x="0" y="0" width="520" height="440" fill="#E9F7F2" rx="14"/>
+                <!-- environment dots (ions) -->
+                <g fill="#63C6A7" opacity=".55" id="envDots"></g>
+                <!-- particle body -->
+                <circle cx="260" cy="210" r="150" fill="#BFE8D6" stroke="#1F2E2C" stroke-width="3"/>
+                <!-- cutaway wedge (interior) -->
+                <path d="M260 210 L 392 134 A 152 152 0 0 1 392 286 Z" fill="#E9F7F2" stroke="#1F2E2C" stroke-width="2.5" stroke-dasharray="7 5"/>
+                <!-- polymer chains -->
+                <g fill="none" stroke="#2F7E6A" stroke-width="3.2" stroke-linecap="round" id="chains">
+                  <path d="M150 170 C 185 140, 215 200, 250 165 S 300 130, 330 160"/>
+                  <path d="M138 215 C 175 190, 200 250, 245 220 S 290 190, 325 225"/>
+                  <path d="M150 262 C 185 235, 220 290, 258 262 S 305 240, 335 268"/>
+                  <path d="M190 118 C 210 150, 190 190, 215 225 S 205 275, 225 308"/>
+                  <path d="M290 100 C 275 140, 300 175, 285 215 S 300 270, 288 318"/>
+                </g>
+                <!-- crosslinks -->
+                <g stroke="#1F2E2C" stroke-width="3.4" stroke-linecap="round" id="xlinks">
+                  <line x1="200" y1="176" x2="196" y2="204"/>
+                  <line x1="246" y1="168" x2="248" y2="216"/>
+                  <line x1="282" y1="196" x2="288" y2="226"/>
+                  <line x1="214" y1="240" x2="216" y2="266"/>
+                  <line x1="262" y1="258" x2="258" y2="284"/>
+                  <line x1="300" y1="148" x2="292" y2="178"/>
+                </g>
+                <g fill="#1F2E2C" id="xdots">
+                  <circle cx="200" cy="176" r="4"/><circle cx="196" cy="204" r="4"/><circle cx="246" cy="168" r="4"/><circle cx="248" cy="216" r="4"/>
+                  <circle cx="282" cy="196" r="4"/><circle cx="288" cy="226" r="4"/><circle cx="214" cy="240" r="4"/><circle cx="216" cy="266" r="4"/>
+                  <circle cx="262" cy="258" r="4"/><circle cx="258" cy="284" r="4"/><circle cx="300" cy="148" r="4"/><circle cx="292" cy="178" r="4"/>
+                </g>
+                <!-- drug molecules -->
+                <g fill="#63C6A7" stroke="#1F2E2C" stroke-width="2" id="drugs">
+                  <circle cx="176" cy="196" r="8"/><circle cx="232" cy="196" r="8"/><circle cx="270" cy="240" r="8"/>
+                  <circle cx="176" cy="290" r="8"/><circle cx="238" cy="130" r="8"/><circle cx="312" cy="200" r="8"/>
+                  <circle cx="330" cy="240" r="8"/><circle cx="318" cy="290" r="8"/>
+                </g>
+                <!-- callout hit-targets -->
+                <g id="hits">
+                  <g class="hit" tabindex="0" role="button" data-part="polymer" aria-label="Polymer network"><rect x="20" y="62" width="112" height="44" rx="10" fill="#fff" stroke="#1F2E2C" stroke-width="2"/><text class="lbl" x="76" y="89" text-anchor="middle">Polymer network</text><line x1="132" y1="84" x2="170" y2="150" stroke="#1F2E2C" stroke-width="1.6"/></g>
+                  <g class="hit" tabindex="0" role="button" data-part="xlink" aria-label="Crosslinking concept"><rect x="20" y="332" width="112" height="44" rx="10" fill="#fff" stroke="#1F2E2C" stroke-width="2"/><text class="lbl" x="76" y="359" text-anchor="middle">Crosslinking</text><line x1="132" y1="346" x2="210" y2="272" stroke="#1F2E2C" stroke-width="1.6"/></g>
+                  <g class="hit" tabindex="0" role="button" data-part="drug" aria-label="Schematic drug molecules"><rect x="388" y="332" width="112" height="44" rx="10" fill="#fff" stroke="#1F2E2C" stroke-width="2"/><text class="lbl" x="444" y="359" text-anchor="middle">Drug molecules</text><line x1="388" y1="346" x2="332" y2="294" stroke="#1F2E2C" stroke-width="1.6"/></g>
+                  <g class="hit" tabindex="0" role="button" data-part="env" aria-label="Surrounding environment"><rect x="388" y="24" width="112" height="44" rx="10" fill="#fff" stroke="#1F2E2C" stroke-width="2"/><text class="lbl" x="444" y="51" text-anchor="middle">Environment</text><line x1="444" y1="68" x2="420" y2="106" stroke="#1F2E2C" stroke-width="1.6"/></g>
+                  <g class="hit" tabindex="0" role="button" data-part="cut" aria-label="Cutaway"><rect x="388" y="180" width="112" height="44" rx="10" fill="#fff" stroke="#1F2E2C" stroke-width="2"/><text class="lbl" x="444" y="207" text-anchor="middle">Cutaway view</text><line x1="388" y1="202" x2="360" y2="210" stroke="#1F2E2C" stroke-width="1.6"/></g>
+                </g>
+                <text x="260" y="410" text-anchor="middle" class="lbl" style="font-size:12px">Not to scale · illustrative arrangement</text>
+              </svg>
+              <p class="p4-caption" id="nanoCaption" style="margin-top:var(--space-3)">Schematic representation — not a molecular-scale structural model</p>
+            </div>
+            <div>
+              <ul class="p4-legend" aria-label="Legend">
+                <li><span class="sw" style="background:#BFE8D6"></span><span><strong>Particle body</strong> — the crosslinked polymer-rich region.</span></li>
+                <li><span class="sw" style="background:#2F7E6A"></span><span><strong>Polymer chains</strong> — chitosan chains drawn as curves.</span></li>
+                <li><span class="sw" style="background:#1F2E2C"></span><span><strong>Crosslink bars</strong> — where polyanion links chains.</span></li>
+                <li><span class="sw" style="background:#63C6A7"></span><span><strong>Drug molecules</strong> — schematic dots only.</span></li>
+                <li><span class="sw" style="background:#E9F7F2"></span><span><strong>Environment</strong> — surrounding aqueous medium.</span></li>
+              </ul>
+              <div class="p4-card" id="partDetail" style="margin-top:var(--space-3)" aria-live="polite"><h3>Select a part</h3><p>Tap any label on the diagram to see what that part represents and what the diagram does not show.</p></div>
+              <details class="alt-text"><summary>Text alternative for the diagram</summary>
+                <ul class="bul"><li>A circle stands for one nanoparticle, with a wedge removed to show the inside.</li><li>Inside, curved lines are polymer chains. Short dark bars join neighbouring chains: these are crosslinks.</li><li>Small round dots between the chains are drug molecules.</li><li>Outside the circle, faint dots represent ions in the surrounding liquid.</li></ul>
+              </details>
+            </div>
+          </div>
+          <div class="whwl" style="margin-top:var(--space-5)">
+            <div class="cell"><h4>What</h4><p>Nanoparticle formation is the point at which dissolved chitosan and polyanion interact to give a dispersed particulate phase instead of a clear solution or a bulk gel.</p></div>
+            <div class="cell"><h4>How</h4><p>When the two solutions meet under stirring, local electrostatic interaction can create crosslinked domains that grow into particles. Whether particles, aggregates or a gel result depends on concentration, ratio, pH, mixing and other conditions.</p></div>
+            <div class="cell"><h4>Why</h4><p>A crosslinked network can hold drug within or on the polymer matrix and keeps the system dispersed as small particles rather than a bulk material.</p></div>
+            <div class="cell lim"><h4>Limitations</h4><p>Particles can aggregate, change with storage, or form a wide size distribution. The picture above is a teaching device; real particles are irregular and their internal structure is not settled by a diagram.</p></div>
+          </div>
+          <div class="p4-nav-row"><button class="btn btn-secondary" data-go="ionic">← Ionic gelation</button><button class="btn btn-primary" data-go="loading">Next: Drug loading →</button></div>
+        </div>
+      </section>
+
+      <!-- 4 DRUG LOADING -->
+      <section class="p4-stagepanel" id="stage-loading" role="tabpanel" aria-labelledby="st-loading" hidden>
+        <div class="p4-sec" style="margin-top:var(--space-6)">
+          <h2>4 · Drug loading</h2>
+          <p class="sub">Conceptual association of drug with the polymer network, then two functional calculators.</p>
+          <div class="whwl">
+            <div class="cell"><h4>What</h4><p>Drug loading describes how drug becomes associated with the particles. Drug can be entrapped within the network, adsorbed at the surface, or interact with polymer groups. Which of these dominates is a research question for each drug and each preparation.</p></div>
+            <div class="cell"><h4>How</h4><p>In many reports the drug is dissolved in one of the solutions before mixing, so it is present as particles form. Charge, solubility and size of the drug influence how much associates.</p></div>
+            <div class="cell"><h4>Why</h4><p>Association with a particle can change how a drug is released and handled. Whether this improves any clinical outcome must be shown by appropriate studies, not assumed.</p></div>
+            <div class="cell lim"><h4>Limitations</h4><p>Some drug may sit on the surface and release quickly. Loading measured by an indirect method can hide losses. Highly water-soluble small molecules are often hard to retain.</p></div>
+          </div>
+
+          <div class="p4-grid c2" style="margin-top:var(--space-6)">
+            <div class="p4-calc" id="calcEE">
+              <span class="p4-label solid">USER CALCULATED</span>
+              <h3 style="margin-top:var(--space-2)">Encapsulation efficiency (EE%)</h3>
+              <div class="eq">EE% = [(Wtotal − Wfree) / Wtotal] × 100</div>
+              <div class="grid">
+                <div class="field"><label for="eeTot">Initial (total) drug, W<sub>total</sub> (mg)</label><input id="eeTot" type="number" inputmode="decimal" min="0" step="any" placeholder="e.g. 10"></div>
+                <div class="field"><label for="eeFree">Free / unencapsulated drug, W<sub>free</sub> (mg)</label><input id="eeFree" type="number" inputmode="decimal" min="0" step="any" placeholder="e.g. 3.5"></div>
+              </div>
+              <div class="calc-actions" style="display:flex;gap:var(--space-2);flex-wrap:wrap;margin-top:var(--space-4)">
+                <button class="btn btn-primary" id="eeGo" type="button">Calculate EE%</button>
+                <button class="btn btn-secondary" id="eeEx" type="button">Load ILLUSTRATIVE example</button>
+              </div>
+              <div class="p4-err" id="eeErr" role="alert" hidden></div>
+              <div class="p4-out" id="eeOut" hidden aria-live="polite"></div>
+              <dl class="defs">
+                <dt>W<sub>total</sub></dt><dd>Total amount of drug initially added to the preparation.</dd>
+                <dt>W<sub>free</sub></dt><dd>Amount of drug measured in the supernatant after separating the particles (unencapsulated, or not associated with the particles).</dd>
+                <dt>EE%</dt><dd>Percentage of the initial drug that is associated with the particles, by this indirect method.</dd>
+              </dl>
+              <p class="p4-caption" style="margin-top:var(--space-3)">Indirect method: assumes all drug missing from the supernatant is associated with the particles and that the assay is accurate. Drug degraded or lost elsewhere would be counted as encapsulated.</p>
+            </div>
+
+            <div class="p4-calc" id="calcDL">
+              <span class="p4-label solid">USER CALCULATED</span>
+              <h3 style="margin-top:var(--space-2)">Drug loading (DL%)</h3>
+              <div class="eq">DL% = [(Wtotal − Wfree) / Wnp] × 100</div>
+              <div class="grid">
+                <div class="field"><label for="dlTot">Initial (total) drug, W<sub>total</sub> (mg)</label><input id="dlTot" type="number" inputmode="decimal" min="0" step="any" placeholder="e.g. 10"></div>
+                <div class="field"><label for="dlFree">Free drug, W<sub>free</sub> (mg)</label><input id="dlFree" type="number" inputmode="decimal" min="0" step="any" placeholder="e.g. 3.5"></div>
+                <div class="field" style="grid-column:1/-1"><label for="dlNp">Total nanoparticle mass, W<sub>np</sub> (mg)</label><input id="dlNp" type="number" inputmode="decimal" min="0" step="any" placeholder="e.g. 60"></div>
+              </div>
+              <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;margin-top:var(--space-4)">
+                <button class="btn btn-primary" id="dlGo" type="button">Calculate DL%</button>
+                <button class="btn btn-secondary" id="dlEx" type="button">Load ILLUSTRATIVE example</button>
+              </div>
+              <div class="p4-err" id="dlErr" role="alert" hidden></div>
+              <div class="p4-out" id="dlOut" hidden aria-live="polite"></div>
+              <dl class="defs">
+                <dt>W<sub>np</sub></dt><dd>Mass of the recovered nanoparticles (polymer, crosslinker and associated drug), usually after drying.</dd>
+                <dt>DL%</dt><dd>Mass of associated drug as a percentage of total particle mass. Different papers define DL differently, so check the definition before comparing values.</dd>
+              </dl>
+              <p class="p4-caption" style="margin-top:var(--space-3)">Definition used here: drug associated per total particle mass. Some sources divide by polymer mass only.</p>
+            </div>
+          </div>
+          <div class="p4-nav-row"><button class="btn btn-secondary" data-go="nano">← Nanoparticle formation</button><button class="btn btn-primary" data-go="char">Next: Characterisation →</button></div>
+        </div>
+      </section>
+
+      <!-- 5 CHARACTERISATION -->
+      <section class="p4-stagepanel" id="stage-char" role="tabpanel" aria-labelledby="st-char" hidden>
+        <div class="p4-sec" style="margin-top:var(--space-6)">
+          <h2>5 · Characterisation</h2>
+          <p class="sub">Nine common measurements. Each answers a specific question and has its own limits. No single test proves a formulation works.</p>
+          <div class="char-grid" id="charGrid"></div>
+          <div class="p4-nav-row"><button class="btn btn-secondary" data-go="loading">← Drug loading</button><button class="btn btn-primary" data-go="release">Next: Drug release →</button></div>
+        </div>
+      </section>
+
+      <!-- 6 RELEASE -->
+      <section class="p4-stagepanel" id="stage-release" role="tabpanel" aria-labelledby="st-release" hidden>
+        <div class="p4-sec" style="margin-top:var(--space-6)">
+          <h2>6 · Drug release</h2>
+          <p class="sub">Release-model laboratory. Four common models, each drawn from its own equation.</p>
+          <div class="p4-banner" role="note" style="margin-bottom:var(--space-4)">Mathematical curve fit alone does not prove release mechanism.</div>
+          <span class="p4-label dash" style="margin-bottom:var(--space-3)">ILLUSTRATIVE — COMPUTED FROM THE DISPLAYED MODEL</span>
+          <div class="model-tabs" id="relTabs" role="tablist" aria-label="Release models" style="margin-top:var(--space-3)"></div>
+          <div id="relPanels"></div>
+          <div class="p4-nav-row"><button class="btn btn-secondary" data-go="char">← Characterisation</button><button class="btn btn-primary" data-go="app">Next: Potential application →</button></div>
+        </div>
+      </section>
+
+      <!-- 7 APPLICATION -->
+      <section class="p4-stagepanel" id="stage-app" role="tabpanel" aria-labelledby="st-app" hidden>
+        <div class="p4-sec" style="margin-top:var(--space-6)">
+          <h2>7 · Potential application</h2>
+          <p class="sub">Where researchers have proposed using chitosan-based particles, and how to read those proposals.</p>
+          <div class="whwl">
+            <div class="cell"><h4>What</h4><p>Chitosan nanoparticles have been studied as carriers in research areas such as mucosal delivery, ocular and nasal routes, and delivery of poorly permeable molecules. Most of this is preclinical.</p></div>
+            <div class="cell"><h4>How</h4><p>The positive surface charge may promote interaction with negatively charged mucus and cell membranes, and chitosan has been reported to influence epithelial permeability in some experimental systems.</p></div>
+            <div class="cell"><h4>Why</h4><p>These properties are the reason for research interest. Interest is not evidence of benefit for a given patient or drug.</p></div>
+            <div class="cell lim"><h4>Limitations</h4><p>Results in cell cultures and animals often do not carry over to people. Scale-up, sterility, stability, batch consistency and regulatory review remain major hurdles. Application claims must be read against study design and the exact material used.</p></div>
+          </div>
+          <div class="p4-nav-row"><button class="btn btn-secondary" data-go="release">← Drug release</button><button class="btn btn-secondary" data-go="chitosan">Back to start</button></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ PARAMETER PANEL ============ -->
+    <section class="p4-sec" id="parameters" aria-labelledby="h-params">
+      <h2 id="h-params">Interactive parameter panel</h2>
+      <p class="sub">Choose a parameter, move its slider, and read: parameter → possible effect → scientific reasoning → limitations. These are tendencies reported in the literature, not universal rules.</p>
+      <div class="param-grid">
+        <div class="param-controls" id="paramCtl"></div>
+        <div class="param-out" id="paramOut" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ============ CHARACTERISATION NOTE ============ -->
+    <!-- ============ COMPARISON ============ -->
+    <section class="p4-sec" id="compare" aria-labelledby="h-cmp">
+      <h2 id="h-cmp">Conceptual comparison of delivery systems</h2>
+      <p class="sub">Six systems, described side by side by what they are and where they tend to be studied. This table does not rank them. Which system is suitable depends on the drug, the route, the target and the evidence for that specific product.</p>
+      <div class="cmp-wrap" tabindex="0" role="region" aria-label="Comparison table (scrolls horizontally)">
+        <table class="cmp" id="cmpTbl"></table>
+      </div>
+      <p class="p4-caption" style="margin-top:var(--space-3)">No universal ranking: each system has strengths and weaknesses that depend on the application.</p>
+    </section>
+
+    <section class="p4-sec" aria-labelledby="h-ev">
+      <h2 id="h-ev">Evidence and limits</h2>
+      <div class="p4-card">
+        <p><span class="badge badge-emerging">EMERGING / RESEARCH-DEPENDENT</span></p>
+        <p style="margin-top:var(--space-3)">General principles of ionic gelation and the characterisation methods are well described in the pharmaceutics literature. Performance of any specific chitosan nanoparticle system, and any claim about its behaviour in the body, is research-dependent and must be verified against the primary literature for that system. This page gives no formulation recipe, no dose and no clinical claim.</p>
+        <p>Content should be reviewed by a qualified pharmaceutics specialist before public release.</p>
+      </div>
+    </section>
+
+    <nav class="mod-pn" aria-label="Related modules">
+      <a class="prev" href="formulation.html"><span class="dir">← Related</span><span class="nm">Formulation</span></a>
+      <a class="next" href="lab.html"><span class="dir">Related →</span><span class="nm">Pharmacokinetic Lab</span></a>
+    </nav>
+  </div>
+</main>
+
+<div data-include="footer"></div>
+<div data-include="bottom-nav"></div>
+
+<script src="js/paths.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/search-index.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/app.js"></script>
+<script src="js/p4-shared.js"></script>
+<script src="js/chitosan.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" defer></script>
+<script src="js/search.js" defer></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => { navigator.serviceWorker.register('service-worker.js').then((reg) => { if (window.pharma3dWatchForUpdates) window.pharma3dWatchForUpdates(reg); }).catch(() => {}); });
+  }
+</script>
+</body>
+</html>

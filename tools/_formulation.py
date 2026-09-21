@@ -1,0 +1,21 @@
+import json, os
+ROOT=os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+R=lambda s,t,p:{"source":s,"type":t,"purpose":p,"verify":"Yes. Confirm the current edition, version and exact entry from the source before citing."}
+layers=[
+ dict(id="api",name="Active pharmaceutical ingredient (API)",role="The component that produces the therapeutic effect.",why="It is the reason the tablet exists. Its dose, solubility, stability and particle properties shape every other choice.",examples="Depends on the product."),
+ dict(id="diluent",name="Diluent (filler)",role="Adds bulk so a very small dose can be made into a tablet that is practical to handle.",why="Many drugs are needed in milligram amounts, which is too little to compress on its own.",examples="Lactose, microcrystalline cellulose, starch, dibasic calcium phosphate."),
+ dict(id="binder",name="Binder",role="Holds particles together so the compressed tablet has mechanical strength.",why="Without enough binder, tablets can crumble or cap.",examples="Povidone, hydroxypropyl methylcellulose, starch paste, pregelatinised starch."),
+ dict(id="disintegrant",name="Disintegrant",role="Helps the tablet break apart in fluid so the drug can dissolve.",why="A tablet that does not break up may release drug too slowly.",examples="Croscarmellose sodium, sodium starch glycolate, crospovidone."),
+ dict(id="lubricant",name="Lubricant (and glidant)",role="Reduces friction between tablet and die during ejection; a glidant improves powder flow.",why="Prevents sticking and helps consistent filling, though too much can weaken tablets and slow dissolution.",examples="Magnesium stearate, stearic acid; colloidal silicon dioxide as a glidant."),
+ dict(id="coating",name="Coating (optional)",role="A thin film for appearance, taste masking, protection, or to control where and when the drug is released.",why="It can protect the drug from acid, mask a bad taste or ease swallowing.",examples="Film-forming polymers with plasticisers and colourants."),
+]
+systems=[
+ dict(id="ir",name="Immediate release",principle="Designed to disintegrate and release the drug soon after administration.",how="Uses disintegrants and soluble excipients so the tablet breaks up and the drug dissolves promptly.",good="Simple and widely used; effect is not intentionally delayed or prolonged.",limits="Plasma levels can rise and fall, and dosing may need to be more frequent for drugs with short half-lives.",examples="Many standard tablets and capsules."),
+ dict(id="sr",name="Sustained (extended) release",principle="Designed to release the drug slowly over an extended period.",how="Uses a matrix or a rate-controlling coating that limits the release rate, such as swellable polymer matrices or coated pellets.",good="Can reduce dosing frequency and smooth fluctuation in plasma levels for suitable drugs.",limits="Not suitable for every drug. Tablets must not be crushed or chewed unless the label allows it, because this can release the dose too quickly.",examples="Extended-release versions of selected drugs."),
+ dict(id="er",name="Enteric release (gastro-resistant)",principle="Designed to resist stomach acid and release the drug in the higher pH of the intestine.",how="Uses a coating polymer that stays intact at low pH and dissolves at higher pH.",good="Protects acid-labile drugs, and can protect the stomach from irritating drugs.",limits="Release timing depends on gastric emptying, which varies. Enteric-coated tablets should not be crushed.",examples="Some acid-labile drugs are formulated this way."),
+]
+json.dump({"meta":{"version":"1.0.0","evidence":"ESTABLISHED",
+ "note":"A simplified educational diagram. Real formulations differ; not every tablet contains every component, and excipient choice is specific to the product. It is not a formulation recipe.",
+ "references":[R("Standard pharmaceutics and industrial pharmacy textbook (edition per your course)","Textbook","Tablet excipients and release systems."),R("Handbook of pharmaceutical excipients (current edition)","Reference","Excipient functions and properties."),R("Pharmacopoeial general chapters on tablets and on dissolution (your jurisdiction)","Pharmacopoeia","Requirements for tablets and release.")]},
+ "layers":layers,"systems":systems},open(os.path.join(ROOT,"data","formulation.json"),"w"),indent=1,ensure_ascii=False)
+print("ok")

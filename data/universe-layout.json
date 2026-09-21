@@ -1,0 +1,117 @@
+{
+ "viewBox": [
+  1000,
+  760
+ ],
+ "nodeRadius": 46,
+ "pos": {
+  "pharmacognosy": {
+   "x": 233,
+   "y": 204
+  },
+  "medicinal-chemistry": {
+   "x": 113,
+   "y": 450
+  },
+  "drug-discovery": {
+   "x": 288,
+   "y": 442
+  },
+  "ai-in-pharmacy": {
+   "x": 190,
+   "y": 332
+  },
+  "pharmacology": {
+   "x": 361,
+   "y": 557
+  },
+  "pharmaceutical-biotechnology": {
+   "x": 235,
+   "y": 605
+  },
+  "pharmaceutics": {
+   "x": 345,
+   "y": 297
+  },
+  "biopharmaceutics": {
+   "x": 438,
+   "y": 684
+  },
+  "nanotechnology": {
+   "x": 515,
+   "y": 554
+  },
+  "pharmaceutical-analysis": {
+   "x": 491,
+   "y": 353
+  },
+  "industrial-pharmacy": {
+   "x": 467,
+   "y": 218
+  },
+  "pharmaceutical-microbiology": {
+   "x": 443,
+   "y": 84
+  },
+  "biostatistics": {
+   "x": 610,
+   "y": 413
+  },
+  "regulatory-science": {
+   "x": 593,
+   "y": 270
+  },
+  "pharmacovigilance": {
+   "x": 713,
+   "y": 505
+  },
+  "clinical-pharmacy": {
+   "x": 750,
+   "y": 635
+  },
+  "community-pharmacy": {
+   "x": 847,
+   "y": 474
+  },
+  "public-health": {
+   "x": 792,
+   "y": 270
+  }
+ },
+ "bend": {
+  "pharmacognosy|medicinal-chemistry": 0.3,
+  "pharmacognosy|drug-discovery": -0.07,
+  "pharmacognosy|pharmaceutical-analysis": -0.22,
+  "pharmaceutics|biopharmaceutics": -0.3,
+  "pharmaceutics|nanotechnology": 0.07,
+  "pharmaceutics|industrial-pharmacy": 0,
+  "pharmaceutics|pharmaceutical-analysis": -0.07,
+  "pharmacology|medicinal-chemistry": -0.07,
+  "pharmacology|clinical-pharmacy": 0.3,
+  "pharmacology|pharmacovigilance": -0.3,
+  "pharmacology|biopharmaceutics": 0,
+  "medicinal-chemistry|drug-discovery": 0.3,
+  "pharmaceutical-analysis|industrial-pharmacy": -0.22,
+  "pharmaceutical-analysis|regulatory-science": -0.14,
+  "pharmaceutical-analysis|nanotechnology": 0.07,
+  "clinical-pharmacy|pharmacovigilance": -0.3,
+  "clinical-pharmacy|community-pharmacy": -0.22,
+  "clinical-pharmacy|ai-in-pharmacy": 0.07,
+  "pharmacovigilance|regulatory-science": 0.14,
+  "pharmacovigilance|biostatistics": 0.22,
+  "pharmacovigilance|community-pharmacy": 0,
+  "pharmacovigilance|ai-in-pharmacy": -0.07,
+  "pharmaceutical-microbiology|industrial-pharmacy": 0.14,
+  "pharmaceutical-microbiology|pharmaceutical-biotechnology": 0.3,
+  "pharmaceutical-microbiology|public-health": 0.07,
+  "biopharmaceutics|nanotechnology": 0.14,
+  "biostatistics|regulatory-science": 0,
+  "biostatistics|drug-discovery": -0.22,
+  "pharmaceutical-biotechnology|nanotechnology": 0.22,
+  "pharmaceutical-biotechnology|drug-discovery": -0.14,
+  "drug-discovery|ai-in-pharmacy": 0,
+  "regulatory-science|industrial-pharmacy": 0.22,
+  "community-pharmacy|public-health": -0.3,
+  "public-health|regulatory-science": 0.22
+ }
+}

@@ -1,0 +1,148 @@
+/* =========================================================
+   PHARMA 3D — Homepage
+   ========================================================= */
+
+.hero{
+  padding-block: var(--space-10) var(--space-12);
+  text-align: center;
+}
+.hero-kicker{
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+  color: var(--accent);
+  letter-spacing: 0.02em;
+  margin-bottom: var(--space-4);
+}
+.hero h1{
+  max-width: 20ch;
+  margin-inline: auto;
+  margin-bottom: var(--space-5);
+}
+.hero p.lead{
+  max-width: 56ch;
+  margin-inline: auto;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  margin-bottom: var(--space-8);
+}
+.hero-actions{
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-10);
+}
+
+/* ---------- Hero illustration stage ---------- */
+.hero-stage{
+  position: relative;
+  max-width: 560px;
+  margin-inline: auto;
+  aspect-ratio: 1 / 1;
+}
+.hero-molecule{
+  position: absolute;
+  inset: 12%;
+}
+.hero-orbit-icon{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-strong);
+  transition: transform var(--dur-fast) var(--ease-standard), box-shadow var(--dur-fast) var(--ease-standard);
+}
+.hero-orbit-icon svg{ width: 28px; height: 28px; }
+.hero-orbit-icon:hover, .hero-orbit-icon:focus-visible{
+  transform: scale(1.1);
+  box-shadow: var(--shadow-md);
+  background: var(--accent-tint);
+}
+.hero-orbit-icon .icon-tip{
+  position: absolute;
+  bottom: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.65rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--text-muted);
+}
+
+/* Orbit positions — percentage based so it scales responsively */
+.orbit-1{ top: 2%;  left: 46%; }
+.orbit-2{ top: 16%; left: 82%; }
+.orbit-3{ top: 46%; left: 92%; }
+.orbit-4{ top: 76%; left: 82%; }
+.orbit-5{ top: 90%; left: 46%; }
+.orbit-6{ top: 76%; left: 10%; }
+.orbit-7{ top: 46%; left: 0%;  }
+.orbit-8{ top: 16%; left: 10%; }
+.orbit-9{ top: 46%; left: 46%; transform: translate(-50%,-50%); width: 46px; height: 46px; }
+
+@media (max-width: 480px){
+  .hero-orbit-icon{ width: 48px; height: 48px; }
+  .hero-orbit-icon svg{ width: 22px; height: 22px; }
+  .hero-orbit-icon .icon-tip{ display: none; }
+}
+
+/* Gentle float animation — decorative only, respects reduced motion + lite mode via base.css */
+.decorative-motion{
+  animation: float-y 5s ease-in-out infinite;
+}
+.orbit-2{ animation-delay: .3s; }
+.orbit-3{ animation-delay: .6s; }
+.orbit-4{ animation-delay: .9s; }
+.orbit-5{ animation-delay: 1.2s; }
+.orbit-6{ animation-delay: 1.5s; }
+.orbit-7{ animation-delay: 1.8s; }
+.orbit-8{ animation-delay: 2.1s; }
+@keyframes float-y{
+  0%, 100%{ transform: translateY(0); }
+  50%{ transform: translateY(-6px); }
+}
+.orbit-9.decorative-motion{ animation: none; } /* keep the aspirin core still */
+
+/* ---------- Journey / progress path section ---------- */
+.journey-section{
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.journey-path{
+  display: flex;
+  gap: var(--space-2);
+  overflow-x: auto;
+  padding-block: var(--space-4);
+  scrollbar-width: none;
+}
+.journey-path::-webkit-scrollbar{ display: none; }
+
+/* ---------- Icon grid (explore categories) ---------- */
+.explore-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+@media (min-width: 640px){
+  .explore-grid{ grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 960px){
+  .explore-grid{ grid-template-columns: repeat(5, 1fr); }
+}
+
+/* ---------- Feature strip ---------- */
+.feature-strip{
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px){
+  .feature-strip{ grid-template-columns: repeat(3, 1fr); }
+}

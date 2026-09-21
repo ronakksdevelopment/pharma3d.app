@@ -1,0 +1,439 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "note": "Single source of truth for all related-content sections. Nothing on any page hardcodes its related links. Node ids in chains are concept nodes; each concept maps to zero or more domain slugs below."
+  },
+  "chains": [
+    {
+      "id": "drug-to-ai",
+      "label": "Drug to AI chain",
+      "description": "How a drug connects to mechanism, formulation, analysis, safety, surveillance, clinical use and AI-supported tools.",
+      "nodes": [
+        "drug",
+        "mechanism",
+        "formulation",
+        "analysis",
+        "safety",
+        "pharmacovigilance",
+        "clinical-pharmacy",
+        "ai"
+      ]
+    },
+    {
+      "id": "chitosan-to-delivery",
+      "label": "Chitosan to drug delivery chain",
+      "description": "How a delivery-oriented material topic connects to formulation, nanoscale design, absorption science, characterisation and delivery.",
+      "nodes": [
+        "chitosan",
+        "pharmaceutics",
+        "nanotechnology",
+        "biopharmaceutics",
+        "pharmaceutical-analysis",
+        "drug-delivery"
+      ]
+    }
+  ],
+  "concepts": {
+    "drug": {
+      "label": "Drug",
+      "domains": [
+        "pharmacology",
+        "medicinal-chemistry",
+        "pharmacognosy",
+        "drug-discovery"
+      ]
+    },
+    "mechanism": {
+      "label": "Mechanism",
+      "domains": [
+        "pharmacology",
+        "medicinal-chemistry"
+      ]
+    },
+    "formulation": {
+      "label": "Formulation",
+      "domains": [
+        "pharmaceutics",
+        "industrial-pharmacy",
+        "biopharmaceutics"
+      ]
+    },
+    "analysis": {
+      "label": "Analysis",
+      "domains": [
+        "pharmaceutical-analysis"
+      ]
+    },
+    "safety": {
+      "label": "Safety",
+      "domains": [
+        "pharmacovigilance",
+        "pharmaceutical-microbiology",
+        "regulatory-science",
+        "biostatistics"
+      ]
+    },
+    "pharmacovigilance": {
+      "label": "Pharmacovigilance",
+      "domains": [
+        "pharmacovigilance"
+      ]
+    },
+    "clinical-pharmacy": {
+      "label": "Clinical pharmacy",
+      "domains": [
+        "clinical-pharmacy",
+        "community-pharmacy"
+      ]
+    },
+    "ai": {
+      "label": "AI",
+      "domains": [
+        "ai-in-pharmacy"
+      ]
+    },
+    "chitosan": {
+      "label": "Chitosan",
+      "domains": [
+        "pharmaceutics",
+        "nanotechnology"
+      ]
+    },
+    "pharmaceutics": {
+      "label": "Pharmaceutics",
+      "domains": [
+        "pharmaceutics"
+      ]
+    },
+    "nanotechnology": {
+      "label": "Nanotechnology",
+      "domains": [
+        "nanotechnology"
+      ]
+    },
+    "biopharmaceutics": {
+      "label": "Biopharmaceutics",
+      "domains": [
+        "biopharmaceutics"
+      ]
+    },
+    "pharmaceutical-analysis": {
+      "label": "Pharmaceutical analysis",
+      "domains": [
+        "pharmaceutical-analysis"
+      ]
+    },
+    "drug-delivery": {
+      "label": "Drug delivery",
+      "domains": [
+        "pharmaceutics",
+        "biopharmaceutics",
+        "nanotechnology",
+        "industrial-pharmacy"
+      ]
+    }
+  },
+  "edges": [
+    {
+      "a": "pharmacognosy",
+      "b": "medicinal-chemistry",
+      "why": "Natural products supply structures that chemists study and modify."
+    },
+    {
+      "a": "pharmacognosy",
+      "b": "drug-discovery",
+      "why": "Natural sources are a long-standing starting point for leads."
+    },
+    {
+      "a": "pharmacognosy",
+      "b": "pharmaceutical-analysis",
+      "why": "Identity and quality of natural materials rely on analytical methods."
+    },
+    {
+      "a": "pharmaceutics",
+      "b": "biopharmaceutics",
+      "why": "Formulation choices change release and absorption."
+    },
+    {
+      "a": "pharmaceutics",
+      "b": "nanotechnology",
+      "why": "Nanocarriers are an advanced formulation strategy."
+    },
+    {
+      "a": "pharmaceutics",
+      "b": "industrial-pharmacy",
+      "why": "Formulations must be manufactured consistently at scale."
+    },
+    {
+      "a": "pharmaceutics",
+      "b": "pharmaceutical-analysis",
+      "why": "Formulations are tested for content, purity and stability."
+    },
+    {
+      "a": "pharmacology",
+      "b": "medicinal-chemistry",
+      "why": "Mechanism guides structural optimisation."
+    },
+    {
+      "a": "pharmacology",
+      "b": "clinical-pharmacy",
+      "why": "Mechanism and kinetics inform individual patient therapy."
+    },
+    {
+      "a": "pharmacology",
+      "b": "pharmacovigilance",
+      "why": "Pharmacology explains adverse effects that surveillance detects."
+    },
+    {
+      "a": "pharmacology",
+      "b": "biopharmaceutics",
+      "why": "Absorption and exposure link dosage form to effect."
+    },
+    {
+      "a": "medicinal-chemistry",
+      "b": "drug-discovery",
+      "why": "Lead optimisation is central to discovery."
+    },
+    {
+      "a": "pharmaceutical-analysis",
+      "b": "industrial-pharmacy",
+      "why": "Quality control tests every manufactured batch."
+    },
+    {
+      "a": "pharmaceutical-analysis",
+      "b": "regulatory-science",
+      "why": "Validated methods support regulatory expectations."
+    },
+    {
+      "a": "pharmaceutical-analysis",
+      "b": "nanotechnology",
+      "why": "Nanoformulations require careful characterisation."
+    },
+    {
+      "a": "clinical-pharmacy",
+      "b": "pharmacovigilance",
+      "why": "Clinical pharmacists detect and report adverse events."
+    },
+    {
+      "a": "clinical-pharmacy",
+      "b": "community-pharmacy",
+      "why": "Both deliver medicines expertise to patients in different settings."
+    },
+    {
+      "a": "clinical-pharmacy",
+      "b": "ai-in-pharmacy",
+      "why": "Decision-support tools are being explored for clinical use."
+    },
+    {
+      "a": "pharmacovigilance",
+      "b": "regulatory-science",
+      "why": "Safety findings feed regulatory action."
+    },
+    {
+      "a": "pharmacovigilance",
+      "b": "biostatistics",
+      "why": "Signal detection uses statistical methods."
+    },
+    {
+      "a": "pharmacovigilance",
+      "b": "community-pharmacy",
+      "why": "Community pharmacists are a frontline source of reports."
+    },
+    {
+      "a": "pharmacovigilance",
+      "b": "ai-in-pharmacy",
+      "why": "Machine learning is being explored for safety data analysis."
+    },
+    {
+      "a": "pharmaceutical-microbiology",
+      "b": "industrial-pharmacy",
+      "why": "Sterile and microbial quality control in manufacturing."
+    },
+    {
+      "a": "pharmaceutical-microbiology",
+      "b": "pharmaceutical-biotechnology",
+      "why": "Biologics manufacture depends on microbial and cell culture control."
+    },
+    {
+      "a": "pharmaceutical-microbiology",
+      "b": "public-health",
+      "why": "Infection control and antimicrobial stewardship."
+    },
+    {
+      "a": "biopharmaceutics",
+      "b": "nanotechnology",
+      "why": "Nanocarriers alter absorption and distribution."
+    },
+    {
+      "a": "biostatistics",
+      "b": "regulatory-science",
+      "why": "Statistical evidence underpins regulatory decisions."
+    },
+    {
+      "a": "biostatistics",
+      "b": "drug-discovery",
+      "why": "Experiment design and data analysis in early research."
+    },
+    {
+      "a": "pharmaceutical-biotechnology",
+      "b": "nanotechnology",
+      "why": "Biologics and nucleic acid medicines often use advanced delivery systems."
+    },
+    {
+      "a": "pharmaceutical-biotechnology",
+      "b": "drug-discovery",
+      "why": "Biologic targets and modalities are part of modern discovery."
+    },
+    {
+      "a": "drug-discovery",
+      "b": "ai-in-pharmacy",
+      "why": "Computational methods are applied to screening and design."
+    },
+    {
+      "a": "regulatory-science",
+      "b": "industrial-pharmacy",
+      "why": "Manufacturing must comply with quality standards."
+    },
+    {
+      "a": "community-pharmacy",
+      "b": "public-health",
+      "why": "Community pharmacies deliver prevention and health promotion."
+    },
+    {
+      "a": "public-health",
+      "b": "regulatory-science",
+      "why": "Population health depends on assured medicine quality and access."
+    }
+  ],
+  "modules": {
+    "note": "Site modules that exist at this point in the project. Future modules are listed with status 'planned' and are NOT linked as live pages.",
+    "items": [
+      {
+        "id": "universe",
+        "label": "Pharmacy Universe",
+        "url": "universe.html",
+        "status": "live",
+        "domains": [
+          "*"
+        ]
+      },
+      {
+        "id": "explore",
+        "label": "Explore hub",
+        "url": "explore.html",
+        "status": "live",
+        "domains": [
+          "*"
+        ]
+      },
+      {
+        "id": "search",
+        "label": "Site search",
+        "url": "search.html",
+        "status": "live",
+        "domains": [
+          "*"
+        ]
+      },
+      {
+        "id": "drug-explorer",
+        "label": "Drug Explorer",
+        "url": "drug.html",
+        "status": "live",
+        "domains": [
+          "pharmacology",
+          "medicinal-chemistry",
+          "drug-discovery"
+        ]
+      },
+      {
+        "id": "plant-explorer",
+        "label": "Plant Explorer",
+        "url": "plants.html",
+        "status": "live",
+        "domains": [
+          "pharmacognosy"
+        ]
+      },
+      {
+        "id": "instruments",
+        "label": "Instruments",
+        "url": "instruments.html",
+        "status": "live",
+        "domains": [
+          "pharmaceutical-analysis"
+        ]
+      },
+      {
+        "id": "manufacturing",
+        "label": "Manufacturing",
+        "url": "manufacturing.html",
+        "status": "live",
+        "domains": [
+          "industrial-pharmacy",
+          "pharmaceutics"
+        ]
+      },
+      {
+        "id": "formulation",
+        "label": "Formulation",
+        "url": "formulation.html",
+        "status": "live",
+        "domains": [
+          "pharmaceutics",
+          "biopharmaceutics",
+          "industrial-pharmacy"
+        ]
+      },
+      {
+        "id": "chitosan-lab",
+        "label": "Chitosan Nanoparticles",
+        "url": "chitosan.html",
+        "status": "live",
+        "domains": [
+          "pharmaceutics",
+          "biopharmaceutics",
+          "nanotechnology"
+        ]
+      },
+      {
+        "id": "ai-section",
+        "label": "AI in Pharmacy",
+        "url": "ai.html",
+        "status": "live",
+        "domains": [
+          "ai-in-pharmacy"
+        ]
+      },
+      {
+        "id": "learning-center",
+        "label": "Learning Center",
+        "url": "learn.html",
+        "status": "live",
+        "domains": [
+          "*"
+        ]
+      },
+      {
+        "id": "pk-lab",
+        "label": "Pharmacokinetic Lab",
+        "url": "lab.html",
+        "status": "live",
+        "domains": [
+          "pharmacology",
+          "biopharmaceutics",
+          "clinical-pharmacy"
+        ]
+      },
+      {
+        "id": "pharmacovigilance-module",
+        "label": "Pharmacovigilance",
+        "url": "pharmacovigilance.html",
+        "status": "live",
+        "domains": [
+          "pharmacovigilance"
+        ]
+      }
+    ]
+  }
+}

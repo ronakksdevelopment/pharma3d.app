@@ -1,0 +1,148 @@
+/* =========================================================
+   PHARMA 3D — Design Tokens
+   Color system: exactly these 5 colors, nothing else.
+   #E9F7F2  lightest mint (page background)
+   #BFE8D6  soft mint (surfaces, subtle fills)
+   #63C6A7  primary mint-green (accents, active states)
+   #2F7E6A  deep teal-green (primary actions, headings on light)
+   #1F2E2C  near-black green (text, high-contrast surfaces)
+   ========================================================= */
+
+:root{
+  /* ---- Brand palette (only these 5) ---- */
+  --c-50:  #E9F7F2;
+  --c-100: #BFE8D6;
+  --c-400: #63C6A7;
+  --c-600: #2F7E6A;
+  --c-900: #1F2E2C;
+
+  /* ---- Semantic roles (light theme, default) ---- */
+  --bg-page:        var(--c-50);
+  --bg-surface:     #FFFFFF;
+  --bg-surface-alt: var(--c-100);
+  --bg-inverse:     var(--c-900);
+
+  --text-primary:   var(--c-900);
+  --text-secondary: #3E524F; /* derived tint of c-900, still within family intent */
+  --text-on-accent: #FFFFFF;
+  --text-muted:     #5C726E;
+
+  --accent:         var(--c-600);
+  --accent-strong:  var(--c-900);
+  --accent-soft:    var(--c-400);
+  --accent-tint:    var(--c-100);
+
+  --border-subtle:  var(--c-100);
+  --border-strong:  var(--c-400);
+
+  --focus-ring:     var(--c-600);
+
+  /* ---- Elevation (flat design: soft, minimal, no heavy shadow) ---- */
+  --shadow-sm: 0 1px 2px rgba(31,46,44,0.06);
+  --shadow-md: 0 4px 12px rgba(31,46,44,0.08);
+  --shadow-lg: 0 8px 24px rgba(31,46,44,0.10);
+
+  /* ---- Radius ---- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* ---- Spacing scale ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* ---- Type ---- */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+
+  --fs-h1: clamp(2rem, 1.5rem + 2.2vw, 3.25rem);
+  --fs-h2: clamp(1.5rem, 1.2rem + 1.4vw, 2.25rem);
+  --fs-h3: clamp(1.2rem, 1.05rem + 0.7vw, 1.6rem);
+  --fs-h4: 1.15rem;
+  --fs-body: 1rem;
+  --fs-body-sm: 0.9rem;
+  --fs-caption: 0.8rem;
+
+  --lh-tight: 1.15;
+  --lh-heading: 1.25;
+  --lh-body: 1.6;
+
+  /* ---- Motion ---- */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 360ms;
+
+  /* ---- Layout ---- */
+  --header-h: 64px;
+  --bottom-nav-h: 64px;
+  --content-max: 1180px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+
+  --z-header: 100;
+  --z-bottomnav: 100;
+  --z-drawer: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+  --z-skip: 500;
+}
+
+/* ---- Dark theme override ----
+   Same 5 brand colors, roles re-mapped so contrast stays correct. */
+:root[data-theme="dark"]{
+  --bg-page:        var(--c-900);
+  --bg-surface:     #253937;
+  --bg-surface-alt: #2C433F;
+
+  --text-primary:   var(--c-50);
+  --text-secondary: var(--c-100);
+  --text-on-accent: #FFFFFF;
+  --text-muted:     #9FC2B9;
+
+  --accent:         var(--c-400);
+  --accent-strong:  var(--c-100);
+  --accent-soft:    var(--c-600);
+  --accent-tint:    #2C433F;
+
+  --border-subtle:  #33504C;
+  --border-strong:  var(--c-600);
+
+  --focus-ring:     var(--c-400);
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.28);
+  --shadow-md: 0 4px 14px rgba(0,0,0,0.32);
+  --shadow-lg: 0 10px 28px rgba(0,0,0,0.38);
+}
+
+/* Respect OS-level preference only when user hasn't explicitly chosen */
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]):not([data-theme="dark"]){
+    --bg-page:        var(--c-900);
+    --bg-surface:     #253937;
+    --bg-surface-alt: #2C433F;
+    --text-primary:   var(--c-50);
+    --text-secondary: var(--c-100);
+    --text-on-accent: #FFFFFF;
+    --text-muted:     #9FC2B9;
+    --accent:         var(--c-400);
+    --accent-strong:  var(--c-100);
+    --accent-soft:    var(--c-600);
+    --accent-tint:    #2C433F;
+    --border-subtle:  #33504C;
+    --border-strong:  var(--c-600);
+    --focus-ring:     var(--c-400);
+  }
+}

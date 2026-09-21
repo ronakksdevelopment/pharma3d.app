@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../" data-drug="atorvastatin">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atorvastatin — Drug Explorer — PHARMA 3D</title>
+<meta name="description" content="A statin used to lower blood cholesterol and reduce cardiovascular risk.">
+<meta name="theme-color" content="#1F2E2C">
+
+<link rel="manifest" href="../manifest.json">
+<link rel="icon" href="../assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../assets/icons/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PHARMA 3D">
+<meta name="mobile-web-app-capable" content="yes">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/universe.css">
+<link rel="stylesheet" href="../css/domain.css">
+<link rel="stylesheet" href="../css/search.css">
+<link rel="stylesheet" href="../css/modules.css">
+</head>
+<body>
+
+<div data-include="header"></div>
+<div data-include="mobile-nav"></div>
+<div data-include="search-modal"></div>
+<div data-include="a11y-drawer"></div>
+
+<main id="main-content">
+  <div class="breadcrumb-bar">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../explore.html">Explore</a>
+      <span aria-hidden="true">/</span>
+      <a href="../drug.html">Drug Explorer</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">Atorvastatin</span>
+    </nav>
+  </div>
+
+  <!-- Content is rendered by drug-explorer.js from data/drugs.json. -->
+  <div id="drug-root" class="container mod-root" aria-live="polite">
+    <noscript>
+      <section class="domain-section">
+        <h1>Atorvastatin — Drug Explorer</h1>
+        <p>A statin used to lower blood cholesterol and reduce cardiovascular risk.</p>
+        <p>This page renders its full content with JavaScript. <a href="../explore.html">Return to Explore</a>.</p>
+      </section>
+    </noscript>
+    <div class="state-block"><p>Loading…</p></div>
+  </div>
+</main>
+
+<div data-include="footer"></div>
+<div data-include="bottom-nav"></div>
+
+<script src="../js/paths.js"></script>
+<script src="../js/icons.js"></script>
+<script src="../js/search-index.js"></script>
+<script src="../js/partials.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/data-store.js"></script>
+<script src="../js/related.js"></script>
+<script src="../js/module-ui.js"></script>
+
+<script src="../js/drug-explorer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" defer></script>
+<script src="../js/search.js" defer></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('../service-worker.js').then((reg) => { if (window.pharma3dWatchForUpdates) window.pharma3dWatchForUpdates(reg); }).catch(() => {});
+    });
+  }
+</script>
+</body>
+</html>

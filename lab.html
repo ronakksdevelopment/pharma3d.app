@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pharmacokinetic Laboratory — PHARMA 3D</title>
+<meta name="description" content="Illustrative pharmacokinetic laboratory: one-compartment, oral (Bateman) and IV bolus models computing Cmax, Tmax, AUC, half-life, clearance, Vd and F.">
+<meta name="theme-color" content="#1F2E2C">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/icons/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PHARMA 3D">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/modules.css">
+<link rel="stylesheet" href="css/phase4.css">
+</head>
+<body>
+
+<div data-include="header"></div>
+<div data-include="mobile-nav"></div>
+<div data-include="search-modal"></div>
+<div data-include="a11y-drawer"></div>
+
+<main id="main-content">
+  <div class="breadcrumb-bar">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span aria-hidden="true">/</span>
+      <a href="explore.html">Explore</a><span aria-hidden="true">/</span>
+      <span aria-current="page">Pharmacokinetic Lab</span>
+    </nav>
+  </div>
+
+  <div class="container p4-root">
+    <header class="p4-head">
+      <span class="section-eyebrow">Pharmacology · Biopharmaceutics</span>
+      <h1>Pharmacokinetic laboratory</h1>
+      <p class="lead">Three classic models, computed live from equations you can read. Change a parameter, watch the curve and the derived values respond. The numbers here are for learning how the mathematics behaves.</p>
+      <div class="p4-meta">
+        <span class="badge badge-established">MODEL MATHEMATICS: ESTABLISHED</span>
+        <span class="p4-label dash">ILLUSTRATIVE — NOT PATIENT DATA</span>
+      </div>
+      <p class="mod-limit" role="note"><strong>Important.</strong> Every value on this page is computed from the model you see, using inputs you choose. The values are not real patient results, are not dosing advice, and must not be used to choose or adjust any medicine dose. Real pharmacokinetics varies between people and is affected by age, organ function, disease, interacting drugs and more.</p>
+    </header>
+
+    <section class="p4-sec" aria-labelledby="h-models">
+      <h2 id="h-models">Choose a model</h2>
+      <div class="model-tabs" id="pkTabs" role="tablist" aria-label="Pharmacokinetic models"></div>
+      <div id="pkPanels"></div>
+    </section>
+
+    <section class="p4-sec" aria-labelledby="h-defs">
+      <h2 id="h-defs">Definitions</h2>
+      <div class="p4-grid c2" id="defsGrid"></div>
+    </section>
+
+    <section class="p4-sec" aria-labelledby="h-lim">
+      <h2 id="h-lim">Limitations of these models</h2>
+      <div class="p4-card">
+        <ul class="bul">
+          <li>The one-compartment model treats the body as a single well-mixed volume. Many drugs distribute in ways that need two or more compartments.</li>
+          <li>Elimination is assumed first-order (rate proportional to concentration). Some drugs show saturable, non-linear elimination at higher concentrations.</li>
+          <li>Parameters are fixed here; in people they change over time and differ widely between individuals.</li>
+          <li>The Bateman function assumes first-order absorption and a single dose. Real absorption can have lag times, be erratic or be limited by dissolution.</li>
+          <li>AUC is computed here from a mathematical formula, and the table uses the trapezoidal rule. Real studies extrapolate from sampled points and carry measurement error.</li>
+        </ul>
+        <p style="margin-top:var(--space-3)">Content should be reviewed by a qualified pharmacokineticist before public release.</p>
+      </div>
+    </section>
+
+    <nav class="mod-pn" aria-label="Related modules">
+      <a class="prev" href="chitosan.html"><span class="dir">← Related</span><span class="nm">Chitosan nanoparticles</span></a>
+      <a class="next" href="pharmacovigilance.html"><span class="dir">Related →</span><span class="nm">Pharmacovigilance</span></a>
+    </nav>
+  </div>
+</main>
+
+<div data-include="footer"></div>
+<div data-include="bottom-nav"></div>
+
+<script src="js/paths.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/search-index.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/app.js"></script>
+<script src="js/p4-shared.js"></script>
+<script src="js/lab.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" defer></script>
+<script src="js/search.js" defer></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => { navigator.serviceWorker.register('service-worker.js').then((reg) => { if (window.pharma3dWatchForUpdates) window.pharma3dWatchForUpdates(reg); }).catch(() => {}); });
+  }
+</script>
+</body>
+</html>

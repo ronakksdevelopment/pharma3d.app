@@ -1,0 +1,1243 @@
+{
+ "meta": {
+  "version": "1.0.0",
+  "note": "General, textbook-level educational drug monographs. No patient-specific dosing is given. Always confirm against a current pharmacopoeia, formulary or the product label before any clinical or dispensing use.",
+  "structureVerification": "Molecular formula, molecular weight and SMILES are shown only where the structure was parsed and the formula was computed from it with RDKit and matched to the expected formula. Average molecular weight is computed from standard atomic weights. Otherwise the field shows DATA PENDING VERIFICATION.",
+  "topics": [
+   "class",
+   "uses",
+   "mechanism",
+   "dosage",
+   "pk",
+   "safety",
+   "interactions",
+   "monitoring",
+   "pharmaceutical",
+   "references"
+  ]
+ },
+ "drugs": [
+  {
+   "slug": "paracetamol",
+   "name": "Paracetamol",
+   "alsoKnownAs": "Acetaminophen",
+   "family": "Analgesic / antipyretic",
+   "evidence": "ESTABLISHED",
+   "summary": "A widely used analgesic and antipyretic with weak anti-inflammatory activity.",
+   "class": "Analgesic and antipyretic (para-aminophenol derivative). Not classed as an NSAID because its anti-inflammatory effect is weak.",
+   "uses": [
+    "Relief of mild to moderate pain.",
+    "Reduction of fever.",
+    "Often used as a first-line option where NSAIDs are unsuitable, subject to clinical judgement."
+   ],
+   "mechanism": [
+    "The exact mechanism is not fully settled.",
+    "Evidence points to inhibition of prostaglandin synthesis, mainly in the central nervous system, which fits its analgesic and antipyretic effects.",
+    "Its weak peripheral anti-inflammatory action is generally explained by low activity of the target enzyme in inflamed tissue, where peroxide levels are high."
+   ],
+   "dosageForms": [
+    "Tablets and caplets",
+    "Dispersible or effervescent tablets",
+    "Oral suspension and syrup",
+    "Suppositories",
+    "Intravenous infusion (hospital use)"
+   ],
+   "routes": [
+    "Oral",
+    "Rectal",
+    "Intravenous"
+   ],
+   "pk": {
+    "absorption": "Well absorbed after oral administration; the rate is influenced by gastric emptying.",
+    "distribution": "Widely distributed in body water; low plasma protein binding.",
+    "metabolism": "Mainly hepatic conjugation (glucuronidation and sulfation). A small fraction is oxidised to a reactive metabolite that is normally detoxified by glutathione.",
+    "excretion": "Metabolites are excreted mainly in urine.",
+    "halfLife": "Short. Values depend on dose, liver function and age; check a current reference."
+   },
+   "adverse": [
+    "Generally well tolerated at appropriate doses.",
+    "Overdose can cause serious liver injury. This is the key safety concern.",
+    "Rare hypersensitivity and skin reactions have been reported."
+   ],
+   "contraindications": [
+    "Known hypersensitivity to paracetamol or excipients."
+   ],
+   "precautions": [
+    "Liver disease, chronic alcohol use and malnutrition increase risk of liver injury.",
+    "Many combination products contain paracetamol, so unintentional duplication is a real hazard.",
+    "Adjustment is needed for low body weight, children and older adults; use a current dosing reference."
+   ],
+   "interactions": [
+    "Enzyme-inducing medicines can increase formation of the reactive metabolite.",
+    "Regular use may enhance the anticoagulant effect of warfarin; monitoring may be needed.",
+    "Check a current interactions source for the full list."
+   ],
+   "monitoring": [
+    "Liver function in long-term or high-risk use.",
+    "Total daily intake from all sources.",
+    "Signs of overdose need urgent medical attention even if the person feels well."
+   ],
+   "counselling": [
+    "Do not exceed the labelled maximum; check labels of other products for paracetamol.",
+    "Seek urgent help after any suspected overdose, even without symptoms.",
+    "Store medicines out of reach of children."
+   ],
+   "pharmaceutical": [
+    "Poorly compressible on its own, so tablet formulations typically use binders or granulation.",
+    "Bitter taste; taste-masking matters in liquids.",
+    "Available as many salt-free formulations; combination products are common."
+   ],
+   "storage": "Store in a cool, dry place in the original container, protected from moisture, per the product label.",
+   "references": [
+    {
+     "source": "Pharmacopoeial monograph for paracetamol (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity, purity and assay standards.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "National or hospital drug formulary / drug information reference",
+     "type": "Formulary",
+     "purpose": "Current indications, dosing bands and safety information.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmacology textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Mechanism and pharmacokinetic background.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ],
+   "structure": {
+    "status": "VERIFIED",
+    "formula": "C8H9NO2",
+    "mw": 151.16,
+    "smiles": "CC(=O)Nc1ccc(O)cc1",
+    "note": "achiral",
+    "method": "RDKit (SMILES parsed; formula computed from the structure and matched to the expected formula; average MW computed from standard atomic weights)"
+   }
+  },
+  {
+   "slug": "ibuprofen",
+   "name": "Ibuprofen",
+   "alsoKnownAs": "",
+   "family": "NSAID",
+   "evidence": "ESTABLISHED",
+   "summary": "A propionic acid non-steroidal anti-inflammatory drug (NSAID) with analgesic, antipyretic and anti-inflammatory effects.",
+   "class": "Non-steroidal anti-inflammatory drug (NSAID), arylpropionic acid derivative.",
+   "uses": [
+    "Relief of mild to moderate pain.",
+    "Reduction of fever.",
+    "Inflammatory musculoskeletal conditions.",
+    "Dysmenorrhoea."
+   ],
+   "mechanism": [
+    "Inhibits cyclooxygenase (COX-1 and COX-2), reducing prostaglandin synthesis.",
+    "Reduced prostaglandins explain the analgesic, antipyretic and anti-inflammatory effects.",
+    "COX-1 inhibition also reduces protective gastric prostaglandins and platelet thromboxane, which underlies several adverse effects."
+   ],
+   "dosageForms": [
+    "Tablets and film-coated tablets",
+    "Capsules (including liquid-filled)",
+    "Oral suspension",
+    "Topical gels",
+    "Intravenous form (hospital use)"
+   ],
+   "routes": [
+    "Oral",
+    "Topical",
+    "Intravenous"
+   ],
+   "pk": {
+    "absorption": "Rapidly absorbed orally; food can slow the rate.",
+    "distribution": "Highly bound to plasma proteins.",
+    "metabolism": "Extensive hepatic oxidation and conjugation to inactive metabolites.",
+    "excretion": "Metabolites are excreted mainly in urine.",
+    "halfLife": "Short; check a current reference."
+   },
+   "adverse": [
+    "Gastrointestinal irritation, dyspepsia, ulceration and bleeding.",
+    "Renal effects, including reduced kidney function and fluid retention.",
+    "Raised blood pressure in some patients.",
+    "Hypersensitivity, including bronchospasm in susceptible asthmatic patients.",
+    "Increased cardiovascular risk has been associated with NSAIDs, particularly at higher doses and with prolonged use."
+   ],
+   "contraindications": [
+    "Known hypersensitivity to ibuprofen or other NSAIDs, including NSAID-triggered asthma.",
+    "Active or history of recurrent peptic ulcer or gastrointestinal bleeding.",
+    "Severe heart failure, severe renal or hepatic impairment.",
+    "Late pregnancy (avoid unless directed by a prescriber)."
+   ],
+   "precautions": [
+    "Use the lowest effective dose for the shortest time.",
+    "Caution in older adults, asthma, hypertension, heart disease and reduced renal function.",
+    "Take with or after food if it upsets the stomach."
+   ],
+   "interactions": [
+    "Anticoagulants and antiplatelets: increased bleeding risk.",
+    "Other NSAIDs and corticosteroids: increased gastrointestinal risk.",
+    "ACE inhibitors, ARBs and diuretics: increased renal risk.",
+    "Can reduce renal clearance of lithium and methotrexate; check a current source."
+   ],
+   "monitoring": [
+    "Blood pressure, renal function and signs of gastrointestinal bleeding in longer-term use.",
+    "Symptoms of hypersensitivity."
+   ],
+   "counselling": [
+    "Take with food; use the lowest dose that works for the shortest time.",
+    "Avoid taking more than one NSAID at a time.",
+    "Stop and seek help for black stools, vomiting blood, swelling, or breathing difficulty."
+   ],
+   "pharmaceutical": [
+    "Poor aqueous solubility of the free acid; dissolution can limit absorption.",
+    "Available as salts and as liquid-fill capsules to improve dissolution.",
+    "Can cause local irritation, which influences coating and formulation choices."
+   ],
+   "storage": "Store below the temperature stated on the label, in a dry place, in the original container.",
+   "references": [
+    {
+     "source": "Pharmacopoeial monograph for ibuprofen (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity, purity and assay standards.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "National or hospital drug formulary",
+     "type": "Formulary",
+     "purpose": "Current indications, contraindications and safety information.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmacology textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "COX inhibition and NSAID adverse-effect background.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ],
+   "structure": {
+    "status": "VERIFIED",
+    "formula": "C13H18O2",
+    "mw": 206.28,
+    "smiles": "CC(C)Cc1ccc(cc1)C(C)C(=O)O",
+    "note": "one stereocentre; structure shown without stereochemistry (marketed as the racemate)",
+    "method": "RDKit (SMILES parsed; formula computed from the structure and matched to the expected formula; average MW computed from standard atomic weights)"
+   }
+  },
+  {
+   "slug": "aspirin",
+   "name": "Aspirin",
+   "alsoKnownAs": "Acetylsalicylic acid",
+   "family": "NSAID / antiplatelet",
+   "evidence": "ESTABLISHED",
+   "summary": "An acetylated salicylate with analgesic, antipyretic, anti-inflammatory and antiplatelet effects.",
+   "class": "Non-steroidal anti-inflammatory drug (salicylate) and antiplatelet agent.",
+   "uses": [
+    "Relief of mild to moderate pain and fever.",
+    "Antiplatelet use in selected cardiovascular indications, decided by a prescriber.",
+    "Inflammatory conditions at higher intake under medical direction."
+   ],
+   "mechanism": [
+    "Irreversibly acetylates cyclooxygenase (COX), blocking prostaglandin and thromboxane synthesis.",
+    "Platelets cannot make new enzyme, so the antiplatelet effect lasts for the life of the platelet.",
+    "This irreversible action distinguishes it from reversible NSAIDs such as ibuprofen."
+   ],
+   "dosageForms": [
+    "Tablets, including dispersible and effervescent",
+    "Enteric-coated tablets",
+    "Gastro-resistant and modified-release forms",
+    "Suppositories"
+   ],
+   "routes": [
+    "Oral",
+    "Rectal"
+   ],
+   "pk": {
+    "absorption": "Rapidly absorbed from the upper gastrointestinal tract.",
+    "distribution": "Widely distributed; salicylate is protein bound and binding is concentration dependent.",
+    "metabolism": "Rapidly hydrolysed to salicylic acid, then conjugated in the liver. Elimination becomes saturable at higher intakes.",
+    "excretion": "Renal, with urinary pH influencing excretion of salicylate.",
+    "halfLife": "Aspirin itself is very short; salicylate is longer and dose dependent. Check a current reference."
+   },
+   "adverse": [
+    "Gastrointestinal irritation, ulceration and bleeding.",
+    "Increased bleeding tendency.",
+    "Hypersensitivity and bronchospasm in susceptible patients.",
+    "Tinnitus and other salicylate toxicity signs at high exposure.",
+    "Reye's syndrome association in children and adolescents with viral illness."
+   ],
+   "contraindications": [
+    "Children and adolescents under 16 for analgesic or antipyretic use (Reye's syndrome risk), unless directed by a specialist.",
+    "Active peptic ulcer or bleeding disorders.",
+    "Known hypersensitivity to salicylates or NSAIDs.",
+    "Severe hepatic or renal impairment."
+   ],
+   "precautions": [
+    "Asthma, dyspepsia and older age raise risk.",
+    "Stop before surgery only on professional advice.",
+    "Avoid in late pregnancy unless directed by a prescriber."
+   ],
+   "interactions": [
+    "Anticoagulants and other antiplatelets: increased bleeding.",
+    "Other NSAIDs and corticosteroids: gastrointestinal risk.",
+    "Methotrexate: reduced clearance; check a current source.",
+    "Alcohol: added gastric irritation."
+   ],
+   "monitoring": [
+    "Signs of bleeding or gastrointestinal upset.",
+    "Salicylate toxicity signs in high or prolonged intake."
+   ],
+   "counselling": [
+    "Take with food or water; do not crush enteric-coated tablets.",
+    "Do not give to children or teenagers for fever or pain unless a doctor says so.",
+    "Tell healthcare staff you take aspirin before procedures."
+   ],
+   "pharmaceutical": [
+    "Hydrolyses in the presence of moisture to salicylic acid and acetic acid, so moisture control is essential and a vinegar-like smell signals degradation.",
+    "Enteric coating protects the stomach and can protect the drug from acid.",
+    "Incompatible with alkaline excipients that accelerate hydrolysis."
+   ],
+   "storage": "Store in a tightly closed container in a dry place, protected from moisture and heat.",
+   "references": [
+    {
+     "source": "Pharmacopoeial monograph for aspirin (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity, purity (free salicylic acid) and assay standards.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "National or hospital drug formulary",
+     "type": "Formulary",
+     "purpose": "Current indications and safety information.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmaceutics textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Hydrolytic stability of esters.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ],
+   "structure": {
+    "status": "VERIFIED",
+    "formula": "C9H8O4",
+    "mw": 180.16,
+    "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+    "note": "achiral",
+    "method": "RDKit (SMILES parsed; formula computed from the structure and matched to the expected formula; average MW computed from standard atomic weights)"
+   }
+  },
+  {
+   "slug": "atenolol",
+   "name": "Atenolol",
+   "alsoKnownAs": "",
+   "family": "Cardiovascular",
+   "evidence": "ESTABLISHED",
+   "summary": "A cardioselective (beta-1) adrenergic blocker used in cardiovascular conditions.",
+   "class": "Beta-adrenergic receptor antagonist (beta-blocker); relatively beta-1 selective and hydrophilic.",
+   "uses": [
+    "Hypertension.",
+    "Angina pectoris.",
+    "Certain arrhythmias.",
+    "Secondary prevention after myocardial infarction, per prescriber."
+   ],
+   "mechanism": [
+    "Competitively blocks beta-1 adrenergic receptors, mainly in the heart.",
+    "Reduces heart rate, force of contraction and cardiac output, and lowers renin release.",
+    "Selectivity is relative and decreases at higher exposure."
+   ],
+   "dosageForms": [
+    "Tablets",
+    "Oral solution",
+    "Fixed-dose combination tablets",
+    "Intravenous form (hospital use)"
+   ],
+   "routes": [
+    "Oral",
+    "Intravenous"
+   ],
+   "pk": {
+    "absorption": "Incompletely absorbed orally.",
+    "distribution": "Low lipid solubility, so limited entry into the central nervous system; low protein binding.",
+    "metabolism": "Minimal hepatic metabolism.",
+    "excretion": "Largely excreted unchanged by the kidneys, so dose depends on renal function.",
+    "halfLife": "Moderate, and prolonged in renal impairment; check a current reference."
+   },
+   "adverse": [
+    "Bradycardia and hypotension.",
+    "Fatigue, cold extremities and sleep disturbance.",
+    "Bronchospasm in susceptible patients.",
+    "Masking of hypoglycaemia symptoms in diabetes.",
+    "Withdrawal rebound if stopped abruptly."
+   ],
+   "contraindications": [
+    "Severe bradycardia, second- or third-degree heart block, cardiogenic shock.",
+    "Uncontrolled heart failure.",
+    "Severe peripheral arterial disease.",
+    "Asthma or serious obstructive airway disease (relative or absolute per guidance)."
+   ],
+   "precautions": [
+    "Do not stop suddenly; taper under prescriber direction.",
+    "Reduce exposure in renal impairment.",
+    "Caution in diabetes and in the elderly."
+   ],
+   "interactions": [
+    "Calcium-channel blockers such as verapamil and diltiazem: risk of bradycardia and heart block.",
+    "Other antihypertensives: additive blood-pressure lowering.",
+    "NSAIDs may blunt the antihypertensive effect.",
+    "Check a current interactions source."
+   ],
+   "monitoring": [
+    "Heart rate and blood pressure.",
+    "Renal function where relevant.",
+    "Symptoms of heart failure or bronchospasm."
+   ],
+   "counselling": [
+    "Take regularly; do not stop suddenly.",
+    "Report dizziness, slow pulse, breathlessness or swelling.",
+    "People with diabetes should be aware that some warning signs of low glucose can be masked."
+   ],
+   "pharmaceutical": [
+    "Water-soluble salts and simple tablet formulations are common.",
+    "Content uniformity matters for low-dose tablets.",
+    "Available in fixed-dose combinations with diuretics."
+   ],
+   "storage": "Store below the temperature on the label, protected from light and moisture.",
+   "references": [
+    {
+     "source": "Pharmacopoeial monograph for atenolol (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity, purity and assay standards.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "National cardiovascular guideline or formulary",
+     "type": "Guideline",
+     "purpose": "Current place in therapy and safety information.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmacology textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Adrenergic receptors and beta-blocker properties.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ],
+   "structure": {
+    "status": "VERIFIED",
+    "formula": "C14H22N2O3",
+    "mw": 266.34,
+    "smiles": "CC(C)NCC(O)COc1ccc(CC(N)=O)cc1",
+    "note": "one stereocentre; structure shown without stereochemistry (marketed as the racemate)",
+    "method": "RDKit (SMILES parsed; formula computed from the structure and matched to the expected formula; average MW computed from standard atomic weights)"
+   }
+  },
+  {
+   "slug": "metformin",
+   "name": "Metformin",
+   "alsoKnownAs": "Metformin hydrochloride (common salt form)",
+   "family": "Endocrine",
+   "evidence": "ESTABLISHED",
+   "summary": "A biguanide antihyperglycaemic used in type 2 diabetes mellitus.",
+   "class": "Biguanide; oral antidiabetic (insulin sensitiser).",
+   "uses": [
+    "Type 2 diabetes mellitus.",
+    "Other uses exist under specialist direction."
+   ],
+   "mechanism": [
+    "Mainly reduces hepatic glucose production.",
+    "Also increases peripheral insulin sensitivity and glucose uptake.",
+    "Does not usually cause hypoglycaemia on its own because it does not stimulate insulin secretion.",
+    "The detailed molecular mechanism is still being studied."
+   ],
+   "dosageForms": [
+    "Immediate-release tablets",
+    "Extended-release tablets",
+    "Oral solution",
+    "Fixed-dose combination tablets"
+   ],
+   "routes": [
+    "Oral"
+   ],
+   "pk": {
+    "absorption": "Absorbed from the small intestine; bioavailability is incomplete.",
+    "distribution": "Negligible plasma protein binding.",
+    "metabolism": "Not metabolised.",
+    "excretion": "Excreted unchanged by the kidneys through active tubular secretion, so renal function governs safety.",
+    "halfLife": "Short in normal renal function; increases in renal impairment. Check a current reference."
+   },
+   "adverse": [
+    "Gastrointestinal upset (nausea, diarrhoea, abdominal discomfort), especially at the start.",
+    "Metallic taste.",
+    "Reduced vitamin B12 absorption with long-term use.",
+    "Lactic acidosis is rare but serious, mainly with renal impairment or acute illness."
+   ],
+   "contraindications": [
+    "Significant renal impairment, per current labelling.",
+    "Conditions that predispose to lactic acidosis (acute illness, dehydration, severe infection, hypoxia).",
+    "Hypersensitivity.",
+    "Temporary withdrawal is usually advised around iodinated contrast studies and surgery, per prescriber."
+   ],
+   "precautions": [
+    "Renal function should be assessed before and during treatment.",
+    "Heavy alcohol intake raises lactic acidosis risk.",
+    "Sick-day guidance from the prescriber applies."
+   ],
+   "interactions": [
+    "Iodinated contrast agents: risk to renal function and lactic acidosis.",
+    "Drugs that impair renal function or compete for renal secretion may raise exposure.",
+    "Alcohol.",
+    "Check a current interactions source."
+   ],
+   "monitoring": [
+    "Renal function (eGFR) at baseline and periodically.",
+    "Blood glucose control and HbA1c.",
+    "Vitamin B12 status in long-term use."
+   ],
+   "counselling": [
+    "Take with meals to reduce stomach upset.",
+    "Do not take if severely dehydrated or acutely unwell; ask a professional about sick-day rules.",
+    "Report unusual tiredness, breathing difficulty or muscle pain."
+   ],
+   "pharmaceutical": [
+    "Highly water soluble and poorly compressible; granulation is typically used.",
+    "Extended-release versions rely on matrix or osmotic technologies.",
+    "Large tablet size can affect swallowability, a formulation design consideration."
+   ],
+   "storage": "Store below the temperature on the label, in a dry place, in the original container.",
+   "references": [
+    {
+     "source": "Pharmacopoeial monograph for metformin hydrochloride (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity, purity and assay standards.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "National diabetes guideline or formulary",
+     "type": "Guideline",
+     "purpose": "Current place in therapy, renal thresholds and safety information.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmacology textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Antidiabetic drug classes.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ],
+   "structure": {
+    "status": "VERIFIED",
+    "formula": "C4H11N5",
+    "mw": 129.17,
+    "smiles": "CN(C)C(=N)NC(N)=N",
+    "note": "achiral; SMILES shows the neutral base (the hydrochloride salt is the usual dosage-form material)",
+    "method": "RDKit (SMILES parsed; formula computed from the structure and matched to the expected formula; average MW computed from standard atomic weights)"
+   }
+  },
+  {
+   "slug": "amoxicillin",
+   "name": "Amoxicillin",
+   "alsoKnownAs": "",
+   "family": "Anti-infective",
+   "evidence": "ESTABLISHED",
+   "summary": "A broad-spectrum aminopenicillin antibiotic.",
+   "class": "Beta-lactam antibiotic; aminopenicillin.",
+   "uses": [
+    "Susceptible bacterial infections of the respiratory tract, urinary tract, ear, skin and other sites, per local guidance.",
+    "Used in combination regimens, for example with a beta-lactamase inhibitor.",
+    "Choice depends on the likely organism and local resistance patterns."
+   ],
+   "mechanism": [
+    "Inhibits bacterial cell-wall synthesis by binding penicillin-binding proteins.",
+    "This blocks peptidoglycan cross-linking, weakening the wall and causing cell lysis in growing bacteria.",
+    "Activity is lost against organisms that produce beta-lactamase unless an inhibitor is added."
+   ],
+   "dosageForms": [
+    "Capsules and tablets",
+    "Dispersible tablets",
+    "Powder for oral suspension",
+    "Powder for injection (hospital use)",
+    "Combination products with clavulanic acid"
+   ],
+   "routes": [
+    "Oral",
+    "Intravenous or intramuscular (hospital use)"
+   ],
+   "pk": {
+    "absorption": "Well absorbed orally and largely unaffected by food.",
+    "distribution": "Distributes into most tissues and fluids; low plasma protein binding.",
+    "metabolism": "Partly metabolised.",
+    "excretion": "Mainly renal, so dose may need adjustment in renal impairment.",
+    "halfLife": "Short; check a current reference."
+   },
+   "adverse": [
+    "Diarrhoea, nausea and rash.",
+    "Hypersensitivity, from rash to anaphylaxis.",
+    "Antibiotic-associated colitis, including Clostridioides difficile infection.",
+    "Candidiasis with prolonged use."
+   ],
+   "contraindications": [
+    "History of serious hypersensitivity to any penicillin.",
+    "Caution with cross-reactivity to other beta-lactams; assess the allergy history."
+   ],
+   "precautions": [
+    "Clarify the nature of any reported penicillin allergy.",
+    "A characteristic non-allergic rash can occur in glandular fever.",
+    "Adjust in renal impairment.",
+    "Complete the prescribed course as directed."
+   ],
+   "interactions": [
+    "Methotrexate: reduced clearance.",
+    "Warfarin: monitor INR when starting or stopping.",
+    "Allopurinol may increase rash frequency.",
+    "Check a current interactions source."
+   ],
+   "monitoring": [
+    "Clinical response and signs of hypersensitivity.",
+    "Renal function in impairment.",
+    "INR when co-prescribed with warfarin."
+   ],
+   "counselling": [
+    "Take exactly as directed and finish the course unless told otherwise.",
+    "Report rash, swelling, or breathing difficulty immediately.",
+    "Shake oral suspensions and use the correct measuring device."
+   ],
+   "pharmaceutical": [
+    "Reconstituted oral suspensions have a limited shelf life and are typically stored cool; follow the label.",
+    "The beta-lactam ring is hydrolytically labile, so moisture and pH control matter.",
+    "Usually supplied as the trihydrate; taste-masking matters for paediatric liquids."
+   ],
+   "storage": "Store dry powder and solid forms in a tightly closed container as labelled. Reconstituted suspensions have a stated in-use life; follow the label.",
+   "references": [
+    {
+     "source": "Pharmacopoeial monograph for amoxicillin (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity, purity and assay standards.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Local or national antimicrobial guideline",
+     "type": "Guideline",
+     "purpose": "Current indications and resistance-informed choices.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard medicinal chemistry or pharmacology textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Beta-lactam mechanism and structure-activity background.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ],
+   "structure": {
+    "status": "VERIFIED",
+    "formula": "C16H19N3O5S",
+    "mw": 365.41,
+    "smiles": "CC1(C)S[C@@H]2[C@H](NC(=O)[C@H](N)c3ccc(O)cc3)C(=O)N2[C@H]1C(O)=O",
+    "note": "fully specified stereochemistry; neutral acid form (trihydrate is the common pharmaceutical form)",
+    "method": "RDKit (SMILES parsed; formula computed from the structure and matched to the expected formula; average MW computed from standard atomic weights)"
+   }
+  },
+  {
+   "slug": "atorvastatin",
+   "name": "Atorvastatin",
+   "alsoKnownAs": "Atorvastatin calcium (common salt form)",
+   "family": "Lipid-lowering",
+   "evidence": "ESTABLISHED",
+   "summary": "A statin used to lower blood cholesterol and reduce cardiovascular risk.",
+   "class": "HMG-CoA reductase inhibitor (statin); lipid-lowering agent.",
+   "uses": [
+    "Hypercholesterolaemia and mixed dyslipidaemia.",
+    "Primary and secondary prevention of cardiovascular disease, per prescriber and guideline."
+   ],
+   "mechanism": [
+    "Competitively inhibits HMG-CoA reductase, the rate-limiting enzyme in hepatic cholesterol synthesis.",
+    "Lower hepatic cholesterol increases LDL-receptor expression, so more LDL cholesterol is cleared from blood.",
+    "Additional non-lipid effects have been described, and their clinical importance is still discussed."
+   ],
+   "dosageForms": [
+    "Film-coated tablets",
+    "Chewable tablets in some markets",
+    "Fixed-dose combination tablets"
+   ],
+   "routes": [
+    "Oral"
+   ],
+   "pk": {
+    "absorption": "Rapidly absorbed; low systemic bioavailability because of first-pass metabolism.",
+    "distribution": "Highly protein bound; acts mainly in the liver.",
+    "metabolism": "Extensive metabolism by CYP3A4, producing active metabolites.",
+    "excretion": "Mainly biliary; little renal excretion.",
+    "halfLife": "Plasma half-life is moderate, but enzyme inhibition lasts longer than plasma levels suggest; check a current reference."
+   },
+   "adverse": [
+    "Muscle symptoms, from aches to rare rhabdomyolysis.",
+    "Raised liver enzymes.",
+    "Gastrointestinal upset and headache.",
+    "Small increase in blood glucose has been reported."
+   ],
+   "contraindications": [
+    "Active liver disease or unexplained persistent liver-enzyme elevation.",
+    "Pregnancy and breastfeeding.",
+    "Hypersensitivity."
+   ],
+   "precautions": [
+    "Risk of muscle toxicity rises with some interacting medicines, older age, hypothyroidism and renal impairment.",
+    "Report unexplained muscle pain, weakness or dark urine promptly.",
+    "Liver testing per current guidance."
+   ],
+   "interactions": [
+    "Strong CYP3A4 inhibitors (some macrolides, azole antifungals, protease inhibitors) raise exposure.",
+    "Grapefruit juice in large quantities can raise exposure.",
+    "Fibrates and other lipid agents: increased muscle-toxicity risk.",
+    "Check a current interactions source."
+   ],
+   "monitoring": [
+    "Lipid profile response.",
+    "Liver enzymes per guidance.",
+    "Muscle symptoms."
+   ],
+   "counselling": [
+    "Report unexplained muscle pain or weakness.",
+    "Tell professionals about all medicines and supplements.",
+    "Lifestyle measures remain important alongside medication."
+   ],
+   "pharmaceutical": [
+    "Poor aqueous solubility, so salt selection and dissolution matter.",
+    "Sensitive to acidic conditions and light; formulation needs a protective, often alkaline, microenvironment.",
+    "Polymorphism is an important consideration for the crystalline form."
+   ],
+   "storage": "Store below the temperature on the label, protected from light and moisture, in the original container.",
+   "references": [
+    {
+     "source": "Pharmacopoeial monograph for atorvastatin calcium (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity, purity and assay standards.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "National lipid or cardiovascular guideline",
+     "type": "Guideline",
+     "purpose": "Current place in therapy and monitoring.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmacology textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Cholesterol biosynthesis and statin mechanism.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ],
+   "structure": {
+    "status": "VERIFIED",
+    "formula": "C33H35FN2O5",
+    "mw": 558.65,
+    "smiles": "CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(O)=O",
+    "note": "3R,5R stereochemistry specified; free acid form (calcium salt is the usual pharmaceutical form)",
+    "method": "RDKit (SMILES parsed; formula computed from the structure and matched to the expected formula; average MW computed from standard atomic weights)"
+   }
+  },
+  {
+   "slug": "salbutamol",
+   "name": "Salbutamol",
+   "alsoKnownAs": "Albuterol (US name)",
+   "family": "Respiratory",
+   "evidence": "ESTABLISHED",
+   "summary": "A short-acting beta-2 adrenergic agonist used as a reliever bronchodilator.",
+   "class": "Selective beta-2 adrenergic agonist; short-acting bronchodilator.",
+   "uses": [
+    "Relief of bronchospasm in asthma.",
+    "Relief of bronchospasm in chronic obstructive pulmonary disease.",
+    "Prevention of exercise-induced bronchospasm."
+   ],
+   "mechanism": [
+    "Stimulates beta-2 receptors on airway smooth muscle, raising intracellular cyclic AMP.",
+    "This relaxes smooth muscle and widens the airways.",
+    "Selectivity for beta-2 is relative; some cardiac beta-1 effects can occur at higher exposure."
+   ],
+   "dosageForms": [
+    "Pressurised metered-dose inhaler",
+    "Dry powder inhaler",
+    "Nebuliser solution",
+    "Oral tablets and syrup",
+    "Injection (hospital use)"
+   ],
+   "routes": [
+    "Inhalation",
+    "Oral",
+    "Intravenous (hospital use)"
+   ],
+   "pk": {
+    "absorption": "Inhaled: acts locally with onset within minutes. Oral: absorbed with first-pass metabolism.",
+    "distribution": "Moderate protein binding.",
+    "metabolism": "Hepatic and gut-wall sulfation to an inactive metabolite.",
+    "excretion": "Renal, as parent drug and metabolite.",
+    "halfLife": "Short; check a current reference."
+   },
+   "adverse": [
+    "Tremor, palpitations and tachycardia.",
+    "Headache and nervousness.",
+    "Hypokalaemia, especially at high exposure or with other hypokalaemic agents.",
+    "Paradoxical bronchospasm is rare but requires urgent action."
+   ],
+   "contraindications": [
+    "Hypersensitivity to salbutamol or excipients."
+   ],
+   "precautions": [
+    "Increasing reliever use signals poor asthma control and needs clinical review.",
+    "Caution in cardiovascular disease, hyperthyroidism, diabetes and hypokalaemia.",
+    "Correct inhaler technique strongly affects delivered dose."
+   ],
+   "interactions": [
+    "Non-selective beta-blockers antagonise the effect and can provoke bronchospasm.",
+    "Corticosteroids, diuretics and xanthines can add to hypokalaemia.",
+    "Check a current interactions source."
+   ],
+   "monitoring": [
+    "Symptom control and frequency of reliever use.",
+    "Heart rate and potassium in high-exposure settings."
+   ],
+   "counselling": [
+    "Demonstrate and check inhaler technique; use a spacer if advised.",
+    "Seek review if you need it more often than usual.",
+    "Follow priming and cleaning instructions for the device."
+   ],
+   "pharmaceutical": [
+    "Pressurised inhalers depend on propellant, valve and actuator design; particle size affects lung deposition.",
+    "Dry powder inhalers rely on the patient's inspiratory flow.",
+    "Device and formulation together determine delivered dose."
+   ],
+   "storage": "Store inhalers as labelled, away from heat and frost; pressurised canisters must not be punctured or burned.",
+   "references": [
+    {
+     "source": "Pharmacopoeial monograph for salbutamol (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity, purity and assay standards.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "National or international asthma and COPD guideline",
+     "type": "Guideline",
+     "purpose": "Current place in therapy.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmaceutics textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Inhalation dosage forms and device principles.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ],
+   "structure": {
+    "status": "VERIFIED",
+    "formula": "C13H21NO3",
+    "mw": 239.31,
+    "smiles": "CC(C)(C)NCC(O)c1ccc(O)c(CO)c1",
+    "note": "one stereocentre; structure shown without stereochemistry (marketed as the racemate)",
+    "method": "RDKit (SMILES parsed; formula computed from the structure and matched to the expected formula; average MW computed from standard atomic weights)"
+   }
+  },
+  {
+   "slug": "omeprazole",
+   "name": "Omeprazole",
+   "alsoKnownAs": "",
+   "family": "Gastrointestinal",
+   "evidence": "ESTABLISHED",
+   "summary": "A proton pump inhibitor that strongly reduces gastric acid secretion.",
+   "class": "Proton pump inhibitor (PPI).",
+   "uses": [
+    "Gastro-oesophageal reflux disease.",
+    "Peptic ulcer disease.",
+    "Eradication regimens for Helicobacter pylori, with antibiotics.",
+    "Prevention of NSAID-associated gastric injury in selected patients."
+   ],
+   "mechanism": [
+    "A prodrug that is activated in the acidic environment of the parietal-cell canaliculus.",
+    "The active form covalently and irreversibly binds the H+/K+ ATPase (proton pump), blocking the final step of acid secretion.",
+    "Acid secretion recovers only as new pump molecules are made."
+   ],
+   "dosageForms": [
+    "Delayed-release (enteric-coated) capsules and tablets",
+    "Powder for oral suspension",
+    "Intravenous form (hospital use)"
+   ],
+   "routes": [
+    "Oral",
+    "Intravenous"
+   ],
+   "pk": {
+    "absorption": "Acid-labile, so absorbed only from the intestine; needs enteric protection.",
+    "distribution": "Highly protein bound.",
+    "metabolism": "Extensive hepatic metabolism mainly by CYP2C19 and CYP3A4; genetic variation in CYP2C19 changes exposure.",
+    "excretion": "Metabolites excreted mainly in urine.",
+    "halfLife": "Short plasma half-life, but effect on acid secretion lasts much longer because binding is irreversible; check a current reference."
+   },
+   "adverse": [
+    "Headache, diarrhoea, abdominal pain and nausea.",
+    "Low magnesium and vitamin B12 with long-term use.",
+    "Increased risk of certain infections and fractures has been associated with prolonged use.",
+    "Rebound acid hypersecretion after stopping."
+   ],
+   "contraindications": [
+    "Hypersensitivity to omeprazole or other benzimidazoles.",
+    "Co-administration with certain drugs whose absorption depends on gastric acidity, per labelling."
+   ],
+   "precautions": [
+    "Review the ongoing need regularly; use the lowest effective duration.",
+    "Investigate alarm symptoms before treating symptomatically.",
+    "Long-term use warrants attention to magnesium and B12."
+   ],
+   "interactions": [
+    "Clopidogrel: reduced activation through CYP2C19 competition; prescriber should consider the combination.",
+    "Drugs needing acid for absorption (some antifungals, some antivirals) may be affected.",
+    "Methotrexate and others; check a current source."
+   ],
+   "monitoring": [
+    "Symptom response and ongoing indication.",
+    "Magnesium and B12 in long-term use."
+   ],
+   "counselling": [
+    "Swallow delayed-release capsules whole unless the label says otherwise.",
+    "Take before a meal as directed.",
+    "Do not use for long periods without review."
+   ],
+   "pharmaceutical": [
+    "Degrades quickly in acid, so enteric-coated pellets or tablets are essential.",
+    "An inert subcoat prevents contact between the acidic enteric polymer and the alkaline-stabilised core.",
+    "Moisture and heat also accelerate degradation."
+   ],
+   "storage": "Store in a tightly closed container, dry and protected from light and heat, as labelled.",
+   "references": [
+    {
+     "source": "Pharmacopoeial monograph for omeprazole (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity, purity and assay standards.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "National gastroenterology guideline or formulary",
+     "type": "Guideline",
+     "purpose": "Current indications and duration.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmaceutics textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Enteric coating principles.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ],
+   "structure": {
+    "status": "VERIFIED",
+    "formula": "C17H19N3O3S",
+    "mw": 345.42,
+    "smiles": "COc1ccc2[nH]c(nc2c1)S(=O)Cc1ncc(C)c(OC)c1C",
+    "note": "sulfoxide stereocentre; structure shown without stereochemistry (omeprazole is the racemate; esomeprazole is the S-enantiomer)",
+    "method": "RDKit (SMILES parsed; formula computed from the structure and matched to the expected formula; average MW computed from standard atomic weights)"
+   }
+  },
+  {
+   "slug": "warfarin",
+   "name": "Warfarin",
+   "alsoKnownAs": "Warfarin sodium (common salt form)",
+   "family": "Anticoagulant",
+   "evidence": "ESTABLISHED",
+   "summary": "A vitamin K antagonist oral anticoagulant that needs regular blood-test monitoring.",
+   "class": "Vitamin K antagonist; oral anticoagulant (coumarin derivative).",
+   "uses": [
+    "Prevention and treatment of venous thromboembolism.",
+    "Stroke prevention in atrial fibrillation.",
+    "Anticoagulation with mechanical heart valves."
+   ],
+   "mechanism": [
+    "Inhibits vitamin K epoxide reductase, so the vitamin K-dependent clotting factors (II, VII, IX, X) and proteins C and S are made in a less active form.",
+    "Effect develops over days because existing circulating factors must decay first.",
+    "Anticoagulant effect is measured by the INR."
+   ],
+   "dosageForms": [
+    "Tablets in several strengths, colour-coded by strength in many markets"
+   ],
+   "routes": [
+    "Oral"
+   ],
+   "pk": {
+    "absorption": "Well absorbed orally.",
+    "distribution": "Very highly protein bound, mainly to albumin.",
+    "metabolism": "Extensive hepatic metabolism, mainly CYP2C9; genetic variation in CYP2C9 and VKORC1 changes dose requirement.",
+    "excretion": "Metabolites excreted in urine and bile.",
+    "halfLife": "Long; check a current reference."
+   },
+   "adverse": [
+    "Bleeding, the principal risk, from minor to life-threatening.",
+    "Skin necrosis (rare).",
+    "Teratogenicity in pregnancy.",
+    "Purple toe syndrome (rare)."
+   ],
+   "contraindications": [
+    "Pregnancy, except in specific specialist situations.",
+    "Active significant bleeding or high bleeding risk.",
+    "Severe uncontrolled hypertension.",
+    "Recent surgery involving critical sites, per prescriber."
+   ],
+   "precautions": [
+    "Dose is individual and adjusted by INR; never change tablet strength or brand without guidance.",
+    "Diet (vitamin K intake), alcohol, illness and many medicines shift the INR.",
+    "Head injury or significant bleeding needs urgent assessment."
+   ],
+   "interactions": [
+    "A very large number of interactions: antibiotics, azole antifungals, amiodarone, NSAIDs and antiplatelets, herbal products and others.",
+    "Always check a current interactions source before adding, changing or stopping any medicine."
+   ],
+   "monitoring": [
+    "INR at a frequency set by the anticoagulation service.",
+    "Signs of bleeding and bruising.",
+    "Renal and hepatic function as appropriate."
+   ],
+   "counselling": [
+    "Take at the same time daily and keep all monitoring appointments.",
+    "Keep vitamin K intake consistent rather than avoiding it.",
+    "Carry an anticoagulant alert card and tell every clinician and pharmacist.",
+    "Report bleeding, black stools, head injury or unusual bruising."
+   ],
+   "pharmaceutical": [
+    "Narrow therapeutic index, so content uniformity and consistency between batches matter.",
+    "Colour-coding by strength reduces dispensing and administration error.",
+    "Consistency of brand is often advised."
+   ],
+   "storage": "Store in the original container, protected from light and moisture, as labelled.",
+   "references": [
+    {
+     "source": "Pharmacopoeial monograph for warfarin sodium (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity, purity and assay standards.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "National anticoagulation guideline or formulary",
+     "type": "Guideline",
+     "purpose": "INR targets and management.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard clinical pharmacy textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Therapeutic drug monitoring of anticoagulants.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ],
+   "structure": {
+    "status": "VERIFIED",
+    "formula": "C19H16O4",
+    "mw": 308.33,
+    "smiles": "CC(=O)CC(c1ccccc1)c1c(O)c2ccccc2oc1=O",
+    "note": "one stereocentre; structure shown without stereochemistry (marketed as the racemate)",
+    "method": "RDKit (SMILES parsed; formula computed from the structure and matched to the expected formula; average MW computed from standard atomic weights)"
+   }
+  },
+  {
+   "slug": "ciprofloxacin",
+   "name": "Ciprofloxacin",
+   "alsoKnownAs": "",
+   "family": "Anti-infective",
+   "evidence": "ESTABLISHED",
+   "summary": "A fluoroquinolone antibiotic with broad activity, especially against Gram-negative bacteria.",
+   "class": "Fluoroquinolone antibiotic.",
+   "uses": [
+    "Selected bacterial infections such as urinary tract, gastrointestinal and some respiratory and bone infections, per local guidance.",
+    "Reserved in many guidelines because of resistance and adverse-effect concerns."
+   ],
+   "mechanism": [
+    "Inhibits bacterial DNA gyrase (topoisomerase II) and topoisomerase IV.",
+    "This blocks DNA replication and repair and is bactericidal.",
+    "Resistance arises through target mutations and efflux."
+   ],
+   "dosageForms": [
+    "Film-coated tablets",
+    "Oral suspension",
+    "Intravenous infusion",
+    "Eye and ear drops"
+   ],
+   "routes": [
+    "Oral",
+    "Intravenous",
+    "Topical (ocular, otic)"
+   ],
+   "pk": {
+    "absorption": "Well absorbed orally; absorption is reduced by polyvalent cations.",
+    "distribution": "Good tissue penetration.",
+    "metabolism": "Partly hepatic.",
+    "excretion": "Renal and non-renal routes.",
+    "halfLife": "Moderate; check a current reference."
+   },
+   "adverse": [
+    "Nausea, diarrhoea and headache.",
+    "Tendinopathy and tendon rupture, more likely with corticosteroids and in older adults.",
+    "Central nervous system effects and peripheral neuropathy.",
+    "QT prolongation.",
+    "Photosensitivity.",
+    "Serious effects have led to restricted use in many guidelines."
+   ],
+   "contraindications": [
+    "History of tendon disorders with fluoroquinolones.",
+    "Hypersensitivity to quinolones.",
+    "Caution or avoidance in myasthenia gravis and in known QT prolongation risk, per labelling."
+   ],
+   "precautions": [
+    "Stop and seek advice at the first sign of tendon pain.",
+    "Caution in epilepsy, older age and renal impairment.",
+    "Avoid excessive sunlight exposure."
+   ],
+   "interactions": [
+    "Antacids, iron, zinc, calcium and magnesium products chelate the drug and reduce absorption; separate the timing.",
+    "Corticosteroids: tendon risk.",
+    "Theophylline: raised levels.",
+    "Warfarin: monitor INR.",
+    "Other QT-prolonging drugs."
+   ],
+   "monitoring": [
+    "Clinical response.",
+    "Tendon pain, neurological symptoms and mood changes.",
+    "INR if on warfarin."
+   ],
+   "counselling": [
+    "Take as directed and separate from antacids and mineral supplements.",
+    "Stop and call for advice if you develop tendon pain or unusual nerve symptoms.",
+    "Stay well hydrated and protect your skin from strong sun."
+   ],
+   "pharmaceutical": [
+    "Chelation with polyvalent cations is a formulation and dispensing consideration.",
+    "Solubility is pH dependent; the salt form is common.",
+    "Oral suspension uses microcapsules or a coated system for taste masking."
+   ],
+   "storage": "Store below the temperature on the label, protected from light and moisture.",
+   "references": [
+    {
+     "source": "Pharmacopoeial monograph for ciprofloxacin (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity, purity and assay standards.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Local or national antimicrobial guideline and regulator safety communications",
+     "type": "Guideline",
+     "purpose": "Current restrictions and safety warnings.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard medicinal chemistry textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Quinolone structure-activity and mechanism.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ],
+   "structure": {
+    "status": "VERIFIED",
+    "formula": "C17H18FN3O3",
+    "mw": 331.35,
+    "smiles": "OC(=O)C1=CN(C2CC2)c2cc(N3CCNCC3)c(F)cc2C1=O",
+    "note": "achiral; neutral form (hydrochloride is a common salt)",
+    "method": "RDKit (SMILES parsed; formula computed from the structure and matched to the expected formula; average MW computed from standard atomic weights)"
+   }
+  },
+  {
+   "slug": "levothyroxine",
+   "name": "Levothyroxine",
+   "alsoKnownAs": "L-thyroxine; Levothyroxine sodium (common salt form)",
+   "family": "Endocrine",
+   "evidence": "ESTABLISHED",
+   "summary": "Synthetic thyroid hormone replacement.",
+   "class": "Thyroid hormone (T4) replacement.",
+   "uses": [
+    "Hypothyroidism.",
+    "Suppression of thyroid-stimulating hormone in selected thyroid cancer settings, under specialist care.",
+    "Some goitre management, per prescriber."
+   ],
+   "mechanism": [
+    "Levothyroxine is converted in tissues to the active hormone triiodothyronine (T3).",
+    "T3 binds nuclear thyroid-hormone receptors and regulates gene expression governing metabolism, growth and development.",
+    "It replaces the missing endogenous hormone rather than acting through a new pharmacological pathway."
+   ],
+   "dosageForms": [
+    "Tablets in many strengths",
+    "Oral solution",
+    "Soft-gel capsules in some markets",
+    "Intravenous form (hospital use)"
+   ],
+   "routes": [
+    "Oral",
+    "Intravenous (hospital use)"
+   ],
+   "pk": {
+    "absorption": "Variable and incomplete; better on an empty stomach.",
+    "distribution": "Highly bound to thyroid-binding proteins.",
+    "metabolism": "Deiodinated in tissues; also conjugated in the liver.",
+    "excretion": "Renal and faecal.",
+    "halfLife": "Long, which supports once-daily dosing; check a current reference."
+   },
+   "adverse": [
+    "Signs of over-replacement: palpitations, tremor, anxiety, weight loss, insomnia and heat intolerance.",
+    "Arrhythmia, especially atrial fibrillation, and worsening angina in susceptible patients.",
+    "Reduced bone density with long-term over-replacement.",
+    "Under-replacement leaves symptoms of hypothyroidism."
+   ],
+   "contraindications": [
+    "Untreated adrenal insufficiency, thyrotoxicosis and acute myocardial infarction, per labelling.",
+    "Hypersensitivity to the product."
+   ],
+   "precautions": [
+    "Narrow therapeutic index; dose is individualised and monitored.",
+    "Start low and go slowly in older adults and in heart disease.",
+    "Pregnancy usually changes requirements and needs monitoring.",
+    "Brand switching should be managed with monitoring."
+   ],
+   "interactions": [
+    "Calcium, iron, aluminium and magnesium products, cholestyramine and sucralfate reduce absorption; separate the timing.",
+    "Proton pump inhibitors and food can change absorption.",
+    "Enzyme inducers may raise dose requirement.",
+    "Warfarin effect may increase as thyroid status normalises."
+   ],
+   "monitoring": [
+    "Thyroid-stimulating hormone (TSH), with free T4 as needed.",
+    "Repeat testing after dose or brand changes and at set intervals.",
+    "Clinical symptoms and heart rate."
+   ],
+   "counselling": [
+    "Take at the same time each day, usually on an empty stomach, with water and away from calcium and iron products.",
+    "Do not change brand or stop without advice.",
+    "Report chest pain, palpitations or marked symptom change."
+   ],
+   "pharmaceutical": [
+    "Very low doses per tablet, so content uniformity is critical.",
+    "Sensitive to light, moisture and heat; stability drives packaging.",
+    "Small strength differences matter; colour-coding and clear labelling reduce error."
+   ],
+   "storage": "Store in the original container, protected from light and moisture, as labelled.",
+   "references": [
+    {
+     "source": "Pharmacopoeial monograph for levothyroxine sodium (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity, purity and assay standards.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "National or professional thyroid guideline",
+     "type": "Guideline",
+     "purpose": "Monitoring targets and management.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard endocrine pharmacology textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Thyroid hormone physiology and replacement.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ],
+   "structure": {
+    "status": "VERIFIED",
+    "formula": "C15H11I4NO4",
+    "mw": 776.87,
+    "smiles": "N[C@@H](Cc1cc(I)c(Oc2cc(I)c(O)c(I)c2)c(I)c1)C(O)=O",
+    "note": "L-(S) configuration specified; free acid form (sodium salt is the usual pharmaceutical form)",
+    "method": "RDKit (SMILES parsed; formula computed from the structure and matched to the expected formula; average MW computed from standard atomic weights)"
+   }
+  }
+ ]
+}

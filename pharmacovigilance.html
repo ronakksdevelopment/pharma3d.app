@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pharmacovigilance — PHARMA 3D</title>
+<meta name="description" content="From medicine to regulatory action: the pharmacovigilance chain, terminology, a fictional Naranjo case and PRR / ROR / chi-square signal detection.">
+<meta name="theme-color" content="#1F2E2C">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/icons/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PHARMA 3D">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/modules.css">
+<link rel="stylesheet" href="css/phase4.css">
+</head>
+<body>
+
+<div data-include="header"></div>
+<div data-include="mobile-nav"></div>
+<div data-include="search-modal"></div>
+<div data-include="a11y-drawer"></div>
+
+<main id="main-content">
+  <div class="breadcrumb-bar">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span aria-hidden="true">/</span>
+      <a href="explore.html">Explore</a><span aria-hidden="true">/</span>
+      <span aria-current="page">Pharmacovigilance</span>
+    </nav>
+  </div>
+
+  <div class="container p4-root">
+    <header class="p4-head">
+      <span class="section-eyebrow">Medicine safety</span>
+      <h1>Pharmacovigilance</h1>
+      <p class="lead">Pharmacovigilance is the science and activity of detecting, assessing, understanding and preventing adverse effects and other medicine-related problems. This page follows how a safety concern travels from one patient to a regulatory decision.</p>
+      <div class="p4-meta">
+        <span class="badge badge-established">CONCEPTS: ESTABLISHED</span>
+        <span class="p4-label dash">CASE EXAMPLE IS FICTIONAL</span>
+      </div>
+      <div class="p4-banner big" role="note" style="margin-top:var(--space-5)">A statistical signal is not proof of causation</div>
+    </header>
+
+    <!-- ===== CHAIN ===== -->
+    <section class="p4-sec" aria-labelledby="h-chain">
+      <h2 id="h-chain">The pharmacovigilance chain</h2>
+      <p class="sub">Seven linked stages. Tap a stage to read it.</p>
+      <div class="flow" id="pvFlow" role="group" aria-label="Pharmacovigilance chain"></div>
+      <div class="p4-card" id="pvDetail" style="margin-top:var(--space-3)" aria-live="polite"></div>
+    </section>
+
+    <!-- ===== TERMS ===== -->
+    <section class="p4-sec" aria-labelledby="h-terms">
+      <h2 id="h-terms">Core terminology</h2>
+      <div class="field" style="max-width:420px">
+        <label for="termSearch">Filter terms</label>
+        <input id="termSearch" type="search" placeholder="e.g. signal, ADR, serious" autocomplete="off">
+      </div>
+      <div class="p4-grid c2" id="termGrid"></div>
+    </section>
+
+    <!-- ===== NARANJO ===== -->
+    <section class="p4-sec" aria-labelledby="h-nar">
+      <h2 id="h-nar">Naranjo algorithm — worked example</h2>
+      <p class="sub">The Naranjo algorithm is a ten-question scoring tool that helps assess how likely it is that a medicine caused an adverse event in one patient.</p>
+      <div class="fict">
+        <span class="p4-label solid">FICTIONAL CASE — NOT A REAL PATIENT</span>
+        <h3 style="margin-top:var(--space-3)">Case: “Drug X” and a skin rash</h3>
+        <p>A fictional adult began a fictional medicine called Drug X. Eight days later a widespread itchy rash appeared. The rash improved after Drug X was stopped. The patient had not had a similar rash before. No other new medicine was started. This case, the drug and every detail are invented to teach the method.</p>
+        <p class="p4-caption" style="margin-top:var(--space-3)">Tap answers to score. The example answers are pre-filled to match the story; change them to see how the score and category move.</p>
+      </div>
+      <div id="narQs" style="margin-top:var(--space-4)"></div>
+      <div class="p4-calc" style="margin-top:var(--space-4)">
+        <span class="p4-label solid">USER CALCULATED</span>
+        <h3 style="margin-top:var(--space-2)">Naranjo score</h3>
+        <div class="p4-out" id="narOut" aria-live="polite"></div>
+        <p class="p4-caption" style="margin-top:var(--space-3)">Categories: ≥ 9 definite · 5–8 probable · 1–4 possible · ≤ 0 doubtful. The score supports a structured judgement; it does not replace clinical assessment and is not a diagnosis.</p>
+        <div style="margin-top:var(--space-3);display:flex;gap:var(--space-2);flex-wrap:wrap">
+          <button class="btn btn-secondary" id="narReset" type="button">Reset to example</button>
+          <button class="btn btn-secondary" id="narClear" type="button">Set all to “Do not know”</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SIGNAL DETECTION ===== -->
+    <section class="p4-sec" aria-labelledby="h-sig">
+      <h2 id="h-sig">Signal detection: PRR, ROR and chi-square</h2>
+      <p class="sub">Spontaneous-report databases can be screened for drug–event pairs reported more often than expected. These measures compare reporting patterns. They are screening tools.</p>
+      <div class="p4-banner big" role="note">A statistical signal is not proof of causation</div>
+
+      <div class="p4-grid c2" style="margin-top:var(--space-5)">
+        <div class="p4-card" style="margin:0">
+          <h3>The 2 × 2 table</h3>
+          <div class="tbl22" role="table" aria-label="Two by two contingency table of reports">
+            <div class="h"></div><div class="h">Event of interest</div><div class="h">All other events</div>
+            <div class="h">Drug of interest</div><div class="in">a</div><div class="in">b</div>
+            <div class="h">All other drugs</div><div class="in">c</div><div class="in">d</div>
+          </div>
+          <dl class="defs">
+            <dt>a</dt><dd>Reports with the drug of interest AND the event of interest.</dd>
+            <dt>b</dt><dd>Reports with the drug of interest and any other event.</dd>
+            <dt>c</dt><dd>Reports with any other drug and the event of interest.</dd>
+            <dt>d</dt><dd>Reports with any other drug and any other event.</dd>
+          </dl>
+          <div class="eq">PRR = [a / (a + b)] / [c / (c + d)]
+ROR = (a / b) / (c / d) = (a·d) / (b·c)
+χ² = N·(a·d − b·c)² / [(a+b)(c+d)(a+c)(b+d)]
+N = a + b + c + d</div>
+          <p>PRR compares the proportion of a drug’s reports that name the event with that proportion for all other drugs. ROR compares the odds. χ² tests whether the difference is larger than chance alone would give, under independence assumptions.</p>
+        </div>
+
+        <div class="p4-calc">
+          <span class="p4-label solid">USER CALCULATED</span>
+          <h3 style="margin-top:var(--space-2)">Disproportionality calculator</h3>
+          <div class="grid">
+            <div class="field"><label for="sa">a — drug + event</label><input id="sa" type="number" inputmode="numeric" min="0" step="1" placeholder="e.g. 12"></div>
+            <div class="field"><label for="sb">b — drug + other events</label><input id="sb" type="number" inputmode="numeric" min="0" step="1" placeholder="e.g. 88"></div>
+            <div class="field"><label for="sc">c — other drugs + event</label><input id="sc" type="number" inputmode="numeric" min="0" step="1" placeholder="e.g. 60"></div>
+            <div class="field"><label for="sd">d — other drugs + other events</label><input id="sd" type="number" inputmode="numeric" min="0" step="1" placeholder="e.g. 9840"></div>
+          </div>
+          <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;margin-top:var(--space-4)">
+            <button class="btn btn-primary" id="sigGo" type="button">Calculate</button>
+            <button class="btn btn-secondary" id="sigEx" type="button">Load ILLUSTRATIVE example</button>
+          </div>
+          <div class="p4-err" id="sigErr" role="alert" hidden></div>
+          <div class="p4-out" id="sigOut" hidden aria-live="polite"></div>
+        </div>
+      </div>
+
+      <div class="p4-card" style="margin-top:var(--space-4)">
+        <h3>Reading the result carefully</h3>
+        <ul class="bul">
+          <li>A commonly cited screening rule (from the literature, not a law) flags a pair when PRR ≥ 2, χ² ≥ 4 and at least 3 cases. Thresholds differ between organisations.</li>
+          <li>A flagged pair is a hypothesis to investigate, not a finding that the drug caused the event.</li>
+          <li>Reporting is voluntary and incomplete; it is affected by publicity, drug age, disease severity and reporting habits. Reporting rates are not incidence rates.</li>
+          <li>Confounding, such as the underlying illness the drug is used for, can create a signal with no causal link.</li>
+          <li>A signal with a low PRR is not proof of safety, either.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="p4-sec" aria-labelledby="h-ev">
+      <h2 id="h-ev">Evidence and limits</h2>
+      <div class="p4-card">
+        <p><span class="badge badge-established">ESTABLISHED CONCEPTS</span></p>
+        <p style="margin-top:var(--space-3)">The pharmacovigilance chain, Naranjo scoring and disproportionality statistics are standard, widely taught methods. Specific thresholds, reporting requirements and terminology vary by regulator and change over time; check the current guidance of the relevant authority. This page is educational and does not replace regulatory guidance or clinical judgement. The case example is fictional.</p>
+        <p>Content should be reviewed by a qualified pharmacovigilance professional before public release.</p>
+      </div>
+    </section>
+
+    <nav class="mod-pn" aria-label="Related modules">
+      <a class="prev" href="lab.html"><span class="dir">← Related</span><span class="nm">Pharmacokinetic Lab</span></a>
+      <a class="next" href="ai.html"><span class="dir">Related →</span><span class="nm">AI in Pharmacy</span></a>
+    </nav>
+  </div>
+</main>
+
+<div data-include="footer"></div>
+<div data-include="bottom-nav"></div>
+
+<script src="js/paths.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/search-index.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/app.js"></script>
+<script src="js/p4-shared.js"></script>
+<script src="js/pharmacovigilance.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" defer></script>
+<script src="js/search.js" defer></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => { navigator.serviceWorker.register('service-worker.js').then((reg) => { if (window.pharma3dWatchForUpdates) window.pharma3dWatchForUpdates(reg); }).catch(() => {}); });
+  }
+</script>
+</body>
+</html>

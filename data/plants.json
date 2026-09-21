@@ -1,0 +1,550 @@
+{
+ "meta": {
+  "version": "1.0.0",
+  "note": "General, textbook-level educational plant monographs. TRADITIONAL USE is kept strictly separate from EXPERIMENTAL / SCIENTIFIC EVIDENCE. No treatment, dosing or self-treatment advice is given. Content should be reviewed by a subject expert before public release.",
+  "tierNote": "Each plant carries a traditional-use tier and a separate evidence tier for the scientific record. The two are never merged."
+ },
+ "plants": [
+  {
+   "slug": "turmeric",
+   "name": "Turmeric",
+   "latin": "Curcuma longa",
+   "biologicalSource": "Dried or fresh rhizomes of Curcuma longa Linn.",
+   "family": "Zingiberaceae",
+   "distribution": "Cultivated widely in tropical regions of South and Southeast Asia; India is a major producer.",
+   "partUsed": "Rhizome (fresh, or dried and powdered).",
+   "morphology": "Rhizomes are ovoid to cylindrical, often with short branches. The outer surface is yellowish-brown with ring-like leaf-scar markings and fine root scars. The fracture is short and horny, and the cut surface is orange-yellow to deep orange.",
+   "microscopy": "Powder shows abundant starch grains (often gelatinised or partly so after processing), parenchyma cells containing orange-yellow pigment and oil globules, and fragments of vessels with reticulate or spiral thickening. Cork cells may be present in unpeeled material.",
+   "constituents": [
+    "Curcuminoids (curcumin and related compounds), responsible for the yellow-orange colour.",
+    "Volatile oil containing sesquiterpenes such as turmerone.",
+    "Starch and other carbohydrates."
+   ],
+   "extraction": "Curcuminoids are typically extracted from dried powder with organic solvents such as ethanol or acetone. Volatile oil is obtained by steam distillation. Details vary with the intended product.",
+   "identification": [
+    "Macroscopic and microscopic characters as above.",
+    "Colour reactions of curcuminoids, such as the characteristic colour change on treatment with a boric acid and acid reagent.",
+    "Thin-layer chromatography fingerprint against a reference standard."
+   ],
+   "adulteration": "Reported adulterants include added starch and synthetic or non-permitted colouring agents to enhance colour. Related Curcuma species may be substituted. Verification uses microscopy and chromatographic or spectroscopic methods.",
+   "evaluation": [
+    "Moisture content.",
+    "Total ash and acid-insoluble ash.",
+    "Extractive values.",
+    "Curcuminoid content by spectrophotometry or chromatography.",
+    "Volatile oil content.",
+    "Microbial and heavy-metal limits; pesticide residues where required."
+   ],
+   "significance": "Curcuminoids and turmeric extracts are widely studied. Turmeric is a common food spice and colouring agent, and a source of interest in natural-product research.",
+   "cautions": [
+    "High-dose extracts and concentrated supplements may cause gastrointestinal upset.",
+    "May interact with anticoagulant and antiplatelet medicines and with some drug-metabolising pathways; seek professional advice.",
+    "Use in gallbladder disease should be discussed with a clinician.",
+    "Purity of supplements is variable; adulteration with dyes has been reported."
+   ],
+   "traditional": {
+    "label": "TRADITIONAL USE",
+    "tier": "TRADITIONAL",
+    "statement": "In Ayurvedic and other traditional systems turmeric has long been used as a culinary spice and in preparations applied to the skin or taken by mouth for a range of complaints.",
+    "limits": "Traditional use records long-standing practice. It does not by itself show that a use is effective or safe, and it is not a claim made by this site."
+   },
+   "scientific": {
+    "label": "EXPERIMENTAL / SCIENTIFIC EVIDENCE",
+    "tier": "EMERGING",
+    "statement": "Laboratory studies show that curcumin has many biological activities in cell and animal models. Human clinical evidence for specific health benefits is mixed and often limited by small studies. Curcumin has low oral bioavailability, which complicates interpretation of both laboratory and clinical results.",
+    "limits": "Findings from cell and animal work may not translate to people. No use is recommended here; consult current systematic reviews and a clinician."
+   },
+   "references": [
+    {
+     "source": "Pharmacopoeial monograph for turmeric / Curcuma longa rhizome (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity, purity and quality parameters.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmacognosy textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Macroscopy, microscopy, constituents and adulteration.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Current systematic reviews on curcumin (search a scholarly database)",
+     "type": "Search direction",
+     "purpose": "Evidence for and against clinical effects. Not a citation.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ]
+  },
+  {
+   "slug": "cinchona",
+   "name": "Cinchona",
+   "latin": "Cinchona species (e.g. Cinchona officinalis, C. succirubra, C. ledgeriana)",
+   "biologicalSource": "Dried bark of the stem and root of Cinchona species.",
+   "family": "Rubiaceae",
+   "distribution": "Native to the Andean region of South America; cultivated in parts of Asia and Africa.",
+   "partUsed": "Bark.",
+   "morphology": "Bark is supplied as quills or flat pieces. The outer surface is brownish and rough with longitudinal wrinkles and sometimes lichens. The inner surface is reddish-brown and striated. The fracture is fibrous in the inner layer and short in the outer.",
+   "microscopy": "Sections show cork, cortex with cells containing calcium oxalate microsphenoids and starch, laticiferous cells, and characteristic long spindle-shaped bast fibres that are thick-walled and often isolated.",
+   "constituents": [
+    "Quinoline alkaloids, including quinine, quinidine, cinchonine and cinchonidine.",
+    "Cinchotannic acid and other tannins.",
+    "Quinovin and other glycosides."
+   ],
+   "extraction": "Alkaloids are commonly extracted from powdered bark after basification, using an organic solvent, then separated and purified as salts. Individual alkaloids are separated by their differing solubilities and chromatographic behaviour.",
+   "identification": [
+    "Macroscopic and microscopic features, including bast fibres.",
+    "Thalleioquin test, in which quinine gives a characteristic green colour with bromine water and ammonia.",
+    "Fluorescence of acidic quinine solutions.",
+    "Chromatographic fingerprint for the alkaloids."
+   ],
+   "adulteration": "Bark from other Cinchona species or related genera with lower alkaloid content may be substituted. Total alkaloid and quinine content is assessed to control quality.",
+   "evaluation": [
+    "Total alkaloid content.",
+    "Quinine content by chromatography.",
+    "Total ash and acid-insoluble ash.",
+    "Moisture content.",
+    "Microscopy for bast fibres and cell inclusions."
+   ],
+   "significance": "Cinchona is the historical natural source of quinine, an important antimalarial, and quinidine, an antiarrhythmic. It is a classic example of a plant leading to a drug.",
+   "cautions": [
+    "Quinine and related alkaloids can cause cinchonism (tinnitus, headache, visual disturbance, nausea) and other serious effects.",
+    "Quinine has a narrow margin between effective and toxic exposure and has important drug interactions.",
+    "Cinchona bark or extracts must not be used for self-treatment of malaria or other conditions."
+   ],
+   "traditional": {
+    "label": "TRADITIONAL USE",
+    "tier": "TRADITIONAL",
+    "statement": "Cinchona bark was used in traditional medicine in the regions where it grows, and later in Europe, for fevers.",
+    "limits": "The historical account of use is not a claim made by this site. It is not a basis for self-treatment."
+   },
+   "scientific": {
+    "label": "EXPERIMENTAL / SCIENTIFIC EVIDENCE",
+    "tier": "ESTABLISHED",
+    "statement": "Quinine, isolated from cinchona, is an established antimalarial with well-characterised pharmacology. Quinidine is an established class I antiarrhythmic agent. These roles are supported by extensive clinical use and pharmacological study of the isolated alkaloids.",
+    "limits": "This evidence applies to the purified, dose-controlled alkaloids used under medical supervision, not to crude bark."
+   },
+   "references": [
+    {
+     "source": "Pharmacopoeial monograph for cinchona bark and for quinine salts (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity and alkaloid content standards.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmacognosy textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Bark macroscopy, microscopy and alkaloid chemistry.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Current antimalarial treatment guideline of your national programme or the WHO",
+     "type": "Guideline",
+     "purpose": "Current role of quinine in therapy.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ]
+  },
+  {
+   "slug": "catharanthus-roseus",
+   "name": "Catharanthus roseus",
+   "latin": "Catharanthus roseus (L.) G. Don",
+   "biologicalSource": "Whole plant or leaves and roots of Catharanthus roseus, also known as Vinca rosea.",
+   "family": "Apocynaceae",
+   "distribution": "Native to Madagascar; now cultivated and naturalised in many tropical and subtropical regions, including India.",
+   "partUsed": "Leaves and roots.",
+   "morphology": "A small evergreen herb or subshrub with glossy, oval, opposite leaves and five-petalled flowers that are pink or white, often with a darker centre. Fruits are paired follicles.",
+   "microscopy": "Leaf shows diacytic stomata, unicellular covering trichomes, and laticiferous tissue. Root shows cork, a cortex with stone cells and starch grains, and secondary xylem.",
+   "constituents": [
+    "A large number of monoterpenoid indole alkaloids, over a hundred described.",
+    "Dimeric alkaloids such as vinblastine and vincristine, present in very small amounts in the leaves.",
+    "Monomeric alkaloids such as vindoline and catharanthine, which can be coupled semisynthetically.",
+    "Ajmalicine and serpentine, mainly in roots."
+   ],
+   "extraction": "Because the dimeric alkaloids occur at very low levels, leaves are extracted under acidic conditions, followed by partition into organic solvent and extensive chromatographic purification. Vindoline and catharanthine are used as starting materials for semisynthesis.",
+   "identification": [
+    "Macroscopic and microscopic features.",
+    "Alkaloid colour tests and thin-layer chromatography.",
+    "HPLC comparison with reference alkaloids."
+   ],
+   "adulteration": "Substitution with other Apocynaceae species is possible. Identity is controlled by botanical and chemical authentication.",
+   "evaluation": [
+    "Moisture content.",
+    "Total ash.",
+    "Alkaloid profile by chromatography.",
+    "Extractive values."
+   ],
+   "significance": "The vinca alkaloids vinblastine and vincristine, derived from this plant, are established anticancer drugs. The plant is a classic example of natural-product drug discovery.",
+   "cautions": [
+    "The plant and its crude preparations are toxic and must not be used for self-treatment.",
+    "Vinca alkaloid drugs are potent cytotoxic agents used only under specialist supervision, and vincristine must never be given by the wrong route."
+   ],
+   "traditional": {
+    "label": "TRADITIONAL USE",
+    "tier": "TRADITIONAL",
+    "statement": "Traditional systems in several regions have used preparations of the plant, for example for diabetes-like conditions.",
+    "limits": "Traditional use is reported here as history only. It is not a claim of effectiveness or safety, and crude preparations are not recommended."
+   },
+   "scientific": {
+    "label": "EXPERIMENTAL / SCIENTIFIC EVIDENCE",
+    "tier": "ESTABLISHED",
+    "statement": "Vinblastine and vincristine, purified from the plant, act on microtubules and are established chemotherapy agents in specific regimens. This is supported by extensive clinical use.",
+    "limits": "Evidence applies to the purified drugs given in specialist settings. Claims for crude plant extracts, including for diabetes, rest on limited laboratory and small studies and are not established."
+   },
+   "references": [
+    {
+     "source": "Pharmacopoeial monographs for vinblastine and vincristine (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Quality standards for the drug substances.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmacognosy textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Alkaloid classes and natural-product drug discovery.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Oncology drug reference or formulary",
+     "type": "Reference",
+     "purpose": "Current use and safety of vinca alkaloids.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ]
+  },
+  {
+   "slug": "rauvolfia-serpentina",
+   "name": "Rauvolfia serpentina",
+   "latin": "Rauvolfia serpentina (L.) Benth. ex Kurz",
+   "biologicalSource": "Dried roots of Rauvolfia serpentina.",
+   "family": "Apocynaceae",
+   "distribution": "Native to the Indian subcontinent and Southeast Asia; the wild plant is threatened by over-collection in some regions.",
+   "partUsed": "Root.",
+   "morphology": "Roots are cylindrical, tortuous and seldom branched. The outer surface is greyish-brown with longitudinal wrinkles. The fracture is short and the cut surface is pale yellow to buff.",
+   "microscopy": "Root shows narrow cork, a phelloderm with starch, and a xylem with vessels and fibres. Starch grains are abundant and simple or compound. Stone cells and crystals are generally absent.",
+   "constituents": [
+    "Indole alkaloids such as reserpine, rescinnamine, ajmaline and yohimbine-related compounds.",
+    "Serpentine and related quaternary alkaloids.",
+    "Starch and other constituents."
+   ],
+   "extraction": "Alkaloids are extracted from powdered root, usually after basification, with an organic solvent, followed by acid-base partition and chromatographic purification.",
+   "identification": [
+    "Macroscopic and microscopic characters, including abundant starch.",
+    "Alkaloid colour reactions and thin-layer chromatography.",
+    "Fluorescence of extracts under UV light."
+   ],
+   "adulteration": "Roots of other Rauvolfia species or unrelated roots may be substituted. Alkaloid content is used to check quality.",
+   "evaluation": [
+    "Total alkaloid content, expressed as reserpine.",
+    "Total ash and acid-insoluble ash.",
+    "Moisture content.",
+    "Extractive values."
+   ],
+   "significance": "Reserpine, isolated from this plant, was historically important as an antihypertensive and antipsychotic and was central to the early history of psychopharmacology.",
+   "cautions": [
+    "Reserpine and root preparations can cause depression, sedation, nasal congestion and low blood pressure.",
+    "Use is restricted, and self-treatment is not appropriate.",
+    "Wild collection is a conservation concern."
+   ],
+   "traditional": {
+    "label": "TRADITIONAL USE",
+    "tier": "TRADITIONAL",
+    "statement": "In traditional medicine of the Indian subcontinent the root has been used for conditions including hypertension-like symptoms, sleep disturbance and snakebite.",
+    "limits": "Traditional reports are historical and are not endorsed here. They do not establish safety or efficacy."
+   },
+   "scientific": {
+    "label": "EXPERIMENTAL / SCIENTIFIC EVIDENCE",
+    "tier": "ESTABLISHED",
+    "statement": "Reserpine depletes monoamine stores by inhibiting vesicular uptake, which explains its antihypertensive effect and its adverse psychiatric effects. This mechanism is well established in pharmacology.",
+    "limits": "Reserpine is now used much less than newer antihypertensives. Evidence relates to the purified alkaloid, not to crude root."
+   },
+   "references": [
+    {
+     "source": "Pharmacopoeial monograph for rauwolfia root and reserpine (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity and alkaloid content standards.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmacognosy textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Indole alkaloids and root characteristics.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmacology textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Monoamine depletion and reserpine pharmacology.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ]
+  },
+  {
+   "slug": "digitalis",
+   "name": "Digitalis",
+   "latin": "Digitalis purpurea L. and Digitalis lanata Ehrh.",
+   "biologicalSource": "Dried leaves of Digitalis purpurea (foxglove); D. lanata is the source of lanatosides.",
+   "family": "Plantaginaceae (formerly Scrophulariaceae)",
+   "distribution": "Native to Europe and western Asia; cultivated in many temperate regions.",
+   "partUsed": "Leaf.",
+   "morphology": "Leaves are ovate to lanceolate, crenate, and covered with soft hairs on the lower surface. The venation is prominent and reticulate. The taste is very bitter.",
+   "microscopy": "Leaf shows both unicellular and multicellular covering trichomes, glandular trichomes with a short stalk and a bicellular head, and anomocytic stomata. Calcium oxalate crystals are absent.",
+   "constituents": [
+    "Cardiac glycosides (cardenolides) such as digitoxin and gitoxin from D. purpurea; digoxin and lanatosides from D. lanata.",
+    "Steroidal saponins, flavonoids and other constituents."
+   ],
+   "extraction": "Glycosides are extracted from dried leaf with aqueous alcohol. Purification uses partition and chromatography. Digoxin is obtained mainly from D. lanata.",
+   "identification": [
+    "Macroscopic and microscopic features, especially the trichomes.",
+    "Keller-Killiani test for the deoxysugar of cardiac glycosides.",
+    "Kedde and Baljet tests for the lactone ring.",
+    "Thin-layer chromatography against reference glycosides."
+   ],
+   "adulteration": "Leaves of other species, including Verbascum, Symphytum and Inula, may be substituted. Microscopy and glycoside assay help detect this.",
+   "evaluation": [
+    "Glycoside content by chemical or chromatographic methods.",
+    "Historically, biological assay, now largely replaced by chemical methods.",
+    "Total ash and acid-insoluble ash.",
+    "Moisture content."
+   ],
+   "significance": "Digoxin, from Digitalis lanata, is a cardiac glycoside used in certain heart-failure and arrhythmia settings. It is a classic example of a narrow-therapeutic-index natural-product drug.",
+   "cautions": [
+    "All parts of the plant are highly toxic; ingestion can be fatal.",
+    "Cardiac glycosides have a narrow margin of safety and important interactions; use requires professional monitoring.",
+    "Crude leaf preparations must not be used for self-treatment."
+   ],
+   "traditional": {
+    "label": "TRADITIONAL USE",
+    "tier": "TRADITIONAL",
+    "statement": "Foxglove leaf was used in traditional European folk medicine, including for dropsy, before its effects were studied systematically.",
+    "limits": "Historical use is recorded for context only. It is not a recommendation, and the plant is dangerous."
+   },
+   "scientific": {
+    "label": "EXPERIMENTAL / SCIENTIFIC EVIDENCE",
+    "tier": "ESTABLISHED",
+    "statement": "Cardiac glycosides inhibit the sodium-potassium ATPase, raising intracellular calcium and increasing cardiac contractility, and they also slow atrioventricular conduction. This mechanism and the drug's narrow therapeutic index are well established.",
+    "limits": "Evidence applies to standardised, dose-monitored glycoside drugs. Digoxin's place in therapy has changed over time; consult current guidelines."
+   },
+   "references": [
+    {
+     "source": "Pharmacopoeial monograph for digitalis leaf and digoxin (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity, assay and quality standards.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmacognosy textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Cardiac glycoside chemistry and tests.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Current heart-failure and arrhythmia guideline",
+     "type": "Guideline",
+     "purpose": "Current place of digoxin in therapy.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ]
+  },
+  {
+   "slug": "papaver-somniferum",
+   "name": "Papaver somniferum",
+   "latin": "Papaver somniferum L.",
+   "biologicalSource": "Dried latex (opium) obtained from the unripe capsules; poppy straw is the dried capsule and stalk.",
+   "family": "Papaveraceae",
+   "distribution": "Cultivated in licensed regions in parts of Asia, Europe and elsewhere, under strict national and international control.",
+   "partUsed": "Latex from unripe capsules (opium); dried capsules (poppy straw).",
+   "morphology": "An annual herb with large, glaucous, lobed leaves and showy flowers. The rounded capsule bears a crown of stigmas. Opium is a brown to blackish mass with a characteristic odour and bitter taste.",
+   "microscopy": "Poppy straw shows epidermal cells, laticifers, and vascular bundles. Opium itself is examined mainly by chemical and chromatographic methods rather than microscopy.",
+   "constituents": [
+    "Phenanthrene alkaloids: morphine and codeine, and thebaine.",
+    "Benzylisoquinoline alkaloids: papaverine and noscapine.",
+    "Meconic acid, sugars, proteins and resins."
+   ],
+   "extraction": "Alkaloids are extracted from opium or poppy straw with aqueous or organic solvents, followed by acid-base separation and crystallisation. Industrial processes are conducted under regulatory control.",
+   "identification": [
+    "Meconic acid gives a red colour with ferric chloride.",
+    "Chromatographic profile of the alkaloids.",
+    "Morphine content assay."
+   ],
+   "adulteration": "Opium may be adulterated with foreign matter such as starch, gums or other plant material. Assay of morphine content and identity tests control quality.",
+   "evaluation": [
+    "Morphine content.",
+    "Moisture content.",
+    "Total ash.",
+    "Identity by chromatography."
+   ],
+   "significance": "Morphine and codeine are established analgesics and antitussive, and thebaine is a precursor for other semi-synthetic opioids. These drugs are central to pain management and are subject to legal control.",
+   "cautions": [
+    "Opioids cause dependence, respiratory depression and other serious effects.",
+    "Possession, supply and use are controlled by law in most countries.",
+    "The plant and its products must never be used outside legal and medical channels."
+   ],
+   "traditional": {
+    "label": "TRADITIONAL USE",
+    "tier": "TRADITIONAL",
+    "statement": "Opium has a long history of use in many cultures as an analgesic and sedative.",
+    "limits": "Historical use is recorded for context and is not a recommendation. Opium carries high risk of dependence and overdose."
+   },
+   "scientific": {
+    "label": "EXPERIMENTAL / SCIENTIFIC EVIDENCE",
+    "tier": "ESTABLISHED",
+    "statement": "Morphine acts as an agonist at mu-opioid receptors and is an established potent analgesic. Codeine is a weaker analgesic and antitussive that is converted to morphine in part, and its effect varies with genetic differences in metabolism.",
+    "limits": "Evidence applies to controlled, purified opioid drugs under medical supervision. Risks including dependence and respiratory depression are also well established."
+   },
+   "references": [
+    {
+     "source": "Pharmacopoeial monographs for opium, morphine and codeine (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Quality standards.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "National controlled-drug legislation and regulator guidance",
+     "type": "Regulation",
+     "purpose": "Legal control of opium-derived drugs.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmacology textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Opioid receptor pharmacology.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ]
+  },
+  {
+   "slug": "tulsi",
+   "name": "Tulsi",
+   "latin": "Ocimum tenuiflorum L. (syn. Ocimum sanctum L.)",
+   "biologicalSource": "Fresh or dried leaves, and sometimes whole aerial parts, of Ocimum tenuiflorum.",
+   "family": "Lamiaceae",
+   "distribution": "Native to the Indian subcontinent; widely cultivated in India and other tropical regions, often in home gardens and around temples.",
+   "partUsed": "Leaves (also seeds and aerial parts in some preparations).",
+   "morphology": "An aromatic, erect, branched herb with a square stem, opposite ovate leaves with slightly toothed margins, and purplish or greenish flowers in whorls. The leaves are aromatic when crushed.",
+   "microscopy": "Leaf shows diacytic stomata, glandular trichomes with a multicellular head, and covering trichomes. The stem shows the square outline of Lamiaceae with collenchyma at the corners.",
+   "constituents": [
+    "Volatile oil containing eugenol, methyl eugenol and other terpenoids.",
+    "Flavonoids, phenolic acids such as rosmarinic acid, and triterpenoids such as ursolic acid."
+   ],
+   "extraction": "Volatile oil is obtained by steam distillation. Non-volatile constituents are extracted with alcohol or water-alcohol mixtures.",
+   "identification": [
+    "Macroscopic and microscopic characters, including glandular trichomes.",
+    "Aroma of the leaf and volatile oil.",
+    "Thin-layer chromatography fingerprint."
+   ],
+   "adulteration": "Other Ocimum species or related aromatic leaves may be substituted. Botanical and chemical authentication are used to confirm identity.",
+   "evaluation": [
+    "Volatile oil content.",
+    "Total ash and acid-insoluble ash.",
+    "Moisture content.",
+    "Extractive values."
+   ],
+   "significance": "Tulsi is widely used as a herbal tea and traditional preparation, and it is studied for its volatile oil and phenolic constituents.",
+   "cautions": [
+    "Concentrated extracts have limited safety data, and effects on blood glucose and blood clotting have been suggested; ask a clinician if you take diabetes or anticoagulant medicines.",
+    "Use during pregnancy and breastfeeding is not well studied.",
+    "Eugenol-rich preparations can irritate tissues."
+   ],
+   "traditional": {
+    "label": "TRADITIONAL USE",
+    "tier": "TRADITIONAL",
+    "statement": "Tulsi has a long place in Ayurvedic and household traditions, taken as a tea or in preparations for respiratory and general wellbeing purposes, and it has cultural and religious significance.",
+    "limits": "Traditional and cultural use is recorded as history and practice. It is not a claim of effectiveness or safety made by this site."
+   },
+   "scientific": {
+    "label": "EXPERIMENTAL / SCIENTIFIC EVIDENCE",
+    "tier": "EMERGING",
+    "statement": "Laboratory and animal studies report a range of biological activities for tulsi extracts and constituents. Human clinical studies exist but are generally small, short and of variable quality, so conclusions are limited.",
+    "limits": "Preliminary findings do not establish a clinical benefit. Larger, well-designed trials would be needed."
+   },
+   "references": [
+    {
+     "source": "Pharmacopoeial or herbal-pharmacopoeia monograph for Ocimum sanctum leaf (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity and quality parameters.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmacognosy textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Lamiaceae microscopy and volatile oils.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Current systematic reviews on Ocimum tenuiflorum (search a scholarly database)",
+     "type": "Search direction",
+     "purpose": "Evidence overview. Not a citation.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ]
+  },
+  {
+   "slug": "ashwagandha",
+   "name": "Ashwagandha",
+   "latin": "Withania somnifera (L.) Dunal",
+   "biologicalSource": "Dried roots (and in some preparations leaves) of Withania somnifera.",
+   "family": "Solanaceae",
+   "distribution": "Found in drier regions of India, the Middle East and parts of Africa; cultivated in India.",
+   "partUsed": "Root (also leaves in some products).",
+   "morphology": "Roots are cylindrical, tapering, and straight or slightly curved, with a greyish-yellow outer surface and longitudinal wrinkles. The fracture is short and the cut surface is white to cream. The odour is characteristic.",
+   "microscopy": "Root shows cork, a wide cortex with abundant starch grains, and a xylem with vessels. Starch grains are simple or compound. Calcium oxalate is present as occasional crystals.",
+   "constituents": [
+    "Withanolides, a class of steroidal lactones, such as withaferin A and withanolide D.",
+    "Alkaloids, including withanine and somniferine.",
+    "Sitoindosides and other glycosylated compounds."
+   ],
+   "extraction": "Withanolides are extracted from dried root or leaf with alcohol or aqueous alcohol, followed by fractionation. Extract composition depends strongly on the plant part and method.",
+   "identification": [
+    "Macroscopic and microscopic features, including starch.",
+    "Thin-layer chromatography for withanolides against reference standards.",
+    "HPLC fingerprint."
+   ],
+   "adulteration": "Roots of other plants may be substituted, and extracts vary widely in withanolide content. Standardised, analysed products are preferable for research.",
+   "evaluation": [
+    "Withanolide content by HPLC.",
+    "Total ash and acid-insoluble ash.",
+    "Moisture content.",
+    "Microbial and heavy-metal limits."
+   ],
+   "significance": "Ashwagandha is a widely used traditional herb and a common ingredient of dietary supplements. It is the subject of ongoing research.",
+   "cautions": [
+    "Rare but serious liver injury has been reported with some products.",
+    "May interact with thyroid, sedative and immunosuppressant medicines, and effects on thyroid hormone levels have been reported.",
+    "Not recommended in pregnancy.",
+    "Use with caution in autoimmune conditions and before surgery; consult a clinician."
+   ],
+   "traditional": {
+    "label": "TRADITIONAL USE",
+    "tier": "TRADITIONAL",
+    "statement": "In Ayurveda ashwagandha is used as a rasayana, a tonic taken for general strength, vitality and to support healthy ageing.",
+    "limits": "Traditional use is recorded as history and practice and is not a claim of effectiveness or safety made by this site."
+   },
+   "scientific": {
+    "label": "EXPERIMENTAL / SCIENTIFIC EVIDENCE",
+    "tier": "EMERGING",
+    "statement": "Some small clinical studies have investigated ashwagandha extracts for stress, sleep and related outcomes with mixed or preliminary results. Laboratory studies suggest multiple biological activities. Study quality, product variability and short durations limit firm conclusions.",
+    "limits": "The evidence is preliminary and product-specific. It does not establish a therapeutic use, and safety concerns, including reports of liver injury, apply."
+   },
+   "references": [
+    {
+     "source": "Pharmacopoeial or herbal-pharmacopoeia monograph for ashwagandha root (your jurisdiction)",
+     "type": "Pharmacopoeia",
+     "purpose": "Identity and quality parameters.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Standard pharmacognosy textbook (edition per your course)",
+     "type": "Textbook",
+     "purpose": "Solanaceous root characters and steroidal lactones.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    },
+    {
+     "source": "Regulator or national poison-centre safety communications on ashwagandha products",
+     "type": "Safety",
+     "purpose": "Current safety information.",
+     "verify": "Yes. Confirm the current edition, version and exact entry from the source before citing."
+    }
+   ]
+  }
+ ]
+}

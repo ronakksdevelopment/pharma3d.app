@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Learn — PHARMA 3D</title>
+<meta name="description" content="Practice MCQs, flashcards with spaced repetition, viva question chains, a progress dashboard and a timed exam mode. Progress stays on your device.">
+<meta name="theme-color" content="#1F2E2C">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/icons/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PHARMA 3D">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/modules.css">
+<link rel="stylesheet" href="css/phase4.css">
+</head>
+<body>
+
+<div data-include="header"></div>
+<div data-include="mobile-nav"></div>
+<div data-include="search-modal"></div>
+<div data-include="a11y-drawer"></div>
+
+<main id="main-content">
+  <div class="breadcrumb-bar">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span aria-hidden="true">/</span>
+      <span aria-current="page">Learn</span>
+    </nav>
+  </div>
+
+  <div class="container p4-root">
+    <header class="p4-head">
+      <span class="section-eyebrow">Learning centre</span>
+      <h1>Learn and practise</h1>
+      <p class="lead">Self-study tools for pharmaceutical science: practice questions, flashcards with spaced repetition, viva-style question chains, a progress dashboard and a timed exam mode.</p>
+      <p class="disclaimer" role="note" style="margin-top:var(--space-4)">Progress is saved only in this browser on this device (localStorage). Nothing is sent anywhere. This is an independent self-study aid. It is not an official examination, is not affiliated with GPAT or any examining body, and gives no certificate or reward. Scores show practice performance only.</p>
+    </header>
+
+    <div class="lrn-tabs" role="navigation" aria-label="Learning sections">
+      <div class="track" role="tablist" id="lrnTabs">
+        <button class="lrn-tab" role="tab" id="t-dash" aria-controls="p-dash" aria-selected="true" data-t="dash">Dashboard</button>
+        <button class="lrn-tab" role="tab" id="t-mcq" aria-controls="p-mcq" aria-selected="false" data-t="mcq" tabindex="-1">Practice MCQs</button>
+        <button class="lrn-tab" role="tab" id="t-fc" aria-controls="p-fc" aria-selected="false" data-t="fc" tabindex="-1">Flashcards</button>
+        <button class="lrn-tab" role="tab" id="t-viva" aria-controls="p-viva" aria-selected="false" data-t="viva" tabindex="-1">Viva chains</button>
+        <button class="lrn-tab" role="tab" id="t-exam" aria-controls="p-exam" aria-selected="false" data-t="exam" tabindex="-1">Timed exam</button>
+      </div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <section class="lrn-panel p4-sec" id="p-dash" role="tabpanel" aria-labelledby="t-dash" style="margin-top:var(--space-6)">
+      <h2>Progress dashboard</h2>
+      <p class="sub">A private view of your own practice. Nothing here is an award or a qualification.</p>
+      <div class="dash-grid" id="dashStats"></div>
+      <div class="p4-card" style="margin-top:var(--space-4)">
+        <h3>Overall practice completion</h3>
+        <div class="ring-row">
+          <svg class="ring" id="ring" viewBox="0 0 120 120" role="img" aria-label="Completion ring"></svg>
+          <div class="dom-bars" id="domBars"></div>
+        </div>
+      </div>
+      <div class="p4-grid c2" style="margin-top:var(--space-4)">
+        <div class="p4-card" style="margin:0"><h3>Study streak</h3><p id="streakTxt"></p><div class="streak" id="streak" style="margin-top:var(--space-3)"></div><p class="p4-caption" style="margin-top:var(--space-3)">A streak counts consecutive days on which you answered at least one question or reviewed a card.</p></div>
+        <div class="p4-card" style="margin:0"><h3>Weak domains</h3><div id="weakBox"></div></div>
+      </div>
+      <div style="margin-top:var(--space-4);display:flex;gap:var(--space-2);flex-wrap:wrap">
+        <button class="btn btn-secondary" id="resetAll" type="button">Reset all progress on this device</button>
+      </div>
+    </section>
+
+    <!-- MCQ -->
+    <section class="lrn-panel p4-sec" id="p-mcq" role="tabpanel" aria-labelledby="t-mcq" hidden style="margin-top:var(--space-6)">
+      <h2>Practice MCQs</h2>
+      <p class="sub">Choose an option to see the answer and explanation straight away.</p>
+      <div class="filters">
+        <div class="field"><label for="mcqLevel">Level</label><select id="mcqLevel"></select></div>
+        <div class="field"><label for="mcqDomain">Domain</label><select id="mcqDomain"></select></div>
+        <button class="btn btn-primary" id="mcqStart" type="button">Start practice</button>
+      </div>
+      <div id="mcqArea" aria-live="polite"></div>
+    </section>
+
+    <!-- FLASHCARDS -->
+    <section class="lrn-panel p4-sec" id="p-fc" role="tabpanel" aria-labelledby="t-fc" hidden style="margin-top:var(--space-6)">
+      <h2>Flashcards — Leitner spaced repetition</h2>
+      <p class="sub">Cards move between five boxes. A correct recall moves a card up a box; a miss sends it back to box 1. Lower boxes come up more often. Everything is stored locally.</p>
+      <div class="leitner" id="leitner" aria-label="Cards per Leitner box"></div>
+      <div id="fcArea" aria-live="polite"></div>
+    </section>
+
+    <!-- VIVA -->
+    <section class="lrn-panel p4-sec" id="p-viva" role="tabpanel" aria-labelledby="t-viva" hidden style="margin-top:var(--space-6)">
+      <h2>Viva-style question chains</h2>
+      <p class="sub">Twelve chains of linked questions, like an oral examiner following one idea deeper. Think or say your answer first, then reveal the model answer.</p>
+      <div class="field" style="max-width:420px"><label for="vivaSel">Choose a chain</label><select id="vivaSel"></select></div>
+      <div id="vivaArea"></div>
+    </section>
+
+    <!-- EXAM -->
+    <section class="lrn-panel p4-sec" id="p-exam" role="tabpanel" aria-labelledby="t-exam" hidden style="margin-top:var(--space-6)">
+      <h2>Timed exam mode</h2>
+      <p class="sub">A practice test under time pressure. Choose domain, difficulty, number of questions and time.</p>
+      <div id="examSetup">
+        <div class="filters">
+          <div class="field"><label for="exLevel">Difficulty</label><select id="exLevel"></select></div>
+          <div class="field"><label for="exDomain">Domain</label><select id="exDomain"></select></div>
+          <div class="field"><label for="exN">Questions</label><select id="exN"><option>10</option><option selected>15</option><option>20</option><option>30</option></select></div>
+          <div class="field"><label for="exMin">Time (minutes)</label><select id="exMin"><option>5</option><option selected>10</option><option>15</option><option>30</option><option>45</option></select></div>
+        </div>
+        <button class="btn btn-primary" id="exStart" type="button">Start exam</button>
+        <p class="p4-caption" style="margin-top:var(--space-3)">Practice only — no official standing. If fewer questions match your choice than you asked for, the exam uses what is available.</p>
+      </div>
+      <div id="examRun" hidden></div>
+      <div id="examResult" hidden></div>
+    </section>
+
+    <nav class="mod-pn" aria-label="Related modules">
+      <a class="prev" href="ai.html"><span class="dir">← Related</span><span class="nm">AI in Pharmacy</span></a>
+      <a class="next" href="explore.html"><span class="dir">Related →</span><span class="nm">Explore</span></a>
+    </nav>
+  </div>
+</main>
+
+<div data-include="footer"></div>
+<div data-include="bottom-nav"></div>
+
+<script src="js/paths.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/search-index.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/app.js"></script>
+<script src="js/p4-shared.js"></script>
+<script src="js/learn-mcq.js"></script>
+<script src="js/learn-cards.js"></script>
+<script src="js/learn.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" defer></script>
+<script src="js/search.js" defer></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => { navigator.serviceWorker.register('service-worker.js').then((reg) => { if (window.pharma3dWatchForUpdates) window.pharma3dWatchForUpdates(reg); }).catch(() => {}); });
+  }
+</script>
+</body>
+</html>
