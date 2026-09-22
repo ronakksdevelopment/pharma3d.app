@@ -4,7 +4,7 @@
    cache for navigation requests, with an offline fallback page.
    ========================================================= */
 
-const CACHE_VERSION = "pharma3d-v1.4.0";
+const CACHE_VERSION = "pharma3d-v1.4.1";
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 
 const PRECACHE_URLS = [
@@ -31,8 +31,6 @@ const PRECACHE_URLS = [
   "./css/search.css",
   "./css/wpd2026.css",
   "./js/wpd2026.js",
-  "./css/components.css",
-  "./css/layout.css",
   "./ai.html",
   "./chitosan.html",
   "./manufacturing.html",
@@ -86,12 +84,6 @@ const PRECACHE_URLS = [
   "./drug.html",
   "./plants.html",
   "./instruments.html",
-  "./manufacturing.html",
-  "./formulation.html",
-  "./chitosan.html",
-  "./lab.html",
-  "./pharmacovigilance.html",
-  "./ai.html",
   "./css/phase4.css",
   "./js/p4-shared.js",
   "./js/chitosan.js",

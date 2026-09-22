@@ -9,11 +9,15 @@ interactive pharmaceutical-science learning experience, built for World Pharmaci
 Created by **Karnajit Reang** and **Kishaloy Debnath**, Regional Institute of Pharmaceutical
 Science and Technology (RIPSAT), Tripura University, Agartala, Tripura, India.
 
-This repository contains the **foundation build** (architecture, navigation, design system, homepage,
-shell pages), **Phase 2: the Pharmacy Universe, domain pages, relationship graph and site-wide
-search**, and **Phase 3: the Drug Explorer, Plant Explorer, Instruments (with calculators),
-Manufacturing and Formulation modules**. Later modules (chitosan lab, pharmacokinetics lab,
-pharmacovigilance, AI section, learning center) are not built yet.
+This repository contains the **complete, final build**: the foundation (architecture, navigation,
+design system, homepage, shell pages), the Pharmacy Universe (18-domain network map, relationship
+graph and site-wide search), the Drug Explorer (12 drugs), Plant Explorer (8 plants), Instruments
+(7 instruments with calculators), Manufacturing and Formulation modules, the Chitosan nanoparticle
+lab, the Pharmacokinetic lab, the Pharmacovigilance module, the AI in Pharmacy module, the Learning
+Centre (MCQs, flashcards, viva chains, progress dashboard, timed exam mode), the World Pharmacist
+Day 2026 experience (opening sequence, journey, Thank a Pharmacist, share-card generator,
+Presentation Mode) and the Authors page. All pages have been smoke-tested end to end; see
+`QA-REPORT.md` for the full test log.
 
 ## Tech stack
 - Plain **HTML5**, **CSS3**, **vanilla JavaScript** — no frameworks, no build tools, no backend.
@@ -48,7 +52,7 @@ pharmacovigilance, AI section, learning center) are not built yet.
 /about-authors.html      Authors page with photo placeholders
 /offline.html  /404.html Fallback pages
 /manifest.json           PWA manifest
-/service-worker.js       Offline caching service worker (cache v1.4.0)
+/service-worker.js       Offline caching service worker (cache v1.4.1)
 
 /css/tokens.css          Design tokens (color, type, spacing, motion)
 /css/base.css            Reset + global element styles
@@ -497,12 +501,23 @@ references are explicitly labelled "Search direction" and are not citations.
 confirmed present and unmodified from earlier parts.
 
 ### Not done in this part (per scope)
-- No tests, QA passes, accessibility audits, device testing, or performance/optimisation work were run.
-  The opening sequence, carousel, thank-you feature, share-card canvas and presentation mode were written
-  to the same structural/ARIA conventions as the rest of the site but not exercised in a browser here.
 - Content should still be reviewed by a qualified subject-matter reviewer before public release, consistent
   with the note in Part 4.
 
+## Part 6 — Testing, bug fixing and final packaging
+A full smoke test was run across every page and feature listed in this README: all navigation and
+deep links, the WPD 2026 experience (opening sequence, skip, credits, reduced-motion fallback,
+Thank a Pharmacist, share-card generator), the Universe and all 18 domain pages, Explore, site-wide
+search, the Drug/Plant Explorers and all 20 detail pages, all 7 instrument pages and calculators,
+Manufacturing, Formulation, the Chitosan lab, the Pharmacokinetic lab, Pharmacovigilance, the AI
+module, and the Learning Centre (MCQs, flashcards, viva chains, dashboard, exam mode). See
+`QA-REPORT.md` for the full log, the two real bugs found and fixed, and remaining non-blocking notes.
+No new features, redesigns, or content changes were made in this part — only verification and bug
+fixes.
+
 ## Scope limits (still out of scope)
-- No automated tests, QA passes, audits, accessibility audits, device testing or optimisation passes
-  have been run for any phase, per project scope throughout.
+- Automated end-to-end browser testing (real Chromium/WebKit rendering, visual regression, device labs)
+  was not available in the environment this project was packaged in. Testing in Part 6 was static/structural
+  (HTML/link/JSON/JS validation, a headless DOM harness with browser-API polyfills, and manual code review
+  against each stated formula, label and accessibility requirement) rather than pixel-level visual QA in a
+  live browser. A manual pass in real desktop and mobile browsers before public release is still recommended.
